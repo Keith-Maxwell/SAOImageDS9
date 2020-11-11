@@ -32,15 +32,17 @@ def analyse_file(filename, funclist):
      - "funclist" list of tuples (functions and their origin file) to look for
 
      output :
-     - list of file links
+     - dictionary of file links and their used functions
      """
-    file_links = []  # will populate this list with the references to other files
+    file_links = {}  # will populate this dict with the references to other files
     with open(filename, 'r', errors='ignore') as f:
         content = f.read()
         for func, origin in funclist:
             if content.find(func) != -1 and origin not in file_links:
                 # if the function is in the file, and if the origin file has not been added yet, add the origin file to the list of links
-                file_links.append(origin)
+                file_links[origin] = [func]
+            elif content.find(func) != -1 and origin in file_links:
+                file_links[origin].append(func)
     return file_links
 
 
@@ -67,10 +69,12 @@ def pretty_print(tree):
     creates a .txt file to write the tree
     """
     with open("tree.txt", "w") as output:
-        for key, values in tree.items():
-            output.write(f'-> {key}\n')
-            for i in values:
-                output.write(f"\t|_{i}\n")
+        for top_level_file, called_files in tree.items():
+            output.write(f'-> {top_level_file}\n')
+            for file, functions in called_files.items():
+                output.write(f"\t|_ {file}\n")
+                for func in functions:
+                    output.write(f'\t\t|_ {func}\n')
 
 
 if __name__ == "__main__":
