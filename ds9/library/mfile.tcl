@@ -9,7 +9,7 @@ package provide DS9 1.0
 proc FileMainMenu {} {
     global ds9
 
-    ThemeMenu $ds9(mb).file 
+    ThemeMenu $ds9(mb).file
     $ds9(mb).file add command -label "[msgcat::mc {Open}]..." \
 	-command [list OpenDialog fits] -accelerator "${ds9(ctrl)}O"
     $ds9(mb).file add cascade -label [msgcat::mc {Open as}] \
@@ -32,21 +32,21 @@ proc FileMainMenu {} {
     $ds9(mb).file add command -label "[msgcat::mc {Create Movie}]..." \
 	-command MovieDialog
     $ds9(mb).file add separator
-    $ds9(mb).file add command -label "[msgcat::mc {Backup}]..." \
+    # $ds9(mb).file add command -label "[msgcat::mc {Backup}]..." \
 	-command BackupDialog
-    $ds9(mb).file add command -label "[msgcat::mc {Restore}]..." \
+    # $ds9(mb).file add command -label "[msgcat::mc {Restore}]..." \
 	-command RestoreDialog
-    $ds9(mb).file add separator
+    # $ds9(mb).file add separator
     $ds9(mb).file add command -label "[msgcat::mc {Display Header}]..." \
-	-command DisplayHeaderMenu 
-    $ds9(mb).file add cascade -label [msgcat::mc {Preserve During Load}] \
+	-command DisplayHeaderMenu
+    # $ds9(mb).file add cascade -label [msgcat::mc {Preserve During Load}] \
 	-menu $ds9(mb).file.preserve
-    $ds9(mb).file add separator
-    $ds9(mb).file add cascade -label [msgcat::mc {XPA}] \
+    # $ds9(mb).file add separator
+    # $ds9(mb).file add cascade -label [msgcat::mc {XPA}] \
 	-menu $ds9(mb).file.xpa
-    $ds9(mb).file add cascade -label [msgcat::mc {SAMP}] \
+    # $ds9(mb).file add cascade -label [msgcat::mc {SAMP}] \
 	-menu $ds9(mb).file.samp
-    $ds9(mb).file add separator
+    # $ds9(mb).file add separator
     $ds9(mb).file add command -label "[msgcat::mc {Open TCL Console}]..." \
 	-command OpenConsole
     $ds9(mb).file add command -label "[msgcat::mc {Source TCL}]..." \
@@ -202,40 +202,40 @@ proc FileMainMenu {} {
 	-command [list SaveImageDialog png]
 
     # File Preserve Menu
-    ThemeMenu $ds9(mb).file.preserve
-    $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Pan}] \
+    # ThemeMenu $ds9(mb).file.preserve
+    # $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Pan}] \
 	-variable panzoom(preserve) -command PreservePan
-    $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Region}] \
+    # $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Region}] \
 	-variable marker(preserve) -command MarkerPreserve
 
-    ThemeMenu $ds9(mb).file.samp
-    $ds9(mb).file.samp add command -label [msgcat::mc {Connect}] \
+    # ThemeMenu $ds9(mb).file.samp
+    # $ds9(mb).file.samp add command -label [msgcat::mc {Connect}] \
 	-command SAMPConnect
-    $ds9(mb).file.samp add command -label [msgcat::mc {Disconnect}] \
+    # $ds9(mb).file.samp add command -label [msgcat::mc {Disconnect}] \
 	-command SAMPDisconnect
-    $ds9(mb).file.samp add separator
-    $ds9(mb).file.samp add cascade -label [msgcat::mc {Image}] \
+    # $ds9(mb).file.samp add separator
+    # $ds9(mb).file.samp add cascade -label [msgcat::mc {Image}] \
 	-menu $ds9(mb).file.samp.image
-    $ds9(mb).file.samp add cascade -label [msgcat::mc {Table}] \
+    # $ds9(mb).file.samp add cascade -label [msgcat::mc {Table}] \
 	-menu $ds9(mb).file.samp.table
 
-    ThemeMenu $ds9(mb).file.samp.image
-    $ds9(mb).file.samp.image add command -label [msgcat::mc {Broadcast}] \
+    # ThemeMenu $ds9(mb).file.samp.image
+    # $ds9(mb).file.samp.image add command -label [msgcat::mc {Broadcast}] \
 	-command "SAMPSendImageLoadFits {}"
-    $ds9(mb).file.samp.image add separator
+    # $ds9(mb).file.samp.image add separator
 
-    ThemeMenu $ds9(mb).file.samp.table
-    $ds9(mb).file.samp.table add command -label [msgcat::mc {Broadcast}] \
+    # ThemeMenu $ds9(mb).file.samp.table
+    # $ds9(mb).file.samp.table add command -label [msgcat::mc {Broadcast}] \
 	-command "SAMPSendTableLoadFits {}"
-    $ds9(mb).file.samp.table add separator
+    # $ds9(mb).file.samp.table add separator
 
-    ThemeMenu $ds9(mb).file.xpa
-    $ds9(mb).file.xpa add command -label "[msgcat::mc {Information}]..." \
+    # ThemeMenu $ds9(mb).file.xpa
+    # $ds9(mb).file.xpa add command -label "[msgcat::mc {Information}]..." \
 	-command XPAInfo
-    $ds9(mb).file.xpa add separator
-    $ds9(mb).file.xpa add command -label [msgcat::mc {Connect}] \
+    # $ds9(mb).file.xpa add separator
+    # $ds9(mb).file.xpa add command -label [msgcat::mc {Connect}] \
 	-command XPAConnect
-    $ds9(mb).file.xpa add command -label [msgcat::mc {Disconnect}] \
+    # $ds9(mb).file.xpa add command -label [msgcat::mc {Disconnect}] \
 	-command XPADisconnect
 
     # Bindings
@@ -331,7 +331,7 @@ proc ButtonsFileDef {} {
 	file,saveimage,tiff 0
 	file,saveimage,jpeg 0
 	file,saveimage,png 0
-	
+
 	file,movie 0
 	file,backup 0
 	file,restore 0
@@ -501,19 +501,19 @@ proc CreateButtonsFile {} {
     ButtonButton $ds9(buttons).file.movie \
 	[string tolower [msgcat::mc {Movie}]] MovieDialog
 
-    ButtonButton $ds9(buttons).file.backup \
+    # ButtonButton $ds9(buttons).file.backup \
 	[string tolower [msgcat::mc {Backup}]] BackupDialog
-    ButtonButton $ds9(buttons).file.restore \
+    # ButtonButton $ds9(buttons).file.restore \
 	[string tolower [msgcat::mc {Restore}]] RestoreDialog
 
     ButtonButton $ds9(buttons).file.header \
 	[string tolower [msgcat::mc {Header}]] DisplayHeaderMenu
 
-    ButtonButton $ds9(buttons).file.xpainfo \
+    # ButtonButton $ds9(buttons).file.xpainfo \
 	[string tolower {XPA Info}] XPAInfo
-    ButtonButton $ds9(buttons).file.sampimage \
+    # ButtonButton $ds9(buttons).file.sampimage \
 	[string tolower [msgcat::mc {SAMP Image}]] "SAMPSendImageLoadFits {}"
-    ButtonButton $ds9(buttons).file.samptable \
+    # ButtonButton $ds9(buttons).file.samptable \
 	[string tolower [msgcat::mc {SAMP Table}]] "SAMPSendTableLoadFits {}"
 
     ButtonButton $ds9(buttons).file.console \
@@ -587,12 +587,9 @@ proc CreateButtonsFile {} {
         $ds9(buttons).file.saveimagepng pbuttons(file,saveimage,png)
 
         $ds9(buttons).file.movie pbuttons(file,movie)
-        $ds9(buttons).file.backup pbuttons(file,backup)
+    	$ds9(buttons).file.backup pbuttons(file,backup)
         $ds9(buttons).file.restore pbuttons(file,restore)
         $ds9(buttons).file.header pbuttons(file,header)
-        $ds9(buttons).file.xpainfo pbuttons(file,xpa,info)
-        $ds9(buttons).file.sampimage pbuttons(file,samp,image)
-        $ds9(buttons).file.samptable pbuttons(file,samp,table)
         $ds9(buttons).file.console pbuttons(file,console)
         $ds9(buttons).file.tcl pbuttons(file,tcl)
         $ds9(buttons).file.pspage pbuttons(file,pspage)
@@ -609,7 +606,7 @@ proc PrefsDialogButtonbarFile {f} {
     global ds9
 
     ttk::menubutton $f -text [msgcat::mc {Buttonbar}] -menu $f.menu
-    
+
     set m $f.menu
     ThemeMenu $m
     $m add checkbutton -label "[msgcat::mc {Open}]..." \
@@ -627,16 +624,16 @@ proc PrefsDialogButtonbarFile {f} {
     $m add checkbutton -label "[msgcat::mc {Create Movie}]..." \
 	-variable pbuttons(file,movie) -command {UpdateButtons buttons(file)}
     $m add separator
-    $m add checkbutton -label "[msgcat::mc {Backup}]..." \
+    #$m add checkbutton -label "[msgcat::mc {Backup}]..." \
 	-variable pbuttons(file,backup) -command {UpdateButtons buttons(file)}
-    $m add checkbutton -label "[msgcat::mc {Restore}]..." \
+    #$m add checkbutton -label "[msgcat::mc {Restore}]..." \
 	-variable pbuttons(file,restore) -command {UpdateButtons buttons(file)}
-    $m add separator
+    #$m add separator
     $m add checkbutton -label "[msgcat::mc {Display Header}]..." \
 	-variable pbuttons(file,header) -command {UpdateButtons buttons(file)}
     $m add separator
-    $m add cascade -label [msgcat::mc {XPA}] -menu $m.xpa
-    $m add cascade -label [msgcat::mc {SAMP}] -menu $m.samp
+    #$m add cascade -label [msgcat::mc {XPA}] -menu $m.xpa
+    #$m add cascade -label [msgcat::mc {SAMP}] -menu $m.samp
     $m add separator
     $m add checkbutton -label "[msgcat::mc {Open TCL Console}]..." \
 	-variable pbuttons(file,console) -command {UpdateButtons buttons(file)}
@@ -852,16 +849,16 @@ proc PrefsDialogButtonbarFile {f} {
 	-variable pbuttons(file,saveimage,png) \
 	-command {UpdateButtons buttons(file)}
 
-    ThemeMenu $m.xpa
-    $m.xpa add checkbutton -label "[msgcat::mc {Information}]..." \
+    #ThemeMenu $m.xpa
+    #$m.xpa add checkbutton -label "[msgcat::mc {Information}]..." \
 	-variable pbuttons(file,xpa,info) \
 	-command {UpdateButtons buttons(file)}
 
-    ThemeMenu $m.samp
-    $m.samp add checkbutton -label [msgcat::mc {Image}] \
+    #ThemeMenu $m.samp
+    #$m.samp add checkbutton -label [msgcat::mc {Image}] \
 	-variable pbuttons(file,samp,image) \
 	-command {UpdateButtons buttons(file)}
-    $m.samp add checkbutton -label [msgcat::mc {Table}] \
+    #$m.samp add checkbutton -label [msgcat::mc {Table}] \
 	-variable pbuttons(file,samp,table) \
 	-command {UpdateButtons buttons(file)}
 }
@@ -881,14 +878,14 @@ proc UpdateFileMenu {} {
     UpdateFileMenuSaveImage
     UpdateFileMenuMovie
     UpdateFileMenuHeader
-    UpdateFileMenuXPA
-    UpdateFileMenuSAMP
+    #UpdateFileMenuXPA
+    #UpdateFileMenuSAMP
 }
 
 proc UpdateFileMenuOpen {} {
     global ds9
     global current
- 
+
     set mm $ds9(mb).file
     set bb $ds9(buttons).file
 
@@ -952,7 +949,7 @@ proc UpdateFileMenuOpen {} {
 proc UpdateFileMenuSave {} {
     global ds9
     global current
- 
+
     set mm $ds9(mb).file
     set bb $ds9(buttons).file
 
@@ -1153,7 +1150,7 @@ proc UpdateFileMenuHeader {} {
     }
 }
 
-    
+
 proc UpdateFileMenuXPA {} {
     global ds9
     global current
@@ -1176,7 +1173,7 @@ proc UpdateFileMenuSAMP {} {
     global ds9
     global current
     global samp
- 
+
     set mm $ds9(mb).file
     set bb $ds9(buttons).file
 
@@ -1207,7 +1204,7 @@ proc UpdateFileMenuSAMP {} {
     if {$current(frame) == {}} {
 	return
     }
-    
+
     if {[info exists samp]} {
 	if {[$current(frame) has fits]} {
 	    set ss [expr $ds9(menu,start)+2]
