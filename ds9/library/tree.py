@@ -14,14 +14,15 @@ def get_function_list(exp, start_path='.'):
     funclist = []
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
-            fp = os.path.join(dirpath, f)
-            with open(fp, 'r', errors='ignore') as file:
-                for line in file:
-                    if re.search(exp, line):  # search for the regular expression
-                        # split the string and keep only the second word, which is the name of the function
-                        funcname = line.split(' ')[1]
-                        if funcname not in funclist:  # if not already, add it to the list
-                            funclist.append((funcname, file.name))
+            if f != 'tree.txt' and f != "tree.py":
+                fp = os.path.join(dirpath, f)
+                with open(fp, 'r', errors='ignore') as file:
+                    for line in file:
+                        if re.search(exp, line):  # search for the regular expression
+                            # split the string and keep only the second word, which is the name of the function
+                            funcname = line.split(' ')[1]
+                            if funcname not in funclist:  # if not already, add it to the list
+                                funclist.append((funcname, file.name))
     return funclist
 
 
@@ -58,9 +59,10 @@ def generate_tree(funclist, start_path='.'):
     tree = {}
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
-            fp = os.path.join(dirpath, f)
-            file_links = analyse_file(fp, funclist)
-            tree[f] = file_links
+            if f != 'tree.txt' and f != "tree.py":
+                fp = os.path.join(dirpath, f)
+                file_links = analyse_file(fp, funclist)
+                tree[f] = file_links
     return tree
 
 

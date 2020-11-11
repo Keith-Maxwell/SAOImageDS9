@@ -12,8 +12,6 @@
 		|_ 
 	|_ ./panzoom.tcl
 		|_ Rotate
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markerbasecenter.tcl
@@ -62,8 +60,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./info.tcl
 		|_ UpdateInfoBox
 	|_ ./graph.tcl
@@ -96,8 +92,6 @@
 		|_ Error
 	|_ ./catcdssrchdialog.tcl
 		|_ CATCDSSrch
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./vot.tcl
@@ -169,8 +163,6 @@
 		|_ CATBackup
 	|_ ./dialog.tcl
 		|_ SimpleTextDestroy
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./contour.tcl
@@ -288,8 +280,6 @@
 		|_ ParseURL
 		|_ XMLQuote
 		|_ XMLUnQuote
-	|_ ./tree.py
-		|_ 
 	|_ ./mfile.tcl
 		|_ UpdateFileMenu
 	|_ ./vot.tcl
@@ -316,8 +306,6 @@
 -> htp.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 -> mview.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -339,8 +327,6 @@
 		|_ UpdateButtons
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./layout.tcl
 		|_ ViewDef
 		|_ UpdateView
@@ -403,8 +389,6 @@
 		|_ FontMenu
 		|_ WidthDashMenu
 		|_ ConfigureButtons
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./centroid.tcl
@@ -445,8 +429,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./save.tcl
 		|_ Save
 	|_ ./stdfbox.tcl
@@ -462,8 +444,6 @@
 	|_ ./fpcmd.tcl
 		|_ FPHighliteCB
 		|_ FPUnhighliteCB
-	|_ ./tree.py
-		|_ 
 -> mosaiciraf.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -476,8 +456,6 @@
 	|_ ./error.tcl
 		|_ InitError
 		|_ Error
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -607,8 +585,6 @@
 		|_ ProcessCatalogCmd
 	|_ ./nrrd.tcl
 		|_ ImportNRRDFile
-	|_ ./tree.py
-		|_ 
 	|_ ./shm.tcl
 		|_ ProcessShmCmd
 	|_ ./mosaicimageiraf.tcl
@@ -750,8 +726,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ RealizeDS9
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./load.tcl
@@ -782,8 +756,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markeranalysishist.tcl
@@ -831,8 +803,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./import.tcl
 		|_ Import
 	|_ ./load.tcl
@@ -902,8 +872,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./mbin.tcl
 		|_ UpdateBinMenu
 	|_ ./contour.tcl
@@ -985,8 +953,6 @@
 		|_ Toplevel
 		|_ EntryDialog
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./text.tcl
@@ -1059,8 +1025,6 @@
 		|_ ThemeChange
 		|_ ThemeTreeForeground
 		|_ ThemeTreeBackground
-	|_ ./tree.py
-		|_ 
 	|_ ./info.tcl
 		|_ EnterInfoBox
 		|_ LeaveInfoBox
@@ -1083,8 +1047,6 @@
 		|_ SliderFromTo
 		|_ SliderMinMax
 		|_ SliderCmd
-	|_ ./tree.py
-		|_ 
 -> fpcmd.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -1099,8 +1061,6 @@
 	|_ ./panzoom.tcl
 		|_ Pan
 		|_ PanTo
-	|_ ./tree.py
-		|_ 
 	|_ ./table.tcl
 		|_ TBLValidDB
 		|_ TBLStatusRows
@@ -1162,8 +1122,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ ContourDialog
@@ -1192,8 +1150,6 @@
 		|_ 
 	|_ ./tableflt.tcl
 		|_ TBLFltSort
-	|_ ./tree.py
-		|_ 
 -> panzoom.tcl
 	|_ ./backup.tcl
 		|_ Backup
@@ -1269,8 +1225,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./mzoom.tcl
 		|_ UpdateZoomMenu
 	|_ ./info.tcl
@@ -1308,8 +1262,6 @@
 		|_ NSVRServerMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ MultiLoad
 		|_ ProcessLoad
@@ -1343,8 +1295,6 @@
 		|_ CATLoad
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 -> mosaic.tcl
@@ -1357,8 +1307,6 @@
 		|_ ProcessSendMosaicCmd
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicwcs.tcl
 		|_ ProcessMosaicWCSCmd
 		|_ ProcessSendMosaicWCSCmd
@@ -1379,8 +1327,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -1401,8 +1347,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./prefsdialog.tcl
@@ -1426,8 +1370,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbasepanda.tcl
 		|_ MarkerBasePandaDialog
 		|_ MarkerBasePandaClose
@@ -1466,8 +1408,6 @@
 	|_ ./cat.tcl
 		|_ CATGenerate
 		|_ CATGenerateUpdate
-	|_ ./tree.py
-		|_ 
 	|_ ./catplot.tcl
 		|_ CATPlot
 		|_ CATPlotHighliteElement
@@ -1505,8 +1445,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./save.tcl
 		|_ Save
 	|_ ./colorbar.tcl
@@ -1530,8 +1468,6 @@
 		|_ Error
 	|_ ./plot.tcl
 		|_ PlotDef
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbackup.tcl
 		|_ PlotRestore
 	|_ ./save.tcl
@@ -1546,8 +1482,6 @@
 		|_ FindENVIDataFile
 	|_ ./export.tcl
 		|_ Export
-	|_ ./tree.py
-		|_ 
 	|_ ./import.tcl
 		|_ Import
 	|_ ./load.tcl
@@ -1570,8 +1504,6 @@
 		|_ ProcessSend
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./ar.tcl
@@ -1607,8 +1539,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./array.tcl
 		|_ ExportArrayFile
 	|_ ./rgbarray.tcl
@@ -1725,8 +1655,6 @@
 		|_ SimpleTextDialog
 	|_ ./projection.tcl
 		|_ ProjectionDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./box.tcl
@@ -1781,8 +1709,6 @@
 -> catsdss.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 -> header.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -1806,8 +1732,6 @@
 		|_ DialogWait
 		|_ SimpleTextDialog
 		|_ SimpleTextDestroy
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./save.tcl
@@ -1827,8 +1751,6 @@
 		|_ ErrorTimer
 	|_ ./util.tcl
 		|_ QuitDS9
-	|_ ./tree.py
-		|_ 
 -> fp.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -1858,8 +1780,6 @@
 		|_ ProcessSend
 		|_ ProcessRealizeDS9
 		|_ RealizeDS9
-	|_ ./tree.py
-		|_ 
 	|_ ./vot.tcl
 		|_ VOTParse
 	|_ ./table.tcl
@@ -1880,8 +1800,6 @@
 	|_ ./sfits.tcl
 		|_ LoadSFitsFile
 		|_ ProcessSFitsCmd
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 -> line.tcl
@@ -1896,8 +1814,6 @@
 		|_ LineDistCB
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markeranalysisplot2d.tcl
@@ -1921,8 +1837,6 @@
 		|_ CATLoad
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 -> nameres.tcl
@@ -1955,8 +1869,6 @@
 		|_ NSVRServerMenuItems
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./ar.tcl
 		|_ ARInit
 		|_ ARApply
@@ -1974,8 +1886,6 @@
 		|_ 
 	|_ ./catfits.tcl
 		|_ FITSRead
-	|_ ./tree.py
-		|_ 
 -> buttons.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -2005,8 +1915,6 @@
 		|_ MajorButton
 		|_ UpdateButtons
 		|_ ShowButton
-	|_ ./tree.py
-		|_ 
 	|_ ./mframe.tcl
 		|_ ButtonsFrameDef
 		|_ CreateButtonsFrame
@@ -2052,8 +1960,6 @@
 		|_ 
 	|_ ./var.tcl
 		|_ LoadVar
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 -> frame.tcl
@@ -2233,8 +2139,6 @@
 		|_ Toplevel
 	|_ ./examine.tcl
 		|_ ExamineButton
-	|_ ./tree.py
-		|_ 
 	|_ ./mframe.tcl
 		|_ UpdateFrameMenu
 		|_ UpdateFrameMenuItems
@@ -2314,8 +2218,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./ar.tcl
@@ -2346,8 +2248,6 @@
 		|_ ProcessDebugCmd
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./block.tcl
 		|_ Block
 	|_ ./iis.tcl
@@ -2369,8 +2269,6 @@
 		|_ ProcessSendMECubeCmd
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -2383,8 +2281,6 @@
 	|_ ./backup.tcl
 		|_ 
 		|_ Restore
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./save.tcl
@@ -2397,8 +2293,6 @@
 		|_ ProcessSendMosaicImageCmd
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicimageiraf.tcl
 		|_ ProcessMosaicImageIRAFCmd
 	|_ ./mosaicimagewfpc2.tcl
@@ -2423,8 +2317,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markeranalysishist.tcl
@@ -2466,8 +2358,6 @@
 		|_ WidthDashMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./annulus.tcl
 		|_ AnnulusDialog
 		|_ AnnulusGenerate
@@ -2660,8 +2550,6 @@
 		|_ DialogWait
 		|_ SimpleTextDialog
 		|_ SimpleTextUpdateFont
-	|_ ./tree.py
-		|_ 
 	|_ ./mframe.tcl
 		|_ UpdateFrameMenu
 	|_ ./mbin.tcl
@@ -2820,8 +2708,6 @@
 		|_ EntryCut
 		|_ EntryCopy
 		|_ EntryPaste
-	|_ ./tree.py
-		|_ 
 	|_ ./mframe.tcl
 		|_ FrameMainMenu
 		|_ PrefsDialogFrameMenu
@@ -2874,8 +2760,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./prefsdialog.tcl
 		|_ PrefsDialog
 -> xpa.tcl
@@ -3240,8 +3124,6 @@
 		|_ ProcessSendNRRDCmd
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./shm.tcl
 		|_ ProcessShmCmd
 		|_ ProcessSendShmCmd
@@ -3457,8 +3339,6 @@
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
 		|_ SimpleTextDestroy
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbar.tcl
 		|_ PlotBar
 		|_ PlotBarAddGraph
@@ -3492,8 +3372,6 @@
 	|_ ./external.tcl
 		|_ InitExternalFile
 		|_ ProcessExternalFile
-	|_ ./tree.py
-		|_ 
 -> cat.tcl
 	|_ ./backup.tcl
 		|_ Backup
@@ -3570,8 +3448,6 @@
 		|_ CatalogCmdSymbolRemove
 		|_ CatalogCmdSymbolLoad
 		|_ CatalogCmdSymbolSave
-	|_ ./tree.py
-		|_ 
 	|_ ./catreg.tcl
 		|_ CATReg
 	|_ ./open.tcl
@@ -3619,8 +3495,6 @@
 		|_ CompassApply
 		|_ CompassArrow
 		|_ CompassCoordCB
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markerbasecenter.tcl
@@ -3647,8 +3521,6 @@
 		|_ ProcessNRRDCmd
 		|_ NRRDCmdLoad
 		|_ ProcessSendNRRDCmd
-	|_ ./tree.py
-		|_ 
 	|_ ./import.tcl
 		|_ Import
 	|_ ./load.tcl
@@ -3662,8 +3534,6 @@
 		|_ Bin
 	|_ ./hv.tcl
 		|_ HV
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./save.tcl
@@ -3698,8 +3568,6 @@
 		|_ CATCDSSrchDestroy
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./ar.tcl
@@ -3738,8 +3606,6 @@
 		|_ NSVRParse
 		|_ NSVRServerMenu
 		|_ NSVRServerMenuItems
-	|_ ./tree.py
-		|_ 
 	|_ ./ar.tcl
 		|_ ARCancel
 		|_ ARReset
@@ -3794,8 +3660,6 @@
 		|_ SimpleTextSave
 		|_ PRPrintDialog
 		|_ PRPrintBrowse
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./save.tcl
@@ -3825,8 +3689,6 @@
 		|_ ProjectionEditCB
 		|_ ProjectionDistCB
 		|_ ProjectionThickCB
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markeranalysisplot2d.tcl
@@ -3857,17 +3719,10 @@
 		|_ ExamineButtonRGB
 		|_ ExamineButton3D
 		|_ PrefsDialogExamine
-	|_ ./tree.py
-		|_ 
 	|_ ./fits.tcl
 		|_ LoadFitsFile
 	|_ ./prefsdialog.tcl
 		|_ PrefsDialog
--> tree.py
-	|_ ./backup.tcl
-		|_ 
-	|_ ./tree.py
-		|_ 
 -> mframe.tcl
 	|_ ./crosshair.tcl
 		|_ MatchCrosshairCurrent
@@ -3925,8 +3780,6 @@
 		|_ TileDialog
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./mframe.tcl
 		|_ FrameMainMenu
 		|_ PrefsDialogFrameMenu
@@ -3999,8 +3852,6 @@
 	|_ ./menu.tcl
 		|_ ThemeMenu
 		|_ ConfigureButtons
-	|_ ./tree.py
-		|_ 
 	|_ ./mbin.tcl
 		|_ BinMainMenu
 		|_ PrefsDialogBinMenu
@@ -4016,8 +3867,6 @@
 		|_ 
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./shm.tcl
 		|_ ProcessShmCmd
 		|_ ShmCmdSet
@@ -4038,8 +3887,6 @@
 	|_ ./error.tcl
 		|_ Info
 		|_ Error
-	|_ ./tree.py
-		|_ 
 	|_ ./catreg.tcl
 		|_ CATReg
 	|_ ./catdialog.tcl
@@ -4060,8 +3907,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 		|_ OpenDialog
@@ -4095,8 +3940,6 @@
 	|_ ./error.tcl
 		|_ InitError
 		|_ Error
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicimageiraf.tcl
 		|_ LoadMosaicImageIRAFFile
 		|_ LoadMosaicImageIRAFAlloc
@@ -4154,8 +3997,6 @@
 		|_ XPAConnect
 		|_ XPADisconnect
 		|_ XPAInfo
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 		|_ OpenDialog
@@ -4206,8 +4047,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./2mass.tcl
 		|_ Process2MASSCmd
 		|_ ProcessSend2MASSCmd
@@ -4251,8 +4090,6 @@
 		|_ EntryCut
 		|_ EntryCopy
 		|_ EntryPaste
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./contour.tcl
@@ -4324,8 +4161,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ XMLQuote
-	|_ ./tree.py
-		|_ 
 	|_ ./vot.tcl
 		|_ VOTParse
 		|_ VOTRead
@@ -4375,8 +4210,6 @@
 		|_ SimpleTextSelectNone
 		|_ SimpleTextFind
 		|_ SimpleTextFindNext
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./vot.tcl
@@ -4475,8 +4308,6 @@
 		|_ SourceInitFile
 		|_ GetEnvHome
 		|_ FromYesNo
-	|_ ./tree.py
-		|_ 
 	|_ ./prefs.tcl
 		|_ PrefsDef
 		|_ LoadPrefs
@@ -4516,8 +4347,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ ContourDialog
@@ -4564,8 +4393,6 @@
 	|_ ./error.tcl
 		|_ InitError
 		|_ Error
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicimagewfpc2.tcl
 		|_ LoadMosaicImageWFPC2File
 		|_ LoadMosaicImageWFPC2Alloc
@@ -4586,8 +4413,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./array.tcl
 		|_ ImportArrayFile
 		|_ ImportArrayAlloc
@@ -4611,8 +4436,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicwcs.tcl
 		|_ LoadMosaicWCSFile
 		|_ LoadMosaicWCSAlloc
@@ -4635,8 +4458,6 @@
 		|_ 
 	|_ ./panzoom.tcl
 		|_ Zoom
-	|_ ./tree.py
-		|_ 
 	|_ ./plotzoomstack.tcl
 		|_ PlotZoomStack
 		|_ PlotZoomStackReset
@@ -4663,8 +4484,6 @@
 		|_ ThemeMenu
 		|_ ThemeTreeForeground
 		|_ ThemeTreeBackground
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbasepanda.tcl
 		|_ MarkerBasePandaDialog
 		|_ MarkerBasePandaClose
@@ -4715,8 +4534,6 @@
 	|_ ./menu.tcl
 		|_ ThemeMenu
 		|_ ConfigureButtons
-	|_ ./tree.py
-		|_ 
 	|_ ./mzoom.tcl
 		|_ ZoomMainMenu
 		|_ PrefsDialogZoomMenu
@@ -4739,8 +4556,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./box.tcl
 		|_ BoxDialog
 		|_ BoxClose
@@ -4791,8 +4606,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbar.tcl
 		|_ PlotBarTool
 		|_ PlotBar
@@ -4835,8 +4648,6 @@
 		|_ CATGenerate
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./catsym.tcl
@@ -4864,8 +4675,6 @@
 -> smosaicwcs.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./smosaicwcs.tcl
 		|_ LoadSMosaicWCSFitsFile
 		|_ ProcessSMosaicWCSCmd
@@ -4891,8 +4700,6 @@
 		|_ DialogCreate
 		|_ DialogWait
 		|_ EntryDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ UpdateContourScale
@@ -4958,8 +4765,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./centroid.tcl
 		|_ CentroidDef
 		|_ CentroidDialog
@@ -4983,8 +4788,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./annulus.tcl
 		|_ AnnulusDialog
 		|_ AnnulusClose
@@ -5022,8 +4825,6 @@
 		|_ CoordMenuEnable
 		|_ CoordMenuReset
 		|_ ConfigureButtons
-	|_ ./tree.py
-		|_ 
 	|_ ./mwcs.tcl
 		|_ WCSMainMenu
 		|_ UpdateWCSMenu
@@ -5053,8 +4854,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./array.tcl
@@ -5075,8 +4874,6 @@
 -> catopt.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./catreg.tcl
 		|_ CATReg
 	|_ ./catopt.tcl
@@ -5094,8 +4891,6 @@
 		|_ AboutBox
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./mhelp.tcl
 		|_ HelpMainMenu
 		|_ PrefsDialogHelpMenu
@@ -5121,8 +4916,6 @@
 	|_ ./dialog.tcl
 		|_ Toplevel
 		|_ EntryDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./group.tcl
 		|_ GroupDef
 		|_ GroupCreate
@@ -5160,8 +4953,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./catplot.tcl
 		|_ CATPlot
 		|_ CATPlotGenerate
@@ -5190,8 +4981,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./skyview.tcl
 		|_ SkyViewDef
 		|_ SkyViewDialog
@@ -5219,8 +5008,6 @@
 		|_ ProcessSend
 		|_ ProcessRealizeDS9
 		|_ RealizeDS9
-	|_ ./tree.py
-		|_ 
 	|_ ./vot.tcl
 		|_ VOTParse
 	|_ ./sia.tcl
@@ -5255,8 +5042,6 @@
 		|_ ProcessSendCmdTxt
 		|_ ProcessSend
 		|_ CursorTimer
-	|_ ./tree.py
-		|_ 
 	|_ ./iexam.tcl
 		|_ IExamDef
 		|_ IExamButton
@@ -5280,8 +5065,6 @@
 -> http.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./http.tcl
 		|_ HTTPDef
 		|_ PrefsDialogHTTP
@@ -5303,8 +5086,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbasepanda.tcl
 		|_ MarkerBasePandaDialog
 		|_ MarkerBasePandaClose
@@ -5326,8 +5107,6 @@
 		|_ 
 	|_ ./panzoom.tcl
 		|_ Rotate
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 		|_ TextClose
@@ -5356,8 +5135,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./vla.tcl
@@ -5385,8 +5162,6 @@
 		|_ ProcessSend
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./vlss.tcl
@@ -5413,8 +5188,6 @@
 		|_ CATLoad
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./catcxc.tcl
@@ -5430,8 +5203,6 @@
 		|_ PandaGenerate
 	|_ ./markerbaseannulus.tcl
 		|_ MarkerBaseAnnulusGenerateBox
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbasepanda.tcl
 		|_ MarkerBasePandaGenerateAngles
 	|_ ./annulus.tcl
@@ -5463,8 +5234,6 @@
 		|_ WidthDashMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseDialog
 		|_ MarkerBaseClose
@@ -5483,2757 +5252,6 @@
 		|_ MarkerBaseMenu
 		|_ MarkerBaseFileMenu
 		|_ MarkerBasePropertyMenu
--> tree.txt
-	|_ ./composite.tcl
-		|_ CompositeDialog
-		|_ CompositeClose
-		|_ CompositeApply
-		|_ CompositeRotate
-		|_ CompositeCompAngle
-		|_ CompositeGlobal
-		|_ CompositeCoordCB
-		|_ CompositeRotateCB
-	|_ ./crosshair.tcl
-		|_ CrosshairDef
-		|_ CrosshairButton
-		|_ CrosshairArrowKey
-		|_ CrosshairTo
-		|_ MatchCrosshairCurrent
-		|_ MatchCrosshair
-		|_ LockCrosshairCurrent
-		|_ LockCrosshair
-		|_ CrosshairDialog
-		|_ CrosshairApplyDialog
-		|_ CrosshairDestroyDialog
-		|_ UpdateCrosshairDialog
-		|_ ProcessCrosshairCmd
-		|_ ProcessSendCrosshairCmd
-		|_ CrosshairBackup
-	|_ ./catcdssrch.tcl
-		|_ CATCDSSrchDef
-		|_ CATCDSSrchLoad
-		|_ CATCDSSrchProcess
-		|_ CATCDSSrchTable
-		|_ CATCDSSrchLoadFile
-		|_ CATCDSSrchSaveFile
-		|_ CATCDSSrchClear
-		|_ CATCDSSrchCatalog
-		|_ CATCDSSrchVOTParse
-		|_ CATCDSSrchVOTCharCB
-		|_ CATCDSSrchVOTElemStartCB
-		|_ CATCDSSrchVOTElemEndCB
-	|_ ./backup.tcl
-		|_ BackupDialog
-		|_ Backup
-		|_ BackupPreamble
-		|_ 
-		|_ RestoreDialog
-		|_ Restore
-		|_ BackupFrame
-		|_ BackupFrameLoad
-		|_ BackupFrameLoadParam
-		|_ BackupFrameLoadMMap
-		|_ BackupFrameLoadAlloc
-		|_ BackupGUI
-		|_ ProcessBackupCmd
-		|_ ProcessRestoreCmd
-	|_ ./samp.tcl
-		|_ SAMPDef
-		|_ InitSAMP
-		|_ SAMPConnect
-		|_ SAMPDisconnect
-		|_ SAMPSendImageLoadFits
-		|_ SAMPSendTableLoadFits
-		|_ SAMPSendTableLoadVotable
-		|_ SAMPSendTableHighlightRow
-		|_ SAMPSendTableSelectRowList
-		|_ SAMPSendTableRowListCmd
-		|_ SAMPSendCoordPointAtSky
-		|_ SAMPSendCoordPointAtSkyCmd
-		|_ SAMPShutdown
-		|_ SAMPUpdate
-		|_ SAMPSend
-		|_ SAMPReply
-		|_ SAMPReplySimple
-		|_ SAMPClearSendLock
-		|_ SAMPParseHub
-		|_ SAMPGetAppName
-		|_ SAMPRcvdEventShutdown
-		|_ SAMPRcvdEventRegister
-		|_ SAMPRcvdEventUnregister
-		|_ SAMPRcvdDisconnect
-		|_ SAMPRcvdImageLoadFits
-		|_ SAMPRcvdTableLoadFits
-		|_ SAMPRcvdTableLoadVotable
-		|_ SAMPRcvdTableHighlightRow
-		|_ SAMPRcvdTableSelectRowList
-		|_ SAMPRcvdCoordPointAtSky
-		|_ SAMPRcvdClientEnvGet
-		|_ SAMPRcvdDS9Set
-		|_ SAMPRcvdDS9SetReply
-		|_ SAMPRcvdDS9Get
-		|_ SAMPRcvdDS9GetReply
-		|_ SAMPDelTmpFiles
-		|_ ProcessSAMPFirstCmd
-		|_ ProcessSAMPCmd
-		|_ SAMPCmdSendImage
-		|_ SAMPCmdSendTable
-	|_ ./mview.tcl
-		|_ ViewMainMenu
-		|_ PrefsDialogViewMenu
-		|_ PrefsDialogGraph
-		|_ ButtonsViewDef
-		|_ CreateButtonsView
-		|_ PrefsDialogButtonbarView
-	|_ ./mregion.tcl
-		|_ RegionMainMenu
-		|_ PrefsDialogRegionMenu
-		|_ PrefsDialogRegion
-		|_ PrefsDialogAnnulus
-		|_ PrefsDialogPanda
-		|_ ButtonsRegionDef
-		|_ CreateButtonsRegion
-		|_ PrefsDialogButtonbarRegion
-		|_ UpdateRegionMenu
-	|_ ./plotprint.tcl
-		|_ PlotPSPrint
-		|_ PlotPrintDialog
-		|_ PlotPrintBrowse
-		|_ PlotPostScript
-		|_ PlotPostScriptSingle
-		|_ PlotPostScriptMulti
-		|_ PlotEPS
-		|_ PlotEPSSingle
-		|_ PlotEPSMulti
-		|_ PlotPostScriptSetFonts
-		|_ PlotPostScriptResetFonts
-		|_ PlotPostScriptMultiBuild
-	|_ ./fpreg.tcl
-		|_ FPReg
-		|_ FPFindCenter
-	|_ ./mosaiciraf.tcl
-		|_ LoadMosaicIRAFFile
-		|_ LoadMosaicIRAFAlloc
-		|_ LoadMosaicIRAFSocket
-		|_ ProcessMosaicIRAFCmd
-		|_ MosaicIRAFCmdLoad
-	|_ ./command.tcl
-		|_ BadVisualError
-		|_ ProcessCommandLineFirst
-		|_ ProcessCommandLineSecond
-		|_ ProcessCommandLine
-		|_ ProcessCommand
-		|_ CommandLineLoad
-		|_ CommandLineLoadBase
-		|_ CommandLineLoadRGB
-		|_ CommandLineLoad3D
-		|_ CommandFitsCmd
-		|_ CommandSFitsCmd
-		|_ CommandMosaicImageCmd
-		|_ CommandMosaicCmd
-		|_ CommandMosaicType
-	|_ ./macosx.tcl
-		|_ MacOSOpenDocEvent
-		|_ MacOSPrintDocEvent
-		|_ MacOSXGetLocale
-		|_ MacOSXPrint
-		|_ MacOSXPrintPre
-		|_ MacOSXPageSetup
-	|_ ./ellipse.tcl
-		|_ EllipseDialog
-		|_ EllipseClose
-		|_ EllipseApply
-		|_ EllipseFill
-		|_ EllipseCoordCB
-		|_ EllipseEditCB
-	|_ ./photo.tcl
-		|_ ImportPhotoFile
-		|_ ImportPhotoAlloc
-		|_ ImportPhotoSocket
-		|_ ExportPhotoFile
-		|_ ExportPhotoSocket
-		|_ ProcessGIFCmd
-		|_ ProcessJPEGCmd
-		|_ ProcessPNGCmd
-		|_ ProcessTIFFCmd
-		|_ ProcessPhotoCmd
-		|_ PhotoCmdLoad
-		|_ ProcessSendGIFCmd
-		|_ ProcessSendJPEGCmd
-		|_ ProcessSendPNGCmd
-		|_ ProcessSendTIFFCmd
-		|_ ProcessSendPhotoCmd
-	|_ ./bin.tcl
-		|_ BinDef
-		|_ Bin
-		|_ BinFrame
-		|_ BinAbout
-		|_ BinAboutCenter
-		|_ BinCols
-		|_ BinFilter
-		|_ BinToFit
-		|_ ChangeBinFactor
-		|_ ChangeBinDepth
-		|_ ChangeBinFunction
-		|_ ChangeBinBufferSize
-		|_ UpdateBin
-		|_ BinDialog
-		|_ BinPopUp
-		|_ BinBlankPopUp
-		|_ UpdateBinDialog
-		|_ UpdateXCol
-		|_ UpdateYCol
-		|_ UpdateZCol
-		|_ BinApplyDialog
-		|_ BinUpdateFilterDialog
-		|_ BinClearFilterDialog
-		|_ BinDestroyDialog
-		|_ MatchBinCurrent
-		|_ MatchBin
-		|_ LockBinCurrent
-		|_ LockBin
-		|_ BinBackup
-		|_ BinBackupBase
-		|_ BinBackupRGB
-		|_ ProcessBinCmd
-		|_ ProcessSendBinCmd
-	|_ ./hv.tcl
-		|_ HVDef
-		|_ HV
-		|_ HVDestroy
-		|_ HVMotion
-		|_ HVButton1
-		|_ HVMotion1
-		|_ HVRelease1
-		|_ HVMouseWheel
-		|_ HVClearCmd
-		|_ HVCopyCmd
-		|_ HVExportSelection
-		|_ HVLostSelection
-		|_ HVURLDialogCmd
-		|_ HVFileDialogCmd
-		|_ HVFileDialog
-		|_ HVBackCmd
-		|_ HVFind
-		|_ HVFindCmd
-		|_ HVFindNextCmd
-		|_ HVForwardCmd
-		|_ HVGotoCmd
-		|_ HVReloadCmd
-		|_ HVStopCmd
-		|_ HVPageSourceCmd
-		|_ HVArchUserCmd
-		|_ HVAnalysisCmd
-		|_ HVAnalysisURL
-		|_ HVAnalysisCancel
-		|_ HVArchChandraFTP
-		|_ ProcessWebCmd
-		|_ WebCmdCheck
-		|_ WebCmdRef
-		|_ WebCmdNew
-		|_ WebCmdClick
-		|_ ProcessSendWebCmd
-	|_ ./panner.tcl
-		|_ CreatePanner
-		|_ ThemeConfigPanner
-		|_ PannerDef
-		|_ InitPanner
-		|_ BindEventsPanner
-		|_ UnBindEventsPanner
-		|_ EnterPanner
-		|_ LeavePanner
-		|_ MotionPanner
-		|_ Button1Panner
-		|_ Motion1Panner
-		|_ Release1Panner
-		|_ Release2Panner
-		|_ ArrowKeyPanner
-		|_ PannerBackup
-		|_ PrefsDialogPanner
-		|_ PrefsPannerCompass
-	|_ ./slider.tcl
-		|_ SliderFromTo
-		|_ SliderMinMax
-		|_ SliderCmd
-	|_ ./fpcmd.tcl
-		|_ FPSelectCmd
-		|_ FPButton
-		|_ FPShift
-		|_ FPMotion
-		|_ FPRelease
-		|_ FPHighliteCB
-		|_ FPUnhighliteCB
-	|_ ./crop.tcl
-		|_ CropDef
-		|_ CropReset
-		|_ CropButton
-		|_ CropMotion
-		|_ CropRelease
-		|_ Crop3dButton
-		|_ Crop3dMotion
-		|_ Crop3dRelease
-		|_ UpdateCrop
-		|_ CropDialog
-		|_ CropApplyDialog
-		|_ CropDestroyDialog
-		|_ UpdateCropMenu
-		|_ UpdateCropDialog
-		|_ MatchCropCurrent
-		|_ MatchCrop
-		|_ LockCropCurrent
-		|_ LockCrop
-		|_ CropBackup
-		|_ CropBackupBase
-		|_ CropBackupRGB
-		|_ ProcessCropCmd
-		|_ ProcessSendCropCmd
-	|_ ./tableflt.tcl
-		|_ TBLFltSort
-	|_ ./panzoom.tcl
-		|_ PanZoomDef
-		|_ CenterCurrentFrame
-		|_ CenterAllFrame
-		|_ CenterFrame
-		|_ PanCanvas
-		|_ Pan
-		|_ PanTo
-		|_ PanToFrame
-		|_ PanButton
-		|_ PanMotion
-		|_ PanRelease
-		|_ PreservePan
-		|_ UpdatePan
-		|_ ZoomToFit
-		|_ ChangeZoom
-		|_ ZoomTo
-		|_ Zoom
-		|_ ZoomFrame
-		|_ ZoomButton
-		|_ ZoomShift
-		|_ UpdateZoom
-		|_ ChangeOrient
-		|_ Rotate
-		|_ ChangeRotate
-		|_ RotateButton
-		|_ RotateMotion
-		|_ RotateRelease
-		|_ UpdateRotate
-		|_ PanZoomDialog
-		|_ PanZoomApplyDialog
-		|_ PanZoomDestroyDialog
-		|_ UpdatePanZoomMenu
-		|_ UpdatePanZoomDialog
-		|_ AlignWCSFrame
-		|_ MatchFrameCurrent
-		|_ MatchFrame
-		|_ LockFrameCurrent
-		|_ LockFrame
-		|_ PanZoomBackup
-		|_ ProcessPanCmd
-		|_ ProcessSendPanCmd
-		|_ ProcessZoomCmd
-		|_ ProcessSendZoomCmd
-		|_ ProcessOrientCmd
-		|_ ProcessSendOrientCmd
-		|_ ProcessRotateCmd
-		|_ ProcessSendRotateCmd
-	|_ ./imgsvr.tcl
-		|_ IMGSVRInit
-		|_ IMGSVRApply
-		|_ IMGSVRAck
-		|_ IMGSVRUpdate
-		|_ IMGSVRCrosshair
-		|_ IMGSVRServer
-		|_ IMGSVRGetURL
-		|_ IMGSVRGetURLFinish
-		|_ IMGSVRParse
-		|_ IMGSVRProgress
-	|_ ./catskybot.tcl
-		|_ CATSkyBot
-		|_ CATSkyBotVOT
-		|_ CATSkyBotAck
-	|_ ./mosaic.tcl
-		|_ ProcessMosaicCmd
-		|_ ProcessSendMosaicCmd
-	|_ ./rgbimage.tcl
-		|_ LoadRGBImageFile
-		|_ LoadRGBImageAlloc
-		|_ LoadRGBImageSocket
-		|_ SaveRGBImageFile
-		|_ SaveRGBImageSocket
-		|_ ProcessRGBImageCmd
-		|_ RGBImageCmdLoad
-		|_ ProcessSendRGBImageCmd
-	|_ ./coord.tcl
-		|_ CoordDef
-		|_ SetCoordSystem
-		|_ AdjustCoordSystem
-		|_ AdjustCoordSystem3d
-		|_ DisplayCoordDialog
-		|_ PrefsDialogCoord
-	|_ ./cpanda.tcl
-		|_ PandaDialog
-		|_ PandaClose
-		|_ PandaApply
-		|_ PandaGenerate
-		|_ PandaCoordCB
-		|_ PandaEditCB
-		|_ PandaDistCB
-	|_ ./catcmd.tcl
-		|_ CATSelectCmd
-		|_ CATSelectEditCmd
-		|_ CATSelectBrowseCmd
-		|_ CATSelectRows
-		|_ CATHighliteCB
-		|_ CATUnhighliteCB
-		|_ CATEditCB
-		|_ CATMoveCB
-		|_ CATRotateCB
-		|_ CATButton
-		|_ CATShift
-		|_ CATMotion
-		|_ CATRelease
-	|_ ./print.tcl
-		|_ PSDef
-		|_ PSPrint
-		|_ PostScript
-		|_ EPS
-		|_ PostScriptPageSize
-		|_ PSPrintDialog
-		|_ PSPrintBrowse
-		|_ PrefsDialogPrint
-		|_ ProcessPrintCmd
-		|_ ProcessSendPrintCmd
-		|_ ProcessPSPrintCmd
-		|_ ProcessSendPSPrintCmd
-	|_ ./plotstate.tcl
-		|_ PlotDefState
-		|_ PlotInitGraph
-		|_ PlotSaveState
-		|_ PlotRestoreState
-	|_ ./envi.tcl
-		|_ ImportENVIFile
-		|_ ExportENVIFile
-		|_ ProcessENVICmd
-		|_ FindENVIDataFile
-	|_ ./sao.tcl
-		|_ SAODef
-		|_ SAODialog
-		|_ SAOExec
-		|_ SAOAck
-		|_ ProcessSAOCmd
-		|_ ProcessSendSAOCmd
-	|_ ./export.tcl
-		|_ ExportDef
-		|_ Export
-		|_ ProcessExportCmd
-		|_ ExportCmdSave
-		|_ ExportDialog
-		|_ ArrayExportDialog
-		|_ TIFFExportDialog
-		|_ JPEGExportDialog
-	|_ ./marker.tcl
-		|_ MarkerDef
-		|_ MarkerControl
-		|_ MarkerControlShift
-		|_ MarkerCursor
-		|_ MarkerArrowKey
-		|_ MarkerButton
-		|_ MarkerShift
-		|_ MarkerMotion
-		|_ MarkerRelease
-		|_ MarkerReleaseCB
-		|_ MarkerDouble
-		|_ MarkerCreateShape
-		|_ MarkerDefault
-		|_ MarkerDeleteKey
-		|_ MarkerEpsilon
-		|_ MarkerShow
-		|_ MarkerShowText
-		|_ MarkerPreserve
-		|_ MarkerCentroid
-		|_ MarkerCentroidAuto
-		|_ MarkerCentroidRadius
-		|_ MarkerCentroidIteration
-		|_ MarkerFront
-		|_ MarkerBack
-		|_ MarkerSelectAll
-		|_ MarkerUnselectAll
-		|_ MarkerSelectInvert
-		|_ MarkerDelete
-		|_ MarkerDeleteSelect
-		|_ MarkerDeleteLoad
-		|_ MarkerColor
-		|_ MarkerWidth
-		|_ MarkerProp
-		|_ MarkerFont
-		|_ MarkerList
-		|_ MarkerLoad
-		|_ MarkerLoadFrames
-		|_ MarkerLoadFile
-		|_ MarkerSave
-		|_ MarkerInfo
-		|_ MarkerDialog
-		|_ MarkerCopy
-		|_ MarkerCut
-		|_ MarkerUndo
-		|_ MarkerPaste
-		|_ CompositeCreate
-		|_ CompositeDelete
-		|_ MarkerBackup
-		|_ ProcessRegionsCmd
-		|_ RegionCmdLoad
-		|_ RegionCmdLoadFn
-		|_ RegionCmdSave
-		|_ RegionCmdList
-		|_ RegionCmdGroup
-		|_ RegionCmdGroupNew
-		|_ RegionCmdGroupUpdate
-		|_ RegionCmdGroupFont
-		|_ RegionCmdTemplate
-		|_ RegionCmdTemplateAt
-		|_ RegionCmdTemplateSave
-		|_ RegionCmdCommand
-		|_ ProcessSendRegionsCmd
-		|_ RegionSendCmd
-	|_ ./header.tcl
-		|_ DisplayHeaderMenu
-		|_ DisplayHeaderListDialog
-		|_ DisplayHeader
-		|_ UpdateHeaderDialog
-		|_ DestroyHeader
-		|_ DestroyHeaderOne
-		|_ ProcessHeaderCmd
-		|_ DisplayHeaderCmd
-		|_ CloseHeaderCmd
-		|_ SaveHeaderCmd
-	|_ ./error.tcl
-		|_ InitError
-		|_ Info
-		|_ Warning
-		|_ Error
-		|_ ProcessMessage
-		|_ ParserError
-		|_ ErrorTimer
-	|_ ./fp.tcl
-		|_ FPDef
-		|_ FPAnalysisMenu
-		|_ FPLoad
-		|_ FPProcess
-		|_ FPTable
-		|_ FPRegCXC
-		|_ FPRegHLA
-		|_ FPGenerate
-		|_ FPGenerateRegions
-		|_ FPOff
-		|_ FPUpdateWCS
-		|_ ProcessFootprintCmd
-		|_ ProcessSendFootprintCmd
-		|_ FPCmdRef
-		|_ FPCmdRetrieve
-	|_ ./sfits.tcl
-		|_ LoadSFitsFile
-		|_ ProcessSFitsCmd
-	|_ ./line.tcl
-		|_ LineDialog
-		|_ LineApply
-		|_ LineArrow
-		|_ LineCoordCB
-		|_ LineEditCB
-		|_ LineDistCB
-	|_ ./catned.tcl
-		|_ CATNED
-		|_ CATNEDAck
-	|_ ./nameres.tcl
-		|_ NRESDef
-		|_ NRESApply
-		|_ NRESDialog
-		|_ NRESPan
-		|_ NRESCrosshair
-		|_ PrefsDialogNRES
-		|_ ProcessNRESCmd
-		|_ ProcessSendNRESCmd
-		|_ NRESSendCmd
-	|_ ./catfits.tcl
-		|_ FITSRead
-	|_ ./buttons.tcl
-		|_ ButtonsDef
-		|_ CreateButtons
-		|_ ButtonButton
-		|_ RadioButton
-		|_ CheckButton
-		|_ ButtonMap
-		|_ RadioButtonSim
-		|_ RadioButtonCB
-		|_ CheckButtonSim
-		|_ CheckButtonCB
-		|_ LayoutButtons
-		|_ MajorButton
-		|_ UpdateButtons
-		|_ ShowButton
-	|_ ./var.tcl
-		|_ LoadVar
-	|_ ./frame.tcl
-		|_ CreateFrame
-		|_ CreateRGBFrame
-		|_ Create3DFrame
-		|_ CreateNamedFrame
-		|_ CreateGotoFrame
-		|_ CreateNameNumberFrame
-		|_ DeleteAllFramesMenu
-		|_ DeleteCurrentFrame
-		|_ DeleteAllFrames
-		|_ DeleteSingleFrame
-		|_ DeleteFrame
-		|_ UpdateCurrentFrame
-		|_ UpdateAllFrame
-		|_ UpdateFrame
-		|_ BindEventsFrame
-		|_ BindEventsFrameKey
-		|_ UnBindEventsFrame
-		|_ UnBindEventsFrameKey
-		|_ EnterFrame
-		|_ LeaveFrame
-		|_ MotionFrame
-		|_ ShiftMotionFrame
-		|_ ControlMotionFrame
-		|_ DoMotion
-		|_ Button1Frame
-		|_ ShiftButton1Frame
-		|_ ControlButton1Frame
-		|_ ControlShiftButton1Frame
-		|_ Motion1Frame
-		|_ Release1Frame
-		|_ Double1Frame
-		|_ DoubleRelease1Frame
-		|_ Button2Frame
-		|_ ShiftButton2Frame
-		|_ Motion2Frame
-		|_ Release2Frame
-		|_ Button4Frame
-		|_ Button5Frame
-		|_ MouseWheelFrame
-		|_ KeyFrame
-		|_ KeyReleaseFrame
-		|_ CopyFrame
-		|_ CutFrame
-		|_ PasteFrame
-		|_ UndoFrame
-		|_ FirstFrame
-		|_ PrevFrame
-		|_ NextFrame
-		|_ LastFrame
-		|_ MoveFirstFrame
-		|_ MovePrevFrame
-		|_ MoveNextFrame
-		|_ MoveLastFrame
-		|_ UpdateActiveFrames
-		|_ ActiveFrameAll
-		|_ ActiveFrameNone
-		|_ GotoFrame
-		|_ DisplayMode
-		|_ BlinkTimer
-		|_ ResetCurrentFrame
-		|_ ResetAllFrame
-		|_ ResetFrame
-		|_ ClearCurrentFrame
-		|_ ClearAllFrame
-		|_ ClearFrame
-		|_ FrameToFront
-		|_ TileDialog
-		|_ TileDestroyDialog
-		|_ TileApplyDialog
-		|_ ProcessFrameCmd
-		|_ ProcessSendFrameCmd
-		|_ FrameSendCmd
-		|_ FrameSendCmdGet
-		|_ ProcessSingleCmd
-		|_ ProcessSendSingleCmd
-		|_ ProcessTileCmd
-		|_ ProcessSendTileCmd
-		|_ TileSendCmd
-		|_ ProcessBlinkCmd
-		|_ ProcessSendBlinkCmd
-		|_ BlinkSendCmd
-		|_ BlinkSendCmdInterval
-		|_ ProcessLockCmd
-		|_ ProcessSendLockCmd
-		|_ ProcessMatchCmd
-	|_ ./stsci.tcl
-		|_ STSCIDef
-		|_ STSCIDialog
-		|_ STSCIExec
-		|_ STSCIAck
-		|_ ProcessSTSCICmd
-		|_ ProcessSendSTSCICmd
-	|_ ./debug.tcl
-		|_ DebugDef
-		|_ Debug
-		|_ DebugMenu
-		|_ DumpURL
-		|_ DumpCallStack
-		|_ DumpArray
-		|_ ProcessDebugTclCmd
-		|_ ProcessDebugCmd
-	|_ ./mecube.tcl
-		|_ LoadMECubeFile
-		|_ LoadMECubeAlloc
-		|_ LoadMECubeSocket
-		|_ SaveMECubeFile
-		|_ SaveMECubeSocket
-		|_ ProcessMECubeCmd
-		|_ MECubeCmdLoad
-		|_ ProcessSendMECubeCmd
-	|_ ./mosaicimage.tcl
-		|_ ProcessMosaicImageCmd
-		|_ ProcessSendMosaicImageCmd
-	|_ ./circle.tcl
-		|_ CircleDialog
-		|_ CircleClose
-		|_ CircleApply
-		|_ CircleFill
-		|_ CircleCoordCB
-		|_ CircleEditCB
-	|_ ./markerbaseannulus.tcl
-		|_ MarkerBaseAnnulusDialog
-		|_ MarkerBaseAnnulusFileMenu
-		|_ MarkerBaseAnnulusMethodMenu
-		|_ MarkerBaseAnnulusGenerateCircle
-		|_ MarkerBaseAnnulusGenerateEllipse
-		|_ MarkerBaseAnnulusGenerateBox
-	|_ ./util.tcl
-		|_ CurrentDef
-		|_ CursorDef
-		|_ GetNumCores
-		|_ UpdateDS9
-		|_ UpdateMain
-		|_ ProcessCmdSet
-		|_ ProcessCmdSet2
-		|_ ProcessCmdSet3
-		|_ ProcessCmdSet4
-		|_ ProcessCmdAppend
-		|_ ProcessCmdCurrent
-		|_ ProcessCmdFontStyle
-		|_ ProcessCmdCVAR0
-		|_ ProcessCmdCVAR
-		|_ ProcessCmdCVAR2
-		|_ ProcessCmdCVAR3
-		|_ ProcessCmdCVAR4
-		|_ ProcessCmdCVAR5
-		|_ ProcessCmdCVAR6
-		|_ ProcessCmdCVAROpt
-		|_ ProcessSendCmd
-		|_ ProcessSendCmdYesNo
-		|_ ProcessSendCmdCVAR
-		|_ ProcessSendCmdCVARGet
-		|_ ProcessSendCmdCVARGetYesNo
-		|_ ProcessSendCmdGet
-		|_ ProcessSendCmdGet2
-		|_ ProcessSendCmdGet3
-		|_ ProcessSendCmdGet9
-		|_ ProcessSendCmdCurrent
-		|_ ProcessSendCmdCurrentYesNo
-		|_ ProcessSendCmdTxt
-		|_ ProcessSendCmdSend
-		|_ ProcessSend
-		|_ SourceInitFileDir
-		|_ SourceInitFile
-		|_ ValidReadOnly
-		|_ LanguageToName
-		|_ SetLanguage
-		|_ GetEnvHome
-		|_ InitTempDir
-		|_ InitFilterCompiler
-		|_ ToYesNo
-		|_ FromYesNo
-		|_ ProcessRealizeDS9
-		|_ RealizeDS9
-		|_ Sex2H
-		|_ Sex2Hs
-		|_ Sex2D
-		|_ SetCursor
-		|_ CursorTimer
-		|_ AboutBox
-		|_ QuitDS9
-		|_ OpenSource
-		|_ OpenConsole
-		|_ ToggleBindEvents
-		|_ ChangeMode
-		|_ ChangeModeItem
-		|_ InitDefaultFont
-		|_ InitDefaultTextFont
-		|_ ResetDefaultFont
-		|_ ResetDefaultTextFont
-		|_ SetDefaultFont
-		|_ SetDefaultTextFont
-		|_ PrefsBgColor
-		|_ PrefsNanColor
-		|_ PrefsPrecision
-		|_ ChangeThreads
-		|_ PrefsIRAFAlign
-		|_ DisplayLog
-		|_ ParseURL
-		|_ BreakUp
-		|_ InPath
-		|_ FTPLog
-		|_ HTTPLog
-		|_ ConfigHTTP
-		|_ ProxyHTTP
-		|_ FixSpec
-		|_ MacOSPhotoFix
-		|_ DarwinPhotoRestore
-		|_ DS9Backup
-		|_ ProcessPrefsFirstCmd
-		|_ ProcessPrefsCmd
-		|_ ProcessSendPrefsCmd
-		|_ PrefsSendCmdPrecision
-		|_ ProcessPrecisionCmd
-		|_ ProcessSendPrecisionCmd
-		|_ ProcessBgCmd
-		|_ ProcessSendBgCmd
-		|_ ProcessNanCmd
-		|_ ProcessSendNanCmd
-		|_ ProcessThreadsCmd
-		|_ ProcessSendThreadsCmd
-		|_ ProcessSendIRAFAlignCmd
-		|_ ProcessCDCmd
-		|_ ProcessSendCDCmd
-		|_ ProcessConsoleCmd
-		|_ ProcessCursorCmd
-		|_ CursorCmd
-		|_ ProcessSendDataCmd
-		|_ DataSendCmd
-		|_ ProcessIconifyCmd
-		|_ IconifyCmd
-		|_ ProcessSendIconifyCmd
-		|_ ProcessLowerCmd
-		|_ ProcessModeCmd
-		|_ ProcessQuitCmd
-		|_ ProcessSendModeCmd
-		|_ ProcessRaiseCmd
-		|_ ProcessSleepCmd
-		|_ ProcessSourceCmd
-		|_ SourceCmd
-		|_ ProcessTclCmd
-		|_ ProcessThemeCmd
-		|_ ProcessSendThemeCmd
-		|_ ProcessSendVersionCmd
-		|_ XMLQuote
-		|_ XMLUnQuote
-	|_ ./menu.tcl
-		|_ CreateMenuBar
-		|_ ThemeMenu
-		|_ ThemeConfigFgBg
-		|_ ThemeConfigBg
-		|_ ThemeConfigText
-		|_ ThemeConfigTable
-		|_ ThemeConfigPlot
-		|_ ThemeConfigTFrame
-		|_ ThemeConfigMenu
-		|_ ThemeChange
-		|_ ThemeForeground
-		|_ ThemeBackground
-		|_ ThemeTreeForeground
-		|_ ThemeTreeBackground
-		|_ ThemeSelectedForeground
-		|_ ThemeSelectedBackground
-		|_ ThemeBold
-		|_ AppleMenu
-		|_ CoordMenu
-		|_ CoordMenuButton
-		|_ CoordMenuButtonCmd
-		|_ CoordMenuEnable
-		|_ CoordMenuReset
-		|_ DistMenu
-		|_ DistMenuButton
-		|_ DistMenuButtonCmd
-		|_ DistMenuEnable
-		|_ DistMenuReset
-		|_ EditMenu
-		|_ ColorMenu
-		|_ ColorMenuOther
-		|_ ColorMenuButton
-		|_ FontMenu
-		|_ FontMenuSize
-		|_ FontMenuButton
-		|_ WidthDashMenu
-		|_ WidthDashMenuButton
-		|_ PrefsDialogMenu
-		|_ ConfigureButtons
-	|_ ./pagesetup.tcl
-		|_ PSPageSetup
-		|_ PrefsDialogPageSetup
-		|_ ProcessPageSetupCmd
-		|_ ProcessSendPageSetupCmd
-		|_ ProcessPSPageSetupCmd
-		|_ ProcessSendPSPageSetupCmd
-	|_ ./xpa.tcl
-		|_ InitXPA
-		|_ CreateXPA
-		|_ XPASend2MASS
-		|_ XPARcvd2MASS
-		|_ XPASend3D
-		|_ XPARcvd3D
-		|_ XPASendAbout
-		|_ XPASendAlign
-		|_ XPARcvdAlign
-		|_ XPASendAnalysis
-		|_ XPARcvdAnalysis
-		|_ XPASendArray
-		|_ XPARcvdArray
-		|_ XPASendBg
-		|_ XPARcvdBg
-		|_ XPARcvdBackup
-		|_ XPASendBlink
-		|_ XPARcvdBlink
-		|_ XPASendBin
-		|_ XPARcvdBin
-		|_ XPASendBlock
-		|_ XPARcvdBlock
-		|_ XPASendCAT
-		|_ XPARcvdCAT
-		|_ XPASendCD
-		|_ XPARcvdCD
-		|_ XPARcvdConsole
-		|_ XPASendContour
-		|_ XPARcvdContour
-		|_ XPASendCmap
-		|_ XPARcvdCmap
-		|_ XPASendColorbar
-		|_ XPARcvdColorbar
-		|_ XPASendCrop
-		|_ XPARcvdCrop
-		|_ XPASendCrosshair
-		|_ XPARcvdCrosshair
-		|_ XPASendCube
-		|_ XPARcvdCube
-		|_ XPARcvdCursor
-		|_ XPASendData
-		|_ XPASendSAO
-		|_ XPARcvdSAO
-		|_ XPASendESO
-		|_ XPARcvdESO
-		|_ XPASendSTSCI
-		|_ XPARcvdSTSCI
-		|_ XPARcvdENVI
-		|_ XPARcvdExit
-		|_ XPARcvdExport
-		|_ XPASendFile
-		|_ XPARcvdFile
-		|_ XPASendFits
-		|_ XPARcvdFits
-		|_ XPASendFP
-		|_ XPARcvdFP
-		|_ XPASendFrame
-		|_ XPARcvdFrame
-		|_ XPASendGIF
-		|_ XPARcvdGIF
-		|_ XPASendGrid
-		|_ XPARcvdGrid
-		|_ XPARcvdHeader
-		|_ XPASendHeight
-		|_ XPARcvdHeight
-		|_ XPASendIconify
-		|_ XPARcvdIconify
-		|_ XPASendIExam
-		|_ XPASendIIS
-		|_ XPARcvdIIS
-		|_ XPASendJPEG
-		|_ XPARcvdJPEG
-		|_ XPASendLock
-		|_ XPARcvdLock
-		|_ XPARcvdLower
-		|_ XPASendMagnifier
-		|_ XPARcvdMagnifier
-		|_ XPASendMask
-		|_ XPARcvdMask
-		|_ XPARcvdMatch
-		|_ XPASendMECube
-		|_ XPARcvdMECube
-		|_ XPASendMinMax
-		|_ XPARcvdMinMax
-		|_ XPASendMode
-		|_ XPARcvdMode
-		|_ XPASendMosaic
-		|_ XPARcvdMosaic
-		|_ XPASendMosaicImage
-		|_ XPARcvdMosaicImage
-		|_ XPASendMosaicWCS
-		|_ XPARcvdMosaicWCS
-		|_ XPARcvdMosaicIRAF
-		|_ XPASendMosaicImageWCS
-		|_ XPARcvdMosaicImageWCS
-		|_ XPARcvdMosaicImageIRAF
-		|_ XPARcvdMosaicImageWFPC2
-		|_ XPARcvdMovie
-		|_ XPARcvdMultiFrame
-		|_ XPASendNan
-		|_ XPARcvdNan
-		|_ XPASendNRES
-		|_ XPARcvdNRES
-		|_ XPASendNRRD
-		|_ XPARcvdNRRD
-		|_ XPASendNVSS
-		|_ XPARcvdNVSS
-		|_ XPASendOrient
-		|_ XPARcvdOrient
-		|_ XPASendPageSetup
-		|_ XPARcvdPageSetup
-		|_ XPASendPSPageSetup
-		|_ XPARcvdPSPageSetup
-		|_ XPASendPan
-		|_ XPARcvdPan
-		|_ XPASendPixelTable
-		|_ XPARcvdPixelTable
-		|_ XPASendPlot
-		|_ XPARcvdPlot
-		|_ XPASendPNG
-		|_ XPARcvdPNG
-		|_ XPASendPrecision
-		|_ XPARcvdPrecision
-		|_ XPASendPrefs
-		|_ XPARcvdPrefs
-		|_ XPASendPreserve
-		|_ XPARcvdPreserve
-		|_ XPASendPrint
-		|_ XPARcvdPrint
-		|_ XPASendPrism
-		|_ XPARcvdPrism
-		|_ XPASendPSPrint
-		|_ XPARcvdPSPrint
-		|_ XPARcvdRaise
-		|_ XPASendRegions
-		|_ XPARcvdRegions
-		|_ XPARcvdRestore
-		|_ XPASendRGB
-		|_ XPARcvdRGB
-		|_ XPASendRGBArray
-		|_ XPARcvdRGBArray
-		|_ XPASendRGBCube
-		|_ XPARcvdRGBCube
-		|_ XPASendRGBImage
-		|_ XPARcvdRGBImage
-		|_ XPASendRotate
-		|_ XPARcvdRotate
-		|_ XPARcvdSave
-		|_ XPARcvdSaveImage
-		|_ XPASendScale
-		|_ XPARcvdScale
-		|_ XPARcvdSFits
-		|_ XPASendSIA
-		|_ XPARcvdSIA
-		|_ XPASendSingle
-		|_ XPARcvdSingle
-		|_ XPASendShm
-		|_ XPARcvdShm
-		|_ XPASendSkyView
-		|_ XPARcvdSkyView
-		|_ XPARcvdSleep
-		|_ XPARcvdSMosaic
-		|_ XPARcvdSMosaicWCS
-		|_ XPARcvdSMosaicIRAF
-		|_ XPASendSmooth
-		|_ XPARcvdSmooth
-		|_ XPARcvdSource
-		|_ XPARcvdSRGBCube
-		|_ XPARcvdTcl
-		|_ XPASendTheme
-		|_ XPARcvdTheme
-		|_ XPASendThreads
-		|_ XPARcvdThreads
-		|_ XPASendTIFF
-		|_ XPARcvdTIFF
-		|_ XPASendTile
-		|_ XPARcvdTile
-		|_ XPARcvdUpdate
-		|_ XPARcvdURLFits
-		|_ XPASendVersion
-		|_ XPASendView
-		|_ XPARcvdView
-		|_ XPASendVLA
-		|_ XPARcvdVLA
-		|_ XPASendVLSS
-		|_ XPARcvdVLSS
-		|_ XPASendVO
-		|_ XPARcvdVO
-		|_ XPASendWCS
-		|_ XPARcvdWCS
-		|_ XPASendWeb
-		|_ XPARcvdWeb
-		|_ XPASendWidth
-		|_ XPARcvdWidth
-		|_ XPASendXPA
-		|_ XPARcvdXPA
-		|_ XPASendZoom
-		|_ XPARcvdZoom
-		|_ XPASendZScale
-		|_ XPARcvdZScale
-		|_ XPAConnect
-		|_ XPADisconnect
-		|_ XPAInfo
-		|_ XPAInfoResult
-		|_ XPADebug
-		|_ XPACatchError
-		|_ XPAMethod
-		|_ XPAIsLocal
-		|_ ProcessXPAFirstCmd
-		|_ ProcessXPACmd
-		|_ ProcessSendXPACmd
-	|_ ./plot.tcl
-		|_ PlotDef
-		|_ PlotDestroy
-		|_ PlotAddGraph
-		|_ PlotDeleteGraphCurrent
-		|_ PlotDeleteGraph
-		|_ PlotAddElement
-		|_ PlotDeleteDataSetCurrent
-		|_ PlotDeleteDataSetAll
-		|_ PlotDeleteDataSet
-		|_ PlotCurrentGraph
-		|_ PlotCurrentDataSet
-		|_ PlotChangeAxis
-		|_ PlotChangeLegend
-		|_ PlotChangeLayout
-		|_ PlotChangeTitle
-		|_ PlotUpdateAllElement
-		|_ PlotChangeMode
-		|_ PlotAxisFormat
-		|_ PlotList
-		|_ PlotListGenerate
-		|_ PlotListDestroyCB
-		|_ PlotPing
-		|_ PlotRaise
-		|_ PlotStats
-		|_ PlotStatsGenerate
-		|_ PlotStatsDestroyCB
-		|_ PlotLayoutCanvas
-		|_ PlotCalcMargins
-		|_ PlotUpdateCanvas
-		|_ PlotUpdateGraph
-		|_ PlotButtonInvoke
-		|_ PlotButton
-		|_ PlotHighliteElement
-		|_ PlotTitle
-		|_ PlotDataSetName
-		|_ PlotUpdateCanvasElement
-	|_ ./external.tcl
-		|_ InitExternalFile
-		|_ ProcessExternalFile
-	|_ ./cat.tcl
-		|_ CATDef
-		|_ CATLoad
-		|_ CATProcess
-		|_ CATLoadDone
-		|_ CATTable
-		|_ CATGenerate
-		|_ CATGenerateRegions
-		|_ CATLoadVOTFile
-		|_ CATLoadRDBFile
-		|_ CATLoadTSVFile
-		|_ CATLoadFITSFile
-		|_ CATLoadFn
-		|_ CATOff
-		|_ CATGenerateUpdate
-		|_ CATSet
-		|_ CATAnalysisMenu
-		|_ CATServerMenu
-		|_ CATRADECMenu
-		|_ CATColsMenu
-		|_ CATColXCmd
-		|_ CATColYCmd
-		|_ CATColsCmd
-		|_ CATConfigCols
-		|_ CATConfigColsSearch
-		|_ CATTool
-		|_ CATUpdateWCS
-		|_ CATBackup
-		|_ PrefsDialogCatalog
-		|_ ProcessCatalogCmd
-		|_ ProcessSendCatalogCmd
-		|_ CatalogCmdRef
-		|_ CatalogCmdRetrieve
-		|_ CatalogCmdLoad
-		|_ CatalogCmdMatch
-		|_ CatalogCmdMatchParams
-		|_ CatalogCmdSAMP
-		|_ CatalogCmdSAMPSend
-		|_ CatalogCmdSkyframe
-		|_ CatalogCmdSystem
-		|_ CatalogCmdSymbol
-		|_ CatalogCmdSymbolFontStyle
-		|_ CatalogCmdSymbolAdd
-		|_ CatalogCmdSymbolRemove
-		|_ CatalogCmdSymbolLoad
-		|_ CatalogCmdSymbolSave
-	|_ ./compass.tcl
-		|_ CompassDialog
-		|_ CompassClose
-		|_ CompassApply
-		|_ CompassArrow
-		|_ CompassCoordCB
-	|_ ./nrrd.tcl
-		|_ ImportNRRDFile
-		|_ ImportNRRDAlloc
-		|_ ImportNRRDSocket
-		|_ ExportNRRDFile
-		|_ ExportNRRDSocket
-		|_ ProcessNRRDCmd
-		|_ NRRDCmdLoad
-		|_ ProcessSendNRRDCmd
-	|_ ./catcdssrchdialog.tcl
-		|_ CATCDSSrchDialog
-		|_ CATCDSSrchApply
-		|_ CATCDSSrch
-		|_ CATCDSSrchDestroy
-	|_ ./nsvr.tcl
-		|_ NSVRServer
-		|_ NSVRGetURL
-		|_ NSVRGetURLFinish
-		|_ NSVRSESAME
-		|_ NSVRSESAMECharCB
-		|_ NSVRSESAMEElemStartCB
-		|_ NSVRSESAMEElemEndCB
-		|_ NSVRParse
-		|_ NSVRServerMenu
-		|_ NSVRServerMenuItems
-	|_ ./dialog.tcl
-		|_ Toplevel
-		|_ DialogCreate
-		|_ DialogCenter
-		|_ DialogWait
-		|_ EntryDialog
-		|_ EntryCut
-		|_ EntryCopy
-		|_ EntryPaste
-		|_ GetSelection
-		|_ SimpleTextDef
-		|_ SimpleTextDialog
-		|_ SimpleTextDestroy
-		|_ SimpleTextFont
-		|_ SimpleTextUpdateFont
-		|_ SimpleTextCut
-		|_ SimpleTextCopy
-		|_ SimpleTextClear
-		|_ SimpleTextSelectAll
-		|_ SimpleTextSelectNone
-		|_ SimpleTextFind
-		|_ SimpleTextFindNext
-		|_ SimpleTextPrint
-		|_ SimpleTextPSPrint
-		|_ SimpleTextPostScript
-		|_ SimpleTextPageSetup
-		|_ SimpleTextSave
-		|_ PRPrintDialog
-		|_ PRPrintBrowse
-	|_ ./projection.tcl
-		|_ ProjectionDialog
-		|_ ProjectionApply
-		|_ ProjectionCoordCB
-		|_ ProjectionEditCB
-		|_ ProjectionDistCB
-		|_ ProjectionThickCB
-	|_ ./examine.tcl
-		|_ ExamineDef
-		|_ ExamineButton
-		|_ ExamineButtonBase
-		|_ ExamineButtonRGB
-		|_ ExamineButton3D
-		|_ PrefsDialogExamine
-	|_ ./tree.py
-		|_ 
-	|_ ./mframe.tcl
-		|_ FrameMainMenu
-		|_ PrefsDialogFrameMenu
-		|_ ButtonsFrameDef
-		|_ CreateButtonsFrame
-		|_ PrefsDialogButtonbarFrame
-		|_ UpdateFrameMenu
-		|_ UpdateFrameMenuItems
-	|_ ./mbin.tcl
-		|_ BinMainMenu
-		|_ PrefsDialogBinMenu
-		|_ PrefsDialogBin
-		|_ ButtonsBinDef
-		|_ CreateButtonsBin
-		|_ PrefsDialogButtonbarBin
-		|_ UpdateBinMenu
-	|_ ./shm.tcl
-		|_ ProcessShmCmd
-		|_ ShmCmdSet
-		|_ ProcessSendShmCmd
-	|_ ./catreg.tcl
-		|_ CATReg
-	|_ ./open.tcl
-		|_ Open
-		|_ OpenDialog
-		|_ MosaicWCSDialog
-	|_ ./mosaicimageiraf.tcl
-		|_ LoadMosaicImageIRAFFile
-		|_ LoadMosaicImageIRAFAlloc
-		|_ LoadMosaicImageIRAFSocket
-		|_ ProcessMosaicImageIRAFCmd
-		|_ MosaicImageIRAFCmdLoad
-	|_ ./mfile.tcl
-		|_ FileMainMenu
-		|_ PrefsDialogFileMenu
-		|_ ButtonsFileDef
-		|_ CreateButtonsFile
-		|_ PrefsDialogButtonbarFile
-		|_ UpdateFileMenu
-		|_ UpdateFileMenuOpen
-		|_ UpdateFileMenuSave
-		|_ UpdateFileMenuImport
-		|_ UpdateFileMenuExport
-		|_ UpdateFileMenuSaveImage
-		|_ UpdateFileMenuMovie
-		|_ UpdateFileMenuHeader
-		|_ UpdateFileMenuXPA
-		|_ UpdateFileMenuSAMP
-	|_ ./2mass.tcl
-		|_ Process2MASSCmd
-		|_ ProcessSend2MASSCmd
-	|_ ./contour.tcl
-		|_ ContourDef
-		|_ UpdateContour
-		|_ ContourCheckParams
-		|_ ContourCheckMinMax
-		|_ ContourDialog
-		|_ ContourApplyDialog
-		|_ ContourDestroyDialog
-		|_ ContourGenerateDialog
-		|_ ContourOffDialog
-		|_ ContourCutDialog
-		|_ ContourCopyDialog
-		|_ ContourPasteDialog
-		|_ ContourCCopyDialog
-		|_ ContourCPasteDialog
-		|_ ContourModeDialog
-		|_ ContourLoadLevels
-		|_ ContourLoadLevelsNow
-		|_ ContourLoadLevelsNew
-		|_ ContourSaveLevels
-		|_ ContourSaveLevelsNow
-		|_ ContourSaveDialog
-		|_ ContourLoadDialog
-		|_ ContourLoadOldDialog
-		|_ ContourLoadNewDialog
-		|_ Contour2Polygons
-		|_ UpdateContourMenu
-		|_ UpdateContourScale
-		|_ UpdateContourDialog
-		|_ ContourLogDialog
-		|_ ContourBackup
-		|_ ContourBackupBase
-		|_ ContourBackupRGB
-		|_ PrefsDialogContour
-		|_ ProcessContourCmd
-		|_ ContourCmdLoad
-		|_ ContourCmdLoadOrg
-		|_ ContourCmdSave
-		|_ ContourCmdLoadLevels
-		|_ ContourCmdSaveLevels
-		|_ ContourCmdPaste
-		|_ ContourCmdGenerateDialog
-		|_ ContourCmdScale
-		|_ ContourCmdMode
-		|_ ContourCmdLimits
-		|_ ContourCmdLevels
-		|_ ContourCmdGenerate
-		|_ ProcessSendContourCmd
-		|_ ContourSendCmdLimits
-		|_ ContourSendCmdLevels
-	|_ ./vot.tcl
-		|_ VOTParse
-		|_ VOTRead
-		|_ VOTWrite
-		|_ VOTCharCB
-		|_ VOTElemStartCB
-		|_ VOTElemEndCB
-	|_ ./prism.tcl
-		|_ PrismDef
-		|_ PrismDialog
-		|_ PrismDestroy
-		|_ PrismCopy
-		|_ UpdatePrismDialog
-		|_ PrismDialogUpdate
-		|_ PrismDialogLoad
-		|_ PrismLoadFile
-		|_ PrismLoad
-		|_ PrismImportVOTFile
-		|_ PrismImportRDBFile
-		|_ PrismImportTSVFile
-		|_ PrismImportFn
-		|_ PrismClear
-		|_ PrismPlot
-		|_ PrismPlotGenerate
-		|_ PrismPlotGenerateFits
-		|_ PrismPlotGenerateAscii
-		|_ PrismHistogram
-		|_ PrismHistogramMinMax
-		|_ PrismHistogramMinMaxAscii
-		|_ PrismHistogramGenerate
-		|_ PrismHistogramGenerateFits
-		|_ PrismHistogramGenerateAscii
-		|_ PrismImage
-		|_ PrismSetExt
-		|_ PrismColsMenu
-		|_ PrismColsMenuCmd
-		|_ PrismExtCmd
-		|_ PrismExtFitsCmd
-		|_ PrismTableCmd
-		|_ PrismTableFirst
-		|_ PrismTableNext
-		|_ PrismTablePrev
-		|_ PrismTableLast
-		|_ PrismTableGotoQuery
-		|_ PrismTableGoto
-		|_ PrismTableGotoDialog
-		|_ PrismTable
-		|_ ProcessPrismCmd
-		|_ ProcessSendPrismCmd
-		|_ PrismCmdRef
-		|_ PrismCmdImport
-		|_ PrismCmdLoad
-		|_ PrismCmdExt
-		|_ PrismCmdExtName
-		|_ PrismBackup
-	|_ ./prefs.tcl
-		|_ PrefsDef
-		|_ LoadPrefs
-		|_ CheckPrefs
-		|_ ClearPrefs
-		|_ SavePrefs
-		|_ FixVar
-		|_ FixVarSet
-		|_ FixVarRm
-		|_ FixFontVar
-		|_ FixPrefs
-		|_ FixPrefsVarOld
-		|_ FixPrefs8.1to8.2
-		|_ FixPrefs8.0to8.1
-		|_ FixPrefs7.6to8.0
-		|_ FixPrefs7.5to7.6
-		|_ FixPrefs7.4to7.5
-		|_ FixPrefs7.3to7.4
-		|_ FixPrefs7.2to7.3
-		|_ FixPrefs7.1to7.2
-		|_ FixPrefs7.0to7.1
-		|_ FixPrefs6.2to7.0
-		|_ FixPrefs6.1to6.2
-		|_ FixPrefs6.0to6.1
-		|_ FixPrefs5.xto6.0
-	|_ ./smooth.tcl
-		|_ SmoothDef
-		|_ SmoothUpdate
-		|_ SmoothDialog
-		|_ SmoothCheckSigma
-		|_ SmoothUpdateDialog
-		|_ SmoothApplyDialog
-		|_ SmoothDestroyDialog
-		|_ SmoothOffDialog
-		|_ UpdateSmoothMenu
-		|_ MatchSmoothCurrent
-		|_ MatchSmooth
-		|_ LockSmoothCurrent
-		|_ LockSmooth
-		|_ SmoothBackup
-		|_ SmoothBackupBase
-		|_ SmoothBackupRGB
-		|_ PrefsDialogSmooth
-		|_ ProcessSmoothCmd
-		|_ ProcessSendSmoothCmd
-	|_ ./mosaicimagewfpc2.tcl
-		|_ LoadMosaicImageWFPC2File
-		|_ LoadMosaicImageWFPC2Alloc
-		|_ LoadMosaicImageWFPC2Socket
-		|_ ProcessMosaicImageWFPC2Cmd
-		|_ MosaicImageWFPC2CmdLoad
-	|_ ./array.tcl
-		|_ ImportArrayFile
-		|_ ImportArrayAlloc
-		|_ ImportArraySocket
-		|_ ExportArrayFile
-		|_ ExportArraySocket
-		|_ ProcessArrayCmd
-		|_ ArrayCmdLoad
-		|_ ProcessSendArrayCmd
-	|_ ./mosaicwcs.tcl
-		|_ LoadMosaicWCSFile
-		|_ LoadMosaicWCSAlloc
-		|_ LoadMosaicWCSSocket
-		|_ SaveMosaicWCSFile
-		|_ SaveMosaicWCSSocket
-		|_ ProcessMosaicWCSCmd
-		|_ MosaicWCSCmdLoad
-		|_ ProcessSendMosaicWCSCmd
-	|_ ./plotzoomstack.tcl
-		|_ PlotZoomStack
-		|_ PlotZoomStackReset
-	|_ ./markerbasepanda.tcl
-		|_ MarkerBasePandaDialog
-		|_ MarkerBasePandaClose
-		|_ MarkerBasePandaApply
-		|_ MarkerBasePandaGenerateAngles
-		|_ MarkerBasePandaCoordCB
-		|_ MarkerBasePandaDistCB
-	|_ ./mzoom.tcl
-		|_ ZoomMainMenu
-		|_ PrefsDialogZoomMenu
-		|_ PrefsDialogZoom
-		|_ ButtonsZoomDef
-		|_ CreateButtonsZoom
-		|_ PrefsDialogButtonbarZoom
-		|_ UpdateZoomMenu
-	|_ ./box.tcl
-		|_ BoxDialog
-		|_ BoxClose
-		|_ BoxApply
-		|_ BoxFill
-		|_ BoxCoordCB
-		|_ BoxEditCB
-	|_ ./plotbar.tcl
-		|_ PlotBarTool
-		|_ PlotBar
-		|_ PlotBarMenus
-		|_ PlotBarWidthDialog
-		|_ PlotBarAddGraph
-		|_ PlotBarUpdateElement
-		|_ PlotPrefsBar
-		|_ PlotGUIBar
-	|_ ./catsym.tcl
-		|_ CATSymDef
-		|_ CATSymDialog
-		|_ CATSymDestroy
-		|_ CATSymApply
-		|_ CATSymAdd
-		|_ CATSymRemove
-		|_ CATSymSave
-		|_ CATSymLoad
-		|_ CATSymClear
-		|_ CATSymDBInit
-		|_ CATSymUpdate
-		|_ CATSymTable
-		|_ CATSymSelectCB
-	|_ ./smosaicwcs.tcl
-		|_ LoadSMosaicWCSFitsFile
-		|_ ProcessSMosaicWCSCmd
-	|_ ./scale.tcl
-		|_ ScaleDef
-		|_ MinMaxDef
-		|_ ZScaleDef
-		|_ ChangeDATASEC
-		|_ ChangeScale
-		|_ ChangeScaleMode
-		|_ ChangeScaleLimit
-		|_ ChangeScaleScope
-		|_ ChangeMinMax
-		|_ RescanMinMax
-		|_ ChangeZScale
-		|_ UpdateScale
-		|_ ScaleDialog
-		|_ ThemeConfigScale
-		|_ ScaleApplyDialog
-		|_ ScaleDestroyDialog
-		|_ ScaleMotionDialog
-		|_ ScaleReleaseDialog
-		|_ UpdateScaleDialog
-		|_ UpdateScaleDialogFont
-		|_ ScaleYAxisDialog
-		|_ ScaleXAxisDialog
-		|_ ScaleLogDialog
-		|_ MinMaxDialog
-		|_ ZScaleDialog
-		|_ MatchScaleCurrent
-		|_ MatchScaleLimitsCurrent
-		|_ MatchScale
-		|_ MatchScaleLimits
-		|_ LockScaleCurrent
-		|_ LockScaleLimitsCurrent
-		|_ LockScale
-		|_ LockScaleLimits
-		|_ ScaleBackup
-		|_ ScaleBackupBase
-		|_ ScaleBackupRGB
-		|_ ProcessScaleCmd
-		|_ ProcessSendScaleCmd
-		|_ ProcessMinMaxCmd
-		|_ ProcessSendMinMaxCmd
-		|_ ProcessZScaleCmd
-		|_ ProcessSendZScaleCmd
-	|_ ./centroid.tcl
-		|_ CentroidDef
-		|_ CentroidDialog
-		|_ CentroidDestroyDialog
-		|_ CentroidApplyDialog
-		|_ UpdateCentroidDialog
-		|_ CentroidBackup
-	|_ ./annulus.tcl
-		|_ AnnulusDialog
-		|_ AnnulusClose
-		|_ AnnulusApply
-		|_ AnnulusGenerate
-		|_ AnnulusCoordCB
-		|_ AnnulusEditCB
-		|_ AnnulusDistCB
-	|_ ./mwcs.tcl
-		|_ WCSMainMenu
-		|_ UpdateWCSMenu
-		|_ PrefsDialogWCSMenu
-		|_ ButtonsWCSDef
-		|_ CreateButtonsWCS
-		|_ PrefsDialogButtonbarWCS
-	|_ ./import.tcl
-		|_ Import
-		|_ ImportDialog
-		|_ ArrayImportDialog
-	|_ ./catopt.tcl
-		|_ CATKeyCB
-	|_ ./mhelp.tcl
-		|_ HelpMainMenu
-		|_ PrefsDialogHelpMenu
-		|_ ButtonsHelpDef
-		|_ CreateButtonsHelp
-		|_ PrefsDialogButtonbarHelp
-	|_ ./group.tcl
-		|_ GroupDef
-		|_ GroupCreate
-		|_ GroupCreateSilent
-		|_ GroupDialog
-		|_ GroupDestroyDialog
-		|_ GroupButtonDialog
-		|_ GroupNoneDialog
-		|_ GroupUpdateDialog
-		|_ GroupEditDialog
-		|_ GroupDeleteDialog
-		|_ GroupDeleteAllDialog
-		|_ UpdateGroupDialog
-	|_ ./catplot.tcl
-		|_ CATPlot
-		|_ CATPlotGenerate
-		|_ CATPlotDialog
-		|_ CATPlotDialogColsMenu
-		|_ CATPlotHighliteElement
-	|_ ./skyview.tcl
-		|_ SkyViewDef
-		|_ SkyViewDialog
-		|_ SkyViewExec
-		|_ SkyViewAck
-		|_ ProcessSkyViewCmd
-		|_ ProcessSendSkyViewCmd
-	|_ ./sia.tcl
-		|_ SIADef
-		|_ SIAAnalysisMenu
-		|_ SIALoad
-		|_ SIAProcess
-		|_ SIATable
-		|_ SIAOff
-		|_ ProcessSIACmd
-		|_ ProcessSendSIACmd
-		|_ SIACmdRef
-		|_ SIACmdRetrieve
-	|_ ./iexam.tcl
-		|_ IExamDef
-		|_ IExamButton
-		|_ IExamKey
-		|_ ProcessSendIExamCmd
-		|_ IExamSendCmdDest
-		|_ IExamSendCmdData
-		|_ IExamSendCmdCoord
-		|_ IExamSendCmdMacro
-		|_ ProcessSendIExamCmdOld
-	|_ ./http.tcl
-		|_ HTTPDef
-		|_ PrefsDialogHTTP
-	|_ ./markerbasepandarect.tcl
-		|_ MarkerBasePandaRectDialog
-		|_ MarkerBasePandaRectClose
-		|_ MarkerBasePandaRectApply
-		|_ MarkerBasePandaRectCoordCB
-		|_ MarkerBasePandaRectEditCB
-		|_ MarkerBasePandaRectDistCB
-	|_ ./text.tcl
-		|_ TextDialog
-		|_ TextClose
-		|_ TextApply
-		|_ TextRotate
-		|_ TextCoordCB
-	|_ ./vla.tcl
-		|_ VLADef
-		|_ VLADialog
-		|_ VLAExec
-		|_ VLAAck
-		|_ ProcessVLACmd
-		|_ ProcessSendVLACmd
-	|_ ./vlss.tcl
-		|_ VLSSDef
-		|_ VLSSDialog
-		|_ VLSSExec
-		|_ VLSSAck
-		|_ ProcessVLSSCmd
-		|_ ProcessSendVLSSCmd
-	|_ ./catcxc.tcl
-		|_ CATCXC
-		|_ CATCXCVOT
-		|_ CATCXCAck
-	|_ ./bpanda.tcl
-		|_ BpandaDialog
-		|_ BpandaGenerate
-	|_ ./markerbase.tcl
-		|_ MarkerBaseDialog
-		|_ MarkerBaseClose
-		|_ MarkerBaseApply
-		|_ MarkerBaseColor
-		|_ MarkerBaseLineWidth
-		|_ MarkerBaseProperty
-		|_ MarkerBaseFont
-		|_ MarkerBaseDeleteCB
-		|_ MarkerBaseTextCB
-		|_ MarkerBaseColorCB
-		|_ MarkerBaseLineWidthCB
-		|_ MarkerBasePropertyCB
-		|_ MarkerBaseFontCB
-		|_ MarkerBaseCoordCB
-		|_ MarkerBaseMenu
-		|_ MarkerBaseFileMenu
-		|_ MarkerBasePropertyMenu
-	|_ ./markeranalysisplot2d.tcl
-		|_ MarkerAnalysisPlot2dDialog
-		|_ MarkerAnalysisPlot2dCmd
-		|_ MarkerAnalysisPlot2d
-		|_ MarkerAnalysisPlot2dMethod
-		|_ MarkerAnalysisPlot2dSystem
-		|_ MarkerAnalysisPlot2dCB
-		|_ MarkerAnalysisPlot2dDeleteCB
-		|_ MarkerAnalysisPlot2dAxisTitle
-		|_ MarkerAnalysisPlot2dXAxis
-	|_ ./medit.tcl
-		|_ EditMainMenu
-		|_ PrefsDialogEditMenu
-		|_ ButtonsEditDef
-		|_ CreateButtonsEdit
-		|_ PrefsDialogButtonbarEdit
-		|_ UpdateEditMenu
-	|_ ./markeranalysishist.tcl
-		|_ MarkerAnalysisHistogramDialog
-		|_ MarkerAnalysisHistogramCmd
-		|_ MarkerAnalysisHistogram
-		|_ MarkerAnalysisHistogramCB
-		|_ MarkerAnalysisHistogramDeleteCB
-	|_ ./starbase.tcl
-		|_ Starbase
-	|_ ./load.tcl
-		|_ MultiLoad
-		|_ MultiLoadRGB
-		|_ ProcessLoad
-		|_ ProcessLoadSaveParams
-		|_ LoadUpdate
-		|_ FinishLoad
-		|_ IsLocalFile
-		|_ ConvertFitsFile
-		|_ ConvertArrayFile
-		|_ Stdin
-		|_ BZip2File
-		|_ CompressFile
-		|_ GzipFile
-		|_ ExternalFits
-		|_ ProcessPreserveCmd
-		|_ ProcessSendPreserveCmd
-		|_ ProcessUpdateCmd
-		|_ UpdateCmd
-		|_ UpdateCmdNow
-	|_ ./info.tcl
-		|_ CreateInfoPanel
-		|_ LayoutFrameInfoBox
-		|_ LayoutFrameInfoBoxHorzValue
-		|_ LayoutFrameInfoBoxHorzWCS
-		|_ LayoutFrameInfoBoxHorzImage
-		|_ LayoutFrameInfoBoxVertValue
-		|_ LayoutFrameInfoBoxVertWCS
-		|_ LayoutFrameInfoBoxVertImage
-		|_ EnterInfoBox
-		|_ LeaveInfoBox
-		|_ ClearInfoBox
-		|_ ClearInfoBoxCoords
-		|_ RefreshInfoBox
-		|_ UpdateInfoBoxFrame
-		|_ UpdateInfoBox
-		|_ LayoutInfoPanel
-		|_ LayoutInfoPanelHorz
-		|_ LayoutInfoPanelVert
-	|_ ./table.tcl
-		|_ TBLGetURL
-		|_ TBLGetURLFinish
-		|_ TBLClearFrame
-		|_ TBLValidDB
-		|_ TBLStatusRows
-		|_ TBLSelectTimer
-		|_ TBLSelectTimerCancel
-		|_ TBLCrosshair
-		|_ TBLPanTo
-		|_ TBLUpdate
-		|_ TBLWCSMenuUpdate
-		|_ TBLUpdateFont
-		|_ TBLBindMouseWheel
-		|_ TBLXScroll
-		|_ TBLYScroll
-		|_ TBLCopy
-		|_ TBLCut
-		|_ TBLCopyTable
-		|_ TBLSaveVOTFile
-		|_ TBLSaveRDBFile
-		|_ TBLSaveTSVFile
-		|_ TBLSaveFn
-		|_ TBLSortMenu
-		|_ TBLSortCmd
-		|_ TBLTable
-		|_ TBLEditDialog
-		|_ TBLEditDialogClear
-		|_ TBLEditDialogSave
-		|_ TBLEditDialogLoad
-		|_ TBLCmdSave
-		|_ TBLCmdCoord
-		|_ TBLCmdSize
-		|_ TBLCmdSkyframe
-		|_ TBLCmdSystem
-		|_ TBLCmdFilterLoad
-		|_ TBLPrint
-		|_ TBLPSPrint
-		|_ TBLPostScript
-		|_ TBLCmdPrint
-	|_ ./cube.tcl
-		|_ CubeDef
-		|_ MatchCubeCurrent
-		|_ MatchCube
-		|_ LockCubeCurrent
-		|_ LockCube
-		|_ CubeSlice
-		|_ CubeStop
-		|_ CubePlay
-		|_ CubeTimer
-		|_ CubeFirst
-		|_ CubePrev
-		|_ CubeNext
-		|_ CubeLast
-		|_ CubeApply
-		|_ CubeApplyWCS
-		|_ UpdateCube
-		|_ CubeDialog
-		|_ CubeDestroyDialog
-		|_ UpdateCubeMenu
-		|_ UpdateCubeDialog
-		|_ UpdateCubeDialogNoImage
-		|_ UpdateCubeDialog2Axes
-		|_ UpdateCubeDialogAxes
-		|_ UpdateCubeMotionDialog
-		|_ CubeBackup
-		|_ CubeBackupBase
-		|_ CubeBackupRGB
-		|_ MatchAxesCurrent
-		|_ MatchAxes
-		|_ LockAxesCurrent
-		|_ LockAxes
-		|_ CubeAxes
-		|_ ProcessCubeCmd
-		|_ CubeCmd
-		|_ CubeCmdCoord
-		|_ CubeCmdAxis
-		|_ ProcessSendCubeCmd
-		|_ CubeSendCmdAxis
-	|_ ./comm.tcl
-		|_ CommReturn
-		|_ CommSet
-		|_ CommGet
-	|_ ./grid.tcl
-		|_ GridDef
-		|_ GridDefault
-		|_ GridUpdateCurrent
-		|_ GridUpdate
-		|_ GridUpdateZoom
-		|_ GridAdjustOptions
-		|_ GridBuildOptions
-		|_ GridAst2Color
-		|_ GridColor2Ast
-		|_ GridAst2Font
-		|_ GridFont2Ast
-		|_ GridDialog
-		|_ GridApplyDialog
-		|_ GridResetDialog
-		|_ GridClearDialog
-		|_ GridDestroyDialog
-		|_ UpdateGridMenu
-		|_ UpdateGridDialog
-		|_ GridCreateLineMenu
-		|_ GridLoadDialog
-		|_ GridLoad
-		|_ GridSaveDialog
-		|_ GridSave
-		|_ GridStripComma
-		|_ GridDefaultFormat1
-		|_ GridDefaultFormat2
-		|_ GridBackup
-		|_ ProcessGridCmd
-		|_ ProcessSendGridCmd
-	|_ ./manalysis.tcl
-		|_ AnalysisMainMenu
-		|_ PrefsDialogAnalysisMenu
-		|_ ButtonsAnalysisDef
-		|_ CreateButtonsAnalysis
-		|_ PrefsDialogButtonbarAnalysis
-		|_ UpdateAnalysisMenu
-		|_ PrefsDialogAnalysis
-	|_ ./fpdialog.tcl
-		|_ FPDialog
-		|_ FPApply
-		|_ FPServer
-		|_ FPVOT
-		|_ FPDestroy
-		|_ FPDialogUpdate
-	|_ ./plotdata.tcl
-		|_ PlotAddDataSet
-		|_ PlotDataSetOne
-		|_ PlotExternal
-		|_ PlotDupDataSet
-		|_ PlotLoadData
-		|_ PlotLoadDataFile
-		|_ PlotSaveData
-		|_ PlotSaveDataFile
-	|_ ./graph.tcl
-		|_ GraphDef
-		|_ CreateGraphs
-		|_ ThemeConfigGraph
-		|_ UpdateGraphFont
-		|_ UpdateGraphGrid
-		|_ UpdateGraphAxis
-		|_ UpdateGraphXAxisHV
-		|_ UpdateGraphYAxisHV
-		|_ ClearGraphData
-		|_ UpdateGraphData
-		|_ EnterGraph
-		|_ LeaveGraph
-		|_ MotionGraph
-		|_ ArrowKeyGraph
-		|_ UpdateGraphLayout
-		|_ GraphDialog
-		|_ GraphApplyDialog
-		|_ GraphDestroyDialog
-	|_ ./block.tcl
-		|_ BlockDef
-		|_ BlockToFit
-		|_ ChangeBlock
-		|_ Block
-		|_ UpdateBlock
-		|_ BlockDialog
-		|_ BlockApplyDialog
-		|_ BlockDestroyDialog
-		|_ UpdateBlockDialog
-		|_ UpdateBlockMenu
-		|_ MatchBlockCurrent
-		|_ MatchBlock
-		|_ LockBlockCurrent
-		|_ LockBlock
-		|_ BlockBackup
-		|_ BlockBackupBase
-		|_ BlockBackupRGB
-		|_ ProcessBlockCmd
-		|_ ProcessSendBlockCmd
-		|_ BlockSendCmd
-	|_ ./file.tcl
-		|_ ProcessFileCmd
-		|_ ProcessSendFileCmd
-	|_ ./polygon.tcl
-		|_ PolygonDialog
-		|_ PolygonClose
-		|_ PolygonApply
-		|_ PolygonFill
-		|_ PolygonCoordCB
-	|_ ./multiframe.tcl
-		|_ LoadMultiFrameFile
-		|_ LoadMultiFrameSocket
-		|_ LoadMultiFrameAlloc
-		|_ ProcessMultiFrameCmd
-		|_ MultiframeCmdLoad
-	|_ ./mosaicimagewcs.tcl
-		|_ LoadMosaicImageWCSFile
-		|_ LoadMosaicImageWCSAlloc
-		|_ LoadMosaicImageWCSSocket
-		|_ SaveMosaicImageWCSFile
-		|_ SaveMosaicImageWCSSocket
-		|_ ProcessMosaicImageWCSCmd
-		|_ MosaicImageWCSCmdLoad
-		|_ ProcessSendMosaicImageWCSCmd
-	|_ ./help.tcl
-		|_ HelpDef
-		|_ HelpRef
-		|_ HelpCommand
-		|_ HelpUser
-		|_ HelpFAQ
-		|_ HelpRelease
-		|_ HelpDesk
-		|_ HelpStory
-		|_ HelpAck
-		|_ HelpVO
-		|_ ProcessSendAboutCmd
-	|_ ./analysis.tcl
-		|_ AnalysisDef
-		|_ OpenAnalysisMenu
-		|_ ClearAnalysisMenu
-		|_ ClearAnalysis
-		|_ InitAnalysisFile
-		|_ ProcessAnalysisFile
-		|_ ProcessAnalysis
-		|_ ParseIRAFParam
-		|_ AnalysisTask
-		|_ AnalysisWebDoit
-		|_ AnalysisTaskDoit
-		|_ AnalysisPipe
-		|_ AnalysisReader
-		|_ AnalysisReaderAppend
-		|_ AnalysisReaderFinish
-		|_ AnalysisPlotStdin
-		|_ AnalysisGetURL
-		|_ AnalysisProcessGetURL
-		|_ AnalysisTaskEnd
-		|_ SetEscapedMacros
-		|_ UnsetEscapedMacros
-		|_ ParseDataMacro
-		|_ ParseVOMethodMacro
-		|_ ParseXPAMethodMacro
-		|_ ParseXPAMacro
-		|_ ParseXYBitpixMacro
-		|_ ParseFilenameRegionMacro
-		|_ SubstFilenameRegion
-		|_ ParseFilenameMacro
-		|_ ParseFileDialogMacro
-		|_ CleanFileName
-		|_ ParseRegionMacro
-		|_ SubstRegion
-		|_ ParseEnvMacro
-		|_ ParsePanMacro
-		|_ ParseValueMacro
-		|_ ParseXYMacro
-		|_ ParseZMacro
-		|_ ParseMessageMacro
-		|_ ParseMessageOKMacro
-		|_ ParseEntryMacro
-		|_ ParseParamMacro
-		|_ ParseTextMacro
-		|_ ParseNullMacro
-		|_ ParsePlotMacro
-		|_ ParseURLMacro
-		|_ ParseGetURLMacro
-		|_ ParseImageMacro
-		|_ AnalysisText
-		|_ AnalysisMessage
-		|_ AnalysisMessageOK
-		|_ AnalysisEntry
-		|_ AnalysisPrefOpen
-		|_ ProcessAnalysisCmd
-		|_ AnalysisCmdTask
-		|_ AnalysisCmdText
-		|_ AnalysisCmdPlotStdin
-		|_ AnalysisCmdPlotLine
-		|_ AnalysisCmdLoad
-		|_ ProcessSendAnalysisCmd
-		|_ AnalysisSendCmd
-		|_ AnalysisSendCmdEntry
-		|_ AnalysisSendCmdMessage
-		|_ AnalysisSendCmdTask
-	|_ ./smosaic.tcl
-		|_ ProcessSMosaicCmd
-	|_ ./catmatch.tcl
-		|_ CATMatchFrame
-		|_ CATMatchDialog
-		|_ CATMatchDialogFunctionMenu
-		|_ CATMatchDialogReturnMenu
-		|_ CATMatchDialogCatsMenu
-		|_ CATMatch
-		|_ CATMatchAnd1and2
-		|_ CATMatchAnd1only
-		|_ CATMatchAnd2only
-		|_ CATMatchNot
-	|_ ./segment.tcl
-		|_ SegmentDialog
-		|_ SegmentClose
-		|_ SegmentApply
-		|_ SegmentCoordCB
-	|_ ./boxannulus.tcl
-		|_ BoxAnnulusDialog
-	|_ ./plotprocess.tcl
-		|_ PrefsDialogPlot
-		|_ ProcessPlotCmd
-		|_ ProcessSendPlotCmd
-		|_ PlotCmdRef
-		|_ PlotSendCmdRef
-		|_ PlotCmdNew
-		|_ PlotCmdNewFile
-		|_ PlotCmdNewParam1
-		|_ PlotCmdNewParam5
-		|_ PlotCmdLine
-		|_ PlotCmdBar
-		|_ PlotCmdScatter
-		|_ PlotCmdAnalysisPlotStdin
-		|_ PlotCmdData
-		|_ PlotCmdLoad
-		|_ PlotCmdSave
-		|_ PlotCmdBackup
-		|_ PlotCmdRestore
-		|_ PlotCmdUpdateElement
-		|_ PlotCmdFontStyle
-		|_ PlotCmdExport
-	|_ ./iis.tcl
-		|_ IISDef
-		|_ IISInit
-		|_ IISClose
-		|_ IISDebug
-		|_ IISInitializeCmd
-		|_ IISInitFrameCmd
-		|_ IISSetDisplayFrameCmd
-		|_ IISSetRefFrameCmd
-		|_ IISEraseFrameCmd
-		|_ IISMessageCmd
-		|_ IISWritePixelsCmd
-		|_ IISReadPixelsCmd
-		|_ IISWCSCmd
-		|_ IISSetCursorPosCmd
-		|_ IISGetCursorPosCmd
-		|_ IISCursorModeCmd
-		|_ IISLoadFrame
-		|_ IISGotoFrame
-		|_ IISResetTimer
-		|_ IISTimer
-		|_ IISCursorKey
-		|_ ProcessIISCmd
-		|_ IISCmd
-		|_ ProcessSendIISCmd
-	|_ ./smosaiciraf.tcl
-		|_ LoadSMosaicIRAFFile
-		|_ ProcessSMosaicIRAFCmd
-	|_ ./epanda.tcl
-		|_ EpandaDialog
-		|_ EpandaGenerate
-	|_ ./markerbasecenter.tcl
-		|_ MarkerBaseCenterDialog
-		|_ MarkerBaseCenterClose
-		|_ MarkerBaseCenterApply
-		|_ MarkerBaseCenterRotate
-		|_ MarkerBaseCenterMoveCB
-		|_ MarkerBaseCenterRotateCB
-	|_ ./ar.tcl
-		|_ ARInit
-		|_ ARApply
-		|_ ARCancel
-		|_ ARDestroy
-		|_ ARReset
-		|_ ARDone
-		|_ ARCancelled
-		|_ ARError
-		|_ ARStatus
-		|_ ARClear
-		|_ ARCoord
-		|_ AREditMenu
-		|_ ARSkyFormat
-		|_ ARSkyFormatMenu
-		|_ ARRFormat
-		|_ ARRFormatMenu
-	|_ ./saveimage.tcl
-		|_ SaveImageDef
-		|_ SaveImageDialog
-		|_ SaveImage
-		|_ SaveImagePhoto
-		|_ ProcessSaveImageCmd
-		|_ SaveImageCmdLoad
-		|_ SaveImageCmdMPEG
-	|_ ./markerbaseline.tcl
-		|_ MarkerBaseLineDialog
-		|_ MarkerBaseLineClose
-		|_ MarkerBaseLineApply
-		|_ MarkerBaseLineEditCB
-	|_ ./catvot.tcl
-		|_ CATVOTURL
-		|_ CATVOTFTP
-		|_ CATVOTHTTP
-		|_ CATVOTFile
-	|_ ./win32.tcl
-		|_ Win32Print
-		|_ Win32PageSetup
-	|_ ./mcolor.tcl
-		|_ ColorMainMenu
-		|_ CreateExColorMenu
-		|_ PrefsDialogColorMenu
-		|_ PrefsDialogColor
-		|_ ButtonsColorDef
-		|_ CreateButtonsColor
-		|_ PrefsDialogButtonbarColor
-		|_ UpdateColorMenu
-	|_ ./plotbackup.tcl
-		|_ PlotBackupAll
-		|_ PlotBackupOne
-		|_ PlotBackupLoadFile
-		|_ PlotBackupCanvas
-		|_ PlotBackupGraph
-		|_ PlotBackupDataset
-		|_ PlotBackupDialog
-		|_ PlotBackup
-		|_ PlotRestoreDialog
-		|_ PlotRestore
-		|_ PlotLoadConfigFile
-	|_ ./hvsup.tcl
-		|_ HVCancel
-		|_ HVReset
-		|_ HVDone
-		|_ HVCancelled
-		|_ HVError
-		|_ HVStatus
-		|_ HVResolveURL
-		|_ HVLoadURL
-		|_ HVProcessURLFile
-		|_ HVProcessURLFTP
-		|_ HVProcessURLHTTP
-		|_ HVProcessURLHTTPFinish
-		|_ HVHTTPHeader
-		|_ HVParseMeta
-		|_ HVLoadFile
-		|_ HVParse
-		|_ HVParseMulti
-		|_ HVParseSingle
-		|_ HVParseText
-		|_ HVParseHTML
-		|_ HVParseImg
-		|_ HVParseFITS
-		|_ HVParseColormap
-		|_ HVParseVOT
-		|_ HVParseSave
-		|_ HVParseXPASet
-		|_ HVGotoHTML
-		|_ HVClearCache
-		|_ HVClearIndex
-		|_ HVClearTmpFile
-		|_ HVUpdateDialog
-		|_ HVRefresh
-		|_ HVProgress
-		|_ HVFTPHtmlList
-		|_ HVFileHtmlList
-		|_ HVDirList
-		|_ HVSetURL
-		|_ HVSetResult
-		|_ HVSetData
-		|_ HVSetAnalysis
-		|_ HVClearAll
-		|_ HVImageCB
-		|_ HVImageURL
-		|_ HVFontCB
-		|_ HVNoScriptCB
-		|_ HVScriptCB
-		|_ HVFrameCB
-		|_ HVAppletCB
-		|_ HVParseMimeParam
-	|_ ./vector.tcl
-		|_ VectorDialog
-		|_ VectorClose
-		|_ VectorApply
-		|_ VectorArrow
-		|_ VectorCoordCB
-		|_ VectorEditCB
-		|_ VectorDistCB
-	|_ ./markeranalysisplot3d.tcl
-		|_ MarkerAnalysisPlot3dDialog
-		|_ MarkerAnalysisPlot3dCmd
-		|_ MarkerAnalysisPlot3d
-		|_ MarkerAnalysisPlot3dMethod
-		|_ MarkerAnalysisPlot3dSystem
-		|_ MarkerAnalysisPlot3dCB
-		|_ MarkerAnalysisPlot3dDeleteCB
-		|_ MarkerAnalysisPlot3dSliceCB
-		|_ MarkerAnalysisPlot3dMotion
-		|_ MarkerAnalysisPlot3dMarker
-		|_ MarkerAnalysisPlot3dAxisTitle
-	|_ ./catdialog.tcl
-		|_ CATDialog
-		|_ CATDialogUpdate
-		|_ CATAck
-		|_ CATDefaultAck
-		|_ CATApply
-		|_ CATServer
-		|_ CATDestroy
-		|_ CATEdit
-		|_ CATGetHeader
-		|_ CATHeader
-		|_ CATKey
-		|_ CATPageSetup
-		|_ CATWCSMenuUpdate
-		|_ CATColsUpdate
-		|_ UpdateCATDialog
-	|_ ./vo.tcl
-		|_ VODef
-		|_ VOKeepAlive
-		|_ VOCancel
-		|_ VODestroy
-		|_ VOReset
-		|_ VODone
-		|_ VOError
-		|_ VODialog
-		|_ VOApply
-		|_ VOLoad
-		|_ VOFinish
-		|_ VOParse
-		|_ VOCheck
-		|_ PrefsVOMethod
-		|_ PrefsDialogVO
-		|_ ProcessVOCmd
-		|_ VOCmdConnect
-		|_ VOCmdDisconnect
-		|_ ProcessSendVOCmd
-		|_ VOSendCmdConnect
-	|_ ./siadialog.tcl
-		|_ SIADialog
-		|_ SIAApply
-		|_ SIAServer
-		|_ SIAVOT
-		|_ SIADestroy
-		|_ SIAApplyLoad
-		|_ SIADone
-		|_ SIACancelled
-		|_ SIAError
-		|_ SIADialogUpdate
-		|_ SIAImageCmd
-		|_ SIASelectCmd
-		|_ SIAUpdate
-		|_ SIACrosshair
-	|_ ./catsimbad.tcl
-		|_ CATSIMBAD
-		|_ CATSIMBADAck
-	|_ ./3d.tcl
-		|_ Update3DDialog
-		|_ Match3DCurrent
-		|_ Match3DView
-		|_ Lock3DCurrent
-		|_ Lock3DView
-		|_ PrefsDialog3d
-		|_ Process3DCmd
-		|_ ProcessSend3DCmd
-	|_ ./layout.tcl
-		|_ CanvasDef
-		|_ BlinkDef
-		|_ TileDef
-		|_ ViewDef
-		|_ CreateCanvas
-		|_ ThemeConfigCanvas
-		|_ InitCanvas
-		|_ Button3Canvas
-		|_ Motion3Canvas
-		|_ Release3Canvas
-		|_ UnBindEventsCanvas
-		|_ BindEventsCanvas
-		|_ ConfigureView
-		|_ UpdateView
-		|_ LayoutView
-		|_ LayoutViewAdjust
-		|_ LayoutOrient
-		|_ LayoutViewHorz
-		|_ LayoutViewVert
-		|_ LayoutFrames
-		|_ TileOne
-		|_ TileRect
-		|_ TileIt
-		|_ DisplayDefaultDialog
-		|_ ViewHorzCmd
-		|_ ViewVertCmd
-		|_ ProcessHeightCmd
-		|_ ProcessSendHeightCmd
-		|_ ProcessWidthCmd
-		|_ ProcessSendWidthCmd
-		|_ ProcessViewCmd
-		|_ ProcessSendViewCmd
-	|_ ./cxcpublic.tcl
-		|_ CXCPublicObsId
-		|_ CXCPublicConeSearch
-		|_ CXCPublicSelectCmd
-	|_ ./ruler.tcl
-		|_ RulerDialog
-		|_ RulerApply
-		|_ RulerCoordCB
-		|_ RulerEditCB
-		|_ RulerDistCB
-	|_ ./fits.tcl
-		|_ LoadFitsFile
-		|_ LoadFitsAlloc
-		|_ LoadFitsSocket
-		|_ SaveFitsFile
-		|_ SaveFitsSocket
-		|_ ProcessFitsCmd
-		|_ FitsCmdLoad
-		|_ ProcessSendFitsCmd
-		|_ FitsSendCmd
-		|_ FitsSendCmdType
-		|_ ProcessFitsBackwardCmd
-	|_ ./plotdialog.tcl
-		|_ PlotDialog
-		|_ PlotDataFormatDialog
-		|_ PlotStripDialog
-		|_ PlotRangeDialog
-		|_ PlotGraphTitleDialog
-		|_ DatasetNameDialog
-		|_ PlotExportDialog
-		|_ PlotExport
-		|_ PlotExportPhoto
-		|_ PlotUpdateMenus
-	|_ ./analysisparam.tcl
-		|_ AnalysisParam
-		|_ AnalysisParamReset
-		|_ AnalysisParamItem
-		|_ AnalysisParamListUpdate
-		|_ AnalysisParamFileOpen
-		|_ AnalysisParamFileSave
-		|_ AnalysisParamMenu
-		|_ AnalysisParamMacro
-	|_ ./template.tcl
-		|_ TemplateDef
-		|_ CreateFOVMenu
-		|_ OpenTemplateMarker
-		|_ LoadTemplateMarker
-		|_ LoadTemplateMarkerAt
-		|_ SaveAsTemplateMarker
-	|_ ./tsv.tcl
-		|_ TSVRead
-		|_ TSVWrite
-	|_ ./eso.tcl
-		|_ ESODef
-		|_ ESODialog
-		|_ ESOExec
-		|_ ESOAck
-		|_ ProcessESOCmd
-		|_ ProcessSendESOCmd
-	|_ ./mscale.tcl
-		|_ ScaleMainMenu
-		|_ PrefsDialogScaleMenu
-		|_ PrefsDialogScale
-		|_ ButtonsScaleDef
-		|_ CreateButtonsScale
-		|_ PrefsDialogButtonbarScale
-		|_ UpdateScaleMenu
-	|_ ./url.tcl
-		|_ GetFileURL
-		|_ GetFileFTP
-		|_ GetFileHTTP
-		|_ LoadURLFits
-		|_ LoadURLFitsFTP
-		|_ LoadURLFitsFile
-		|_ LoadURLFitsHTTP
-		|_ OpenURLFits
-		|_ ProcessURLFitsCmd
-	|_ ./markeranalysisradial.tcl
-		|_ MarkerAnalysisRadialDialog
-		|_ MarkerAnalysisRadialCmd
-		|_ MarkerAnalysisRadial
-		|_ MarkerAnalysisRadialSystem
-		|_ MarkerAnalysisRadialCB
-		|_ MarkerAnalysisRadialDeleteCB
-		|_ MarkerAnalysisRadialAxisTitle
-	|_ ./rgbarray.tcl
-		|_ ImportRGBArrayFile
-		|_ ImportRGBArrayAlloc
-		|_ ImportRGBArraySocket
-		|_ ExportRGBArrayFile
-		|_ ExportRGBArraySocket
-		|_ ProcessRGBArrayCmd
-		|_ RGBArrayCmdLoad
-		|_ ProcessSendRGBArrayCmd
-	|_ ./save.tcl
-		|_ SaveDef
-		|_ Save
-		|_ ProcessSaveCmd
-		|_ SaveCmdLoad
-		|_ SaveDialog
-		|_ SaveParams
-		|_ SaveMosaicParams
-	|_ ./colorbar.tcl
-		|_ ColorbarDef
-		|_ CreateColorbar
-		|_ InitColorbar
-		|_ ResetColormap
-		|_ LoadColormap
-		|_ LoadColormapFile
-		|_ SaveColormap
-		|_ SaveColormapFile
-		|_ LoadContrastBias
-		|_ SaveContrastBias
-		|_ ColorbarEnter
-		|_ ColorbarLeave
-		|_ ColorbarMotion
-		|_ ColorbarKey
-		|_ ColorbarKeyRelease
-		|_ ColorbarButton1
-		|_ ColorbarMotion1
-		|_ ColorbarRelease1
-		|_ ColorbarDouble1
-		|_ ColorbarDoubleRelease1
-		|_ ColorbarButton3
-		|_ ColorbarMotion3
-		|_ ColorbarRelease3
-		|_ ChangeColormapID
-		|_ MatchColorCurrent
-		|_ MatchColor
-		|_ LockColorCurrent
-		|_ LockColor
-		|_ InvertColorbar
-		|_ UpdateColormapLevel
-		|_ UpdateColormapLevelMosaic
-		|_ ColorFrameBackup
-		|_ ColorbarSizeDialog
-		|_ TicksDialog
-		|_ OpenColorTag
-		|_ LoadColorTag
-		|_ SaveColorTag
-		|_ DeleteColorTag
-		|_ ColorTagDialog
-		|_ ColormapDialog
-		|_ ColormapCreateMenu
-		|_ ColormapDestroyDialog
-		|_ ApplyColormap
-		|_ BeginAdjustColormap
-		|_ AdjustColormap
-		|_ EndAdjustColormap
-		|_ UpdateColorDialog
-		|_ LayoutColorbar
-		|_ ColorbarBackup
-		|_ ColormapFrameBackup
-		|_ ColorbarBackupCmaps
-		|_ ProcessCmapCmd
-		|_ CmapCmd
-		|_ CmapValueCmd
-		|_ ProcessSendCmapCmd
-		|_ ProcessColorbarCmd
-		|_ ProcessSendColorbarCmd
-		|_ ColorbarSendCmdCurrent
-		|_ ColorbarSendCmdContrastBias
-		|_ ColorbarSendCmdSpace
-	|_ ./rgb.tcl
-		|_ RGBDef
-		|_ RGBEvalLockCurrent
-		|_ RGBEvalLock
-		|_ RGBEvalLockColorbar
-		|_ RGBChannel
-		|_ RGBView
-		|_ RGBSystem
-		|_ RGBDialog
-		|_ RGBDestroyDialog
-		|_ UpdateRGBMenu
-		|_ UpdateRGBDialog
-		|_ RGBBackup
-		|_ ProcessRGBCmd
-		|_ ProcessSendRGBCmd
-	|_ ./markerdialog.tcl
-		|_ MarkerLoadDialog
-		|_ UpdateMarkerLoadDialog
-		|_ MarkerSaveDialog
-		|_ UpdateMarkerSaveDialog
-	|_ ./ellipseannulus.tcl
-		|_ EllipseAnnulusDialog
-	|_ ./markerbaseannulusrect.tcl
-		|_ MarkerBaseAnnulusRectDialog
-		|_ MarkerBaseAnnulusRectClose
-		|_ MarkerBaseAnnulusRectApply
-		|_ MarkerBaseAnnulusRectCoordCB
-		|_ MarkerBaseAnnulusRectEditCB
-		|_ MarkerBaseAnnulusRectDistCB
-	|_ ./hvform.tcl
-		|_ HVFormCB
-		|_ HVFormForm
-		|_ HVFormFlush
-		|_ HVFormInput
-		|_ HVFormSelect
-		|_ HVFormTextArea
-		|_ HVattrs
-		|_ HVSubmitForm
-		|_ HVResetForm
-		|_ HVInitVar
-		|_ HVFixHTMLForm
-	|_ ./plotscatter.tcl
-		|_ PlotScatterTool
-		|_ PlotScatter
-		|_ PlotScatterMenus
-		|_ PlotScatterShapeMenu
-		|_ PlotScatterAddGraph
-		|_ PlotScatterUpdateElement
-		|_ PlotScatterButton
-		|_ PlotScatterHighliteElement
-		|_ PlotPrefsScatter
-		|_ PlotGUIScatter
-	|_ ./ds9.tcl
-		|_ DS9Def
-	|_ ./mask.tcl
-		|_ MaskDef
-		|_ MaskMark
-		|_ MaskBlend
-		|_ MaskRange
-		|_ MaskColor
-		|_ MaskTransparency
-		|_ MaskSystem
-		|_ MaskClear
-		|_ MaskDialog
-		|_ MaskApplyDialog
-		|_ MaskDestroyDialog
-		|_ UpdateMaskMenu
-		|_ MaskLoad
-		|_ MaskParamsDialog
-		|_ MaskBackup
-		|_ ProcessMaskCmd
-		|_ ProcessSendMaskCmd
-	|_ ./srgbcube.tcl
-		|_ LoadSRGBCubeFile
-		|_ ProcessSRGBCubeCmd
-	|_ ./wcs.tcl
-		|_ WCSDef
-		|_ UpdateWCS
-		|_ LayoutWCSInfoBox
-		|_ WCSBackup
-		|_ WCSDialog
-		|_ WCSApplyDialog
-		|_ WCSResetDialog
-		|_ WCSDestroyDialog
-		|_ WCSSaveDialog
-		|_ WCSSaveFile
-		|_ WCSLoadDialog
-		|_ WCSLoadFile
-		|_ UpdateWCSDialog
-		|_ UpdateWCSVars
-		|_ ConfigWCSDialog
-		|_ ConfigWCSDialogExtMenu
-		|_ WCSToVar
-		|_ WCSFromVar
-		|_ ProcessWCSCmd
-		|_ WCSCmdReset
-		|_ WCSCmdLoad
-		|_ WCSCmdLoadFn
-		|_ ProcessSendWCSCmd
-		|_ ProcessAlignCmd
-		|_ ProcessSendAlignCmd
-	|_ ./pixel.tcl
-		|_ PixelDef
-		|_ UpdatePixelTableDialog
-		|_ PixelTableDialog
-		|_ PixelTableDestroyDialog
-		|_ PixelTableCopyDialog
-		|_ PixelTableClearDialog
-		|_ PixelTableSaveDialog
-		|_ PixelTableConfigure
-		|_ PixelTableRender
-		|_ PixelTableExportSelection
-		|_ PixelTableLostSelection
-		|_ PrefsDialogPixelTable
-		|_ PrefsDialogPixelTableButtonCmd
-		|_ ProcessPixelTableCmd
-		|_ PixelTableCmd
-		|_ ProcessSendPixelTableCmd
-	|_ ./nvss.tcl
-		|_ NVSSDef
-		|_ NVSSDialog
-		|_ NVSSExec
-		|_ NVSSAck
-		|_ ProcessNVSSCmd
-		|_ ProcessSendNVSSCmd
-	|_ ./plotgui.tcl
-		|_ PlotGUI
-		|_ PlotGUIDestroy
-		|_ PlotGUIApply
-		|_ PlotGUICanvas
-		|_ PlotGUIGraph
-		|_ PlotGUIDataset
-		|_ PlotGUICurrentGraph
-		|_ PlotUpdateGUI
-	|_ ./movie.tcl
-		|_ MovieDef
-		|_ MovieDialog
-		|_ MovieCreate
-		|_ MovieFrame
-		|_ MovieSlice
-		|_ Movie3d
-		|_ MoviePhoto
-		|_ MoviePhotoMPEG
-		|_ MoviePhotoGIF
-		|_ Movie3dDialog
-		|_ MovieStatusDialog
-		|_ MovieStatusDestroyDialog
-		|_ MovieStatusAbortDialog
-		|_ ProcessMovieCmd
-	|_ ./plotline.tcl
-		|_ PlotLineTool
-		|_ PlotLine
-		|_ PlotLineMenus
-		|_ PlotLineWidthMenu
-		|_ PlotLineShapeMenu
-		|_ PlotLineSmoothMenu
-		|_ PlotLineAddGraph
-		|_ PlotLineUpdateElement
-		|_ PlotPrefsLine
-		|_ PlotGUILine
-	|_ ./prefsdialog.tcl
-		|_ PrefsDialog
-		|_ PrefsDialogListUpdate
-		|_ PrefsDialogSave
-		|_ PrefsDialogClose
-		|_ PrefsDialogClear
-		|_ PrefsDialogGeneral
-		|_ PrefsDialogPrecision
-		|_ PrefsDialogStartup
-	|_ ./markeranalysisstats.tcl
-		|_ MarkerAnalysisStatsDialog
-		|_ MarkerAnalysisStatsCmd
-		|_ MarkerAnalysisStats
-		|_ MarkerAnalysisStatsSystem
-		|_ MarkerAnalysisStatsCB
-		|_ MarkerAnalysisStatsDeleteCB
-	|_ ./catcds.tcl
-		|_ CATCDS
-		|_ CATCDSURL
-		|_ CATCDSAck
-	|_ ./markeranalysispanda.tcl
-		|_ MarkerAnalysisPandaDialog
-		|_ MarkerAnalysisPandaCmd
-		|_ MarkerAnalysisPanda
-		|_ MarkerAnalysisPandaSystem
-		|_ MarkerAnalysisPandaCB
-		|_ MarkerAnalysisPandaDeleteCB
-		|_ MarkerAnalysisPandaAxisTitle
-	|_ ./magnifier.tcl
-		|_ CreateMagnifier
-		|_ ThemeConfigMagnifier
-		|_ MagnifierDef
-		|_ UpdateMagnifier
-		|_ MagnifierFrameBackup
-		|_ MagnifierRegion
-		|_ MagnifierCursor
-		|_ MagnifierZoom
-		|_ MagnifierColor
-		|_ PrefsDialogMagnifier
-		|_ ProcessMagnifierCmd
-		|_ ProcessSendMagnifierCmd
-	|_ ./stdfbox.tcl
-		|_ InitDialogBox
-		|_ SetFileLast
-		|_ ExtToFormat
-		|_ OpenFileDialog
-		|_ SaveFileDialog
-		|_ FileDialog
-		|_ FileDialogMotif
-		|_ FileDialogWindows
-		|_ FileDialogNative
-		|_ FileLast
-	|_ ./rgbcube.tcl
-		|_ LoadRGBCubeFile
-		|_ LoadRGBCubeAlloc
-		|_ LoadRGBCubeSocket
-		|_ SaveRGBCubeFile
-		|_ SaveRGBCubeSocket
-		|_ ProcessRGBCubeCmd
-		|_ RGBCubeCmdLoad
-		|_ ProcessSendRGBCubeCmd
-	|_ ./point.tcl
-		|_ PointDialog
-		|_ PointClose
-		|_ PointApply
-		|_ PointCoordCB
-		|_ PointShape
 -> markeranalysisplot2d.tcl
 	|_ ./backup.tcl
 		|_ 
@@ -8252,8 +5270,6 @@
 		|_ PlotRaise
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./markeranalysisplot2d.tcl
 		|_ MarkerAnalysisPlot2dDialog
 		|_ MarkerAnalysisPlot2dCmd
@@ -8293,8 +5309,6 @@
 	|_ ./menu.tcl
 		|_ ThemeMenu
 		|_ EditMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./medit.tcl
 		|_ EditMainMenu
 		|_ PrefsDialogEditMenu
@@ -8306,8 +5320,6 @@
 		|_ PrefsDialog
 -> xmlrpc.tcl
 	|_ ./backup.tcl
-		|_ 
-	|_ ./tree.py
 		|_ 
 -> markeranalysishist.tcl
 	|_ ./backup.tcl
@@ -8323,8 +5335,6 @@
 		|_ PlotRaise
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./markeranalysishist.tcl
 		|_ MarkerAnalysisHistogramDialog
 		|_ MarkerAnalysisHistogramCmd
@@ -8337,8 +5347,6 @@
 		|_ PlotDialog
 -> starbase.tcl
 	|_ ./backup.tcl
-		|_ 
-	|_ ./tree.py
 		|_ 
 	|_ ./starbase.tcl
 		|_ Starbase
@@ -8356,8 +5364,6 @@
 	|_ ./util.tcl
 		|_ UpdateDS9
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ UpdateContourScale
@@ -8396,8 +5402,6 @@
 		|_ Pan
 	|_ ./error.tcl
 		|_ Info
-	|_ ./tree.py
-		|_ 
 	|_ ./info.tcl
 		|_ CreateInfoPanel
 		|_ LayoutFrameInfoBox
@@ -8452,8 +5456,6 @@
 		|_ EntryCut
 		|_ EntryCopy
 		|_ PRPrintDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./vot.tcl
@@ -8540,8 +5542,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ ContourDialog
@@ -8748,8 +5748,6 @@
 	|_ ./nrrd.tcl
 		|_ ProcessNRRDCmd
 		|_ ProcessSendNRRDCmd
-	|_ ./tree.py
-		|_ 
 	|_ ./shm.tcl
 		|_ ProcessShmCmd
 		|_ ProcessSendShmCmd
@@ -8930,8 +5928,6 @@
 		|_ WidthDashMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./prefs.tcl
@@ -9008,8 +6004,6 @@
 	|_ ./catcdssrchdialog.tcl
 		|_ CATCDSSrchDialog
 		|_ CATCDSSrch
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./contour.tcl
@@ -9132,8 +6126,6 @@
 	|_ ./dialog.tcl
 		|_ Toplevel
 		|_ EntryPaste
-	|_ ./tree.py
-		|_ 
 	|_ ./starbase.tcl
 		|_ Starbase
 	|_ ./table.tcl
@@ -9183,8 +6175,6 @@
 		|_ PlotList
 		|_ PlotRaise
 		|_ PlotStats
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./plotdata.tcl
@@ -9219,8 +6209,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./info.tcl
 		|_ EnterInfoBox
 		|_ LeaveInfoBox
@@ -9283,8 +6271,6 @@
 		|_ EditMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ ContourDialog
@@ -9349,8 +6335,6 @@
 		|_ ProcessMosaicImageCmd
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicimageiraf.tcl
 		|_ ProcessMosaicImageIRAFCmd
 	|_ ./mosaicimagewfpc2.tcl
@@ -9394,8 +6378,6 @@
 		|_ Rotate
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markeranalysishist.tcl
@@ -9432,8 +6414,6 @@
 		|_ CreateFrame
 		|_ DeleteCurrentFrame
 		|_ DisplayMode
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -9451,8 +6431,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -9479,8 +6457,6 @@
 		|_ Info
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./help.tcl
 		|_ HelpDef
 		|_ HelpRef
@@ -9528,8 +6504,6 @@
 	|_ ./dialog.tcl
 		|_ EntryDialog
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./plotbar.tcl
@@ -9628,8 +6602,6 @@
 -> smosaic.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./smosaicwcs.tcl
 		|_ ProcessSMosaicWCSCmd
 	|_ ./smosaic.tcl
@@ -9656,8 +6628,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./table.tcl
 		|_ TBLValidDB
 	|_ ./catmatch.tcl
@@ -9682,8 +6652,6 @@
 		|_ 
 	|_ ./panzoom.tcl
 		|_ Rotate
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./segment.tcl
@@ -9703,8 +6671,6 @@
 		|_ 
 	|_ ./markerbaseannulus.tcl
 		|_ MarkerBaseAnnulusGenerateBox
-	|_ ./tree.py
-		|_ 
 	|_ ./annulus.tcl
 		|_ AnnulusDialog
 		|_ AnnulusGenerate
@@ -9741,8 +6707,6 @@
 		|_ PlotStats
 		|_ PlotUpdateCanvas
 		|_ PlotUpdateCanvasElement
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbar.tcl
 		|_ PlotBar
 		|_ PlotPrefsBar
@@ -9816,8 +6780,6 @@
 		|_ SetCursor
 		|_ CursorTimer
 		|_ ToggleBindEvents
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ FinishLoad
 	|_ ./info.tcl
@@ -9850,8 +6812,6 @@
 -> smosaiciraf.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 	|_ ./smosaiciraf.tcl
@@ -9866,8 +6826,6 @@
 		|_ PandaGenerate
 	|_ ./markerbaseannulus.tcl
 		|_ MarkerBaseAnnulusGenerateEllipse
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbasepanda.tcl
 		|_ MarkerBasePandaGenerateAngles
 	|_ ./annulus.tcl
@@ -9891,8 +6849,6 @@
 		|_ CoordMenu
 		|_ CoordMenuButton
 		|_ CoordMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseDialog
 		|_ MarkerBaseClose
@@ -9912,8 +6868,6 @@
 	|_ ./menu.tcl
 		|_ ThemeMenu
 		|_ EditMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./ar.tcl
 		|_ ARInit
 		|_ ARApply
@@ -9950,8 +6904,6 @@
 		|_ RealizeDS9
 		|_ MacOSPhotoFix
 		|_ DarwinPhotoRestore
-	|_ ./tree.py
-		|_ 
 	|_ ./saveimage.tcl
 		|_ SaveImageDef
 		|_ SaveImageDialog
@@ -9984,8 +6936,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseDialog
 		|_ MarkerBaseClose
@@ -10004,8 +6954,6 @@
 	|_ ./cat.tcl
 		|_ CATLoad
 		|_ CATLoadFn
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./vot.tcl
@@ -10022,8 +6970,6 @@
 		|_ 
 	|_ ./util.tcl
 		|_ RealizeDS9
-	|_ ./tree.py
-		|_ 
 	|_ ./win32.tcl
 		|_ Win32Print
 		|_ Win32PageSetup
@@ -10043,8 +6989,6 @@
 		|_ ColorMenu
 		|_ ColorMenuButton
 		|_ FontMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./mcolor.tcl
 		|_ ColorMainMenu
 		|_ CreateExColorMenu
@@ -10087,8 +7031,6 @@
 		|_ PlotChangeMode
 		|_ PlotUpdateCanvas
 		|_ PlotUpdateGraph
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./plotdata.tcl
@@ -10139,8 +7081,6 @@
 		|_ ProxyHTTP
 	|_ ./xpa.tcl
 		|_ XPAMethod
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./import.tcl
@@ -10233,8 +7173,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseDialog
 		|_ MarkerBaseClose
@@ -10274,8 +7212,6 @@
 		|_ PlotRaise
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./contour.tcl
 		|_ UpdateContour
 		|_ ContourDialog
@@ -10374,8 +7310,6 @@
 		|_ EntryPaste
 		|_ SimpleTextDialog
 		|_ SimpleTextDestroy
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./catsym.tcl
@@ -10461,8 +7395,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./prefs.tcl
 		|_ SavePrefs
 	|_ ./help.tcl
@@ -10525,8 +7457,6 @@
 	|_ ./dialog.tcl
 		|_ Toplevel
 		|_ EntryPaste
-	|_ ./tree.py
-		|_ 
 	|_ ./sia.tcl
 		|_ SIALoad
 		|_ SIAProcess
@@ -10585,8 +7515,6 @@
 		|_ CATLoad
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./catsimbad.tcl
@@ -10605,8 +7533,6 @@
 		|_ ColorMenuButton
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./grid.tcl
 		|_ GridUpdateCurrent
 		|_ GridUpdate
@@ -10651,8 +7577,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./info.tcl
 		|_ LayoutInfoPanel
 		|_ LayoutInfoPanelHorz
@@ -10709,8 +7633,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./table.tcl
 		|_ TBLValidDB
 		|_ TBLStatusRows
@@ -10727,8 +7649,6 @@
 		|_ LineDialog
 		|_ LineApply
 		|_ LineEditCB
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markerbaseline.tcl
@@ -10762,8 +7682,6 @@
 		|_ ProcessSendCmdTxt
 		|_ ProcessSend
 		|_ RealizeDS9
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicimageiraf.tcl
 		|_ ProcessMosaicImageIRAFCmd
 	|_ ./mosaicimagewfpc2.tcl
@@ -10798,8 +7716,6 @@
 		|_ ProcessRGBCubeCmd
 -> map_of_menufiles.py
 	|_ ./backup.tcl
-		|_ 
-	|_ ./tree.py
 		|_ 
 -> plotdialog.tcl
 	|_ ./backup.tcl
@@ -10858,8 +7774,6 @@
 		|_ Toplevel
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbar.tcl
 		|_ PlotBar
 		|_ PlotBarMenus
@@ -10907,8 +7821,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./analysis.tcl
@@ -10942,8 +7854,6 @@
 		|_ 
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./template.tcl
@@ -10962,8 +7872,6 @@
 -> tsv.tcl
 	|_ ./backup.tcl
 		|_ 
-	|_ ./tree.py
-		|_ 
 	|_ ./tsv.tcl
 		|_ TSVRead
 		|_ TSVWrite
@@ -10980,8 +7888,6 @@
 		|_ ThemeMenu
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./ar.tcl
@@ -11010,8 +7916,6 @@
 	|_ ./menu.tcl
 		|_ ThemeMenu
 		|_ ConfigureButtons
-	|_ ./tree.py
-		|_ 
 	|_ ./scale.tcl
 		|_ ScaleDef
 		|_ ChangeDATASEC
@@ -11047,8 +7951,6 @@
 		|_ ProxyHTTP
 	|_ ./dialog.tcl
 		|_ EntryDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./load.tcl
@@ -11080,8 +7982,6 @@
 		|_ PlotRaise
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./plotdata.tcl
 		|_ PlotExternal
 	|_ ./plotdialog.tcl
@@ -11104,8 +8004,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./array.tcl
 		|_ ArrayCmdLoad
 	|_ ./import.tcl
@@ -11136,8 +8034,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./mosaicwcs.tcl
 		|_ SaveMosaicWCSFile
 	|_ ./mosaicimagewcs.tcl
@@ -11184,8 +8080,6 @@
 		|_ DialogCreate
 		|_ DialogWait
 		|_ EntryDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./info.tcl
@@ -11285,8 +8179,6 @@
 		|_ CoordMenuReset
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./block.tcl
 		|_ Block
 	|_ ./colorbar.tcl
@@ -11325,8 +8217,6 @@
 	|_ ./dialog.tcl
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./save.tcl
@@ -11342,8 +8232,6 @@
 		|_ 
 	|_ ./markerbaseannulus.tcl
 		|_ MarkerBaseAnnulusGenerateEllipse
-	|_ ./tree.py
-		|_ 
 	|_ ./annulus.tcl
 		|_ AnnulusDialog
 		|_ AnnulusGenerate
@@ -11373,8 +8261,6 @@
 		|_ DistMenu
 		|_ DistMenuButton
 		|_ DistMenuEnable
-	|_ ./tree.py
-		|_ 
 	|_ ./annulus.tcl
 		|_ AnnulusDialog
 	|_ ./markerbase.tcl
@@ -11407,8 +8293,6 @@
 		|_ HV
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./hvsup.tcl
 		|_ HVReset
 		|_ HVLoadURL
@@ -11444,8 +8328,6 @@
 		|_ PlotList
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./plotdata.tcl
 		|_ PlotAddDataSet
 	|_ ./plotdialog.tcl
@@ -11565,8 +8447,6 @@
 		|_ SimpleTextDef
 	|_ ./examine.tcl
 		|_ ExamineDef
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./contour.tcl
@@ -11685,8 +8565,6 @@
 		|_ Toplevel
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 		|_ OpenDialog
@@ -11718,8 +8596,6 @@
 		|_ 
 	|_ ./error.tcl
 		|_ Error
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 	|_ ./cube.tcl
@@ -11766,8 +8642,6 @@
 		|_ CATUpdateWCS
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./info.tcl
@@ -11829,8 +8703,6 @@
 		|_ ThemeBold
 	|_ ./dialog.tcl
 		|_ Toplevel
-	|_ ./tree.py
-		|_ 
 	|_ ./save.tcl
 		|_ Save
 		|_ SaveDialog
@@ -11867,8 +8739,6 @@
 		|_ ProcessSend
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./ar.tcl
@@ -11927,8 +8797,6 @@
 		|_ EntryCut
 		|_ EntryCopy
 		|_ EntryPaste
-	|_ ./tree.py
-		|_ 
 	|_ ./plotbar.tcl
 		|_ PlotGUIBar
 	|_ ./plotdata.tcl
@@ -11978,8 +8846,6 @@
 		|_ Toplevel
 		|_ DialogCreate
 		|_ DialogWait
-	|_ ./tree.py
-		|_ 
 	|_ ./cube.tcl
 		|_ UpdateCube
 		|_ CubeDialog
@@ -12024,8 +8890,6 @@
 		|_ PlotList
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./plotdata.tcl
 		|_ PlotAddDataSet
 	|_ ./plotdialog.tcl
@@ -12097,8 +8961,6 @@
 		|_ Toplevel
 	|_ ./examine.tcl
 		|_ PrefsDialogExamine
-	|_ ./tree.py
-		|_ 
 	|_ ./mbin.tcl
 		|_ PrefsDialogBin
 	|_ ./contour.tcl
@@ -12147,8 +9009,6 @@
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
 		|_ SimpleTextDestroy
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./markeranalysisstats.tcl
@@ -12160,8 +9020,6 @@
 		|_ MarkerAnalysisStatsDeleteCB
 -> convert.tcl
 	|_ ./backup.tcl
-		|_ 
-	|_ ./tree.py
 		|_ 
 -> catcds.tcl
 	|_ ./backup.tcl
@@ -12175,8 +9033,6 @@
 		|_ CATLoad
 	|_ ./dialog.tcl
 		|_ SimpleTextDialog
-	|_ ./tree.py
-		|_ 
 	|_ ./text.tcl
 		|_ TextDialog
 	|_ ./catcds.tcl
@@ -12203,8 +9059,6 @@
 		|_ PlotRaise
 		|_ PlotStats
 		|_ PlotTitle
-	|_ ./tree.py
-		|_ 
 	|_ ./plotdata.tcl
 		|_ PlotExternal
 	|_ ./plotdialog.tcl
@@ -12231,8 +9085,6 @@
 		|_ ThemeTreeBackground
 		|_ ColorMenu
 		|_ ColorMenuButton
-	|_ ./tree.py
-		|_ 
 	|_ ./prefsdialog.tcl
 		|_ PrefsDialog
 	|_ ./magnifier.tcl
@@ -12253,8 +9105,6 @@
 		|_ 
 	|_ ./print.tcl
 		|_ EPS
-	|_ ./tree.py
-		|_ 
 	|_ ./open.tcl
 		|_ Open
 	|_ ./save.tcl
@@ -12278,8 +9128,6 @@
 		|_ Error
 	|_ ./util.tcl
 		|_ ProcessSend
-	|_ ./tree.py
-		|_ 
 	|_ ./load.tcl
 		|_ ProcessLoad
 		|_ FinishLoad
@@ -12302,8 +9150,6 @@
 		|_ 
 	|_ ./menu.tcl
 		|_ ThemeMenu
-	|_ ./tree.py
-		|_ 
 	|_ ./markerbase.tcl
 		|_ MarkerBaseCoordCB
 	|_ ./markerbasecenter.tcl
