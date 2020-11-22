@@ -25,7 +25,7 @@ def get_function_dict(exp, start_path='.'):
                             if funcname not in funclist:  # if not already, add it to the list
                                 funclist.append(funcname)
                 dico[f] = funclist
-    return dico
+    return dict(sorted(dico.items(), key=lambda item: item[0]))
 
 
 def get_calls_dict(func_dict, start_path='.'):
@@ -42,7 +42,7 @@ def get_calls_dict(func_dict, start_path='.'):
                             if content.find(func) != -1 and content.find('proc ' + func) == -1:
                                 calls.append(func)
                     calls_dict[fp] = calls
-    return calls_dict
+    return dict(sorted(calls_dict.items(), key=lambda item: item[0]))
 
 
 def pretty_print(dict, write_name):
@@ -59,8 +59,8 @@ def pretty_print(dict, write_name):
 if __name__ == "__main__":
     EXP = r"\bproc\b\s[^${]\S+"  # Regex expression for detecting "proc FuncName"
     dict_of_func = get_function_dict(EXP)
-    pretty_print(dict_of_func, "structure_definitions.txt")
-    pretty_print(get_calls_dict(dict_of_func), "structure_calls.txt")
+    pretty_print(dict_of_func, "structure_definitions_initial.txt")
+    pretty_print(get_calls_dict(dict_of_func), "structure_calls_initial.txt")
 
 # The initial structure of the repo has been created
 # Don't create a new one on the master branch
