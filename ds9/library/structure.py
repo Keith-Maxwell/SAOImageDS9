@@ -61,3 +61,7 @@ if __name__ == "__main__":
     dict_of_func = get_function_dict(EXP)
     pretty_print(dict_of_func, "structure_definitions.txt")
     pretty_print(get_calls_dict(dict_of_func), "structure_calls.txt")
+
+# The initial structure of the repo has been created
+# Don't create a new one on the master branch
+# New structure files must be created on the dev branch
