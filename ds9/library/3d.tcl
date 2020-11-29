@@ -207,19 +207,6 @@ proc Update3DDialog {} {
     }
 }
 
-proc 3DBackup {ch which} {
-    # zoom needs to be set before 3d view
-    puts $ch "$which zoom to [$which get zoom]"
-    puts $ch "$which 3d view [$which get 3d view]"
-    puts $ch "$which 3d scale [$which get 3d scale]"
-    puts $ch "$which 3d method [$which get 3d method]"
-    puts $ch "$which 3d highlite [$which get 3d highlite]"
-    puts $ch "$which 3d border [$which get 3d border]"
-    puts $ch "$which 3d background [$which get 3d background]"
-    # this must come after panto and blockto
-    puts $ch "$which 3d view point [$which get 3d view point]"
-
-}
 
 proc 3DViewPoint {} {
     global threed

@@ -32,8 +32,6 @@ proc FileMainMenu {} {
     $ds9(mb).file add command -label "[msgcat::mc {Create Movie}]..." \
 	-command MovieDialog
     $ds9(mb).file add separator
-    # $ds9(mb).file add command -label "[msgcat::mc {Backup}]..." \
-	-command BackupDialog
     # $ds9(mb).file add command -label "[msgcat::mc {Restore}]..." \
 	-command RestoreDialog
     # $ds9(mb).file add separator
@@ -333,7 +331,6 @@ proc ButtonsFileDef {} {
 	file,saveimage,png 0
 
 	file,movie 0
-	file,backup 0
 	file,restore 0
 	file,header 1
 	file,xpa,info 0
@@ -501,8 +498,6 @@ proc CreateButtonsFile {} {
     ButtonButton $ds9(buttons).file.movie \
 	[string tolower [msgcat::mc {Movie}]] MovieDialog
 
-    # ButtonButton $ds9(buttons).file.backup \
-	[string tolower [msgcat::mc {Backup}]] BackupDialog
     # ButtonButton $ds9(buttons).file.restore \
 	[string tolower [msgcat::mc {Restore}]] RestoreDialog
 
@@ -587,7 +582,6 @@ proc CreateButtonsFile {} {
         $ds9(buttons).file.saveimagepng pbuttons(file,saveimage,png)
 
         $ds9(buttons).file.movie pbuttons(file,movie)
-    	$ds9(buttons).file.backup pbuttons(file,backup)
         $ds9(buttons).file.restore pbuttons(file,restore)
         $ds9(buttons).file.header pbuttons(file,header)
         $ds9(buttons).file.console pbuttons(file,console)
@@ -624,8 +618,6 @@ proc PrefsDialogButtonbarFile {f} {
     $m add checkbutton -label "[msgcat::mc {Create Movie}]..." \
 	-variable pbuttons(file,movie) -command {UpdateButtons buttons(file)}
     $m add separator
-    #$m add checkbutton -label "[msgcat::mc {Backup}]..." \
-	-variable pbuttons(file,backup) -command {UpdateButtons buttons(file)}
     #$m add checkbutton -label "[msgcat::mc {Restore}]..." \
 	-variable pbuttons(file,restore) -command {UpdateButtons buttons(file)}
     #$m add separator

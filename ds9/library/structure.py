@@ -57,10 +57,11 @@ def pretty_print(dict, write_name):
 
 
 if __name__ == "__main__":
-    EXP = r"\bproc\b\s[^${]\S+"  # Regex expression for detecting "proc FuncName"
+    # Regex expression for detecting "proc FuncName"
+    EXP = r"\bproc\b\s[^${]\S+"
     dict_of_func = get_function_dict(EXP)
-    pretty_print(dict_of_func, "structure_definitions_initial.txt")
-    pretty_print(get_calls_dict(dict_of_func), "structure_calls_initial.txt")
+    pretty_print(dict_of_func, "structure_definitions.txt")
+    pretty_print(get_calls_dict(dict_of_func), "structure_calls.txt")
 
 # The initial structure of the repo has been created
 # Don't create a new one on the master branch

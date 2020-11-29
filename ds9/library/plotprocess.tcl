@@ -347,23 +347,6 @@ proc PlotCmdSave {fn} {
     }
 }
 
-proc PlotCmdBackup {fn} {
-    global cvarname
-    
-    if {$fn != {}} {
-	PlotBackup $cvarname $fn
-	FileLast apconfigfbox $fn
-    }
-}
-
-proc PlotCmdRestore {fn} {
-    global cvarname
-    
-    if {$fn != {}} {
-	PlotRestore $cvarname $fn
-	FileLast apconfigfbox $fn
-    }
-}
 
 proc PlotCmdUpdateElement {which value} {
     global cvarname

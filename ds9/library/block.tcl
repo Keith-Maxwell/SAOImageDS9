@@ -253,30 +253,6 @@ proc LockBlock {which} {
     }
 }
 
-proc BlockBackup {ch which} {
-    switch [$which get type] {
-	base -
-	3d {BlockBackupBase $ch $which}
-	rgb {BlockBackupRGB $ch $which}
-    }
-}
-
-proc BlockBackupBase {ch which} {
-    set factor [$which get block factor]
-    puts $ch "$which block to $factor"
-}
-
-proc BlockBackupRGB {ch which} {
-    set sav [$which get rgb channel]
-    foreach cc {red green blue} {
-	$which rgb channel $cc
-	puts $ch "$which rgb channel $cc"
-	BlockBackupBase $ch $which
-    }
-    $which rgb channel $sav
-    puts $ch "$which rgb channel $sav"
-}
-
 proc ProcessBlockCmd {varname iname} {
     upvar $varname var
     upvar $iname i

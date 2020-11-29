@@ -687,41 +687,6 @@ proc LockBin {which} {
     }
 }
 
-proc BinBackup {ch which} {
-    switch [$which get type] {
-	base -
-	3d {BinBackupBase $ch $which}
-	rgb {BinBackupRGB $ch $which}
-    }
-}
-
-proc BinBackupBase {ch which} {
-    puts $ch "$which bin factor to [$which get bin factor]"
-    puts $ch "$which bin depth [$which get bin depth]"
-    puts $ch "$which bin filter \{\"[$which get bin filter]\"\}"
-    puts $ch "$which bin buffer size [$which get bin buffer size]"
-    set pos [$which get bin cursor]
-    if {$pos != {}} {
-	puts $ch "$which bin about $pos"
-    }
-    puts $ch "$which bin function [$which get bin function]"
-    set cols [$which get bin cols]
-    if {$cols != {}} {
-	puts $ch "$which bin cols \{\"[lindex $cols 0]\"\} \{\"[lindex $cols 1]\"\} \{\"[lindex $cols 2]\"\}  "
-    }
-}
-
-proc BinBackupRGB {ch which} {
-    set sav [$which get rgb channel]
-    foreach cc {red green blue} {
-	$which rgb channel $cc
-	puts $ch "$which rgb channel $cc"
-	BinBackupBase $ch $which
-    }
-    $which rgb channel $sav
-    puts $ch "$which rgb channel $sav"
-}
-
 # Process Cmds
 
 proc ProcessBinCmd {varname iname} {

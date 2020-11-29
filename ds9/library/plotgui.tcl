@@ -44,11 +44,6 @@ proc PlotGUI {varname} {
     $mb.file add command -label [msgcat::mc {List Data}] \
        -command "set ${varname}(list) 1; PlotList $varname"
     $mb.file add separator
-    $mb.file add command -label "[msgcat::mc {Backup}]..." \
-	-command [list PlotBackupDialog $varname]
-    $mb.file add command -label "[msgcat::mc {Restore}]..." \
-	-command [list PlotRestoreDialog $varname]
-    $mb.file add separator
     $mb.file add command \
 	-label "[msgcat::mc {Page Setup}]..." \
 	-command PSPageSetup -accelerator "${ds9(shiftctrl)}P"
