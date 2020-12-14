@@ -1,0 +1,2 @@
+libast_la-globals.lo: globals.c /usr/include/stdc-predef.h
+/usr/include/stdc-predef.h:

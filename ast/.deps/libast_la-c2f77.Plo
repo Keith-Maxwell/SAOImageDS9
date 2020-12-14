@@ -1,0 +1,6 @@
+libast_la-c2f77.lo: c2f77.c /usr/include/stdc-predef.h error.h config.h \
+ c2f77.h
+/usr/include/stdc-predef.h:
+error.h:
+config.h:
+c2f77.h:
