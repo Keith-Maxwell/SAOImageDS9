@@ -37,7 +37,6 @@ proc FrameMainMenu {} {
     $ds9(mb).frame add radiobutton -label [msgcat::mc {Blink Frames}] \
 	-variable current(display) -value blink -command DisplayMode
     $ds9(mb).frame add separator
-    $ds9(mb).frame add separator
     $ds9(mb).frame add cascade -label [msgcat::mc {Goto Frame}] \
 	-menu $ds9(mb).frame.goto
     $ds9(mb).frame add cascade -label [msgcat::mc {Show/Hide Frames}] \
