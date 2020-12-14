@@ -50,10 +50,6 @@ proc ViewMainMenu {} {
 	-variable view(info,image) -command UpdateView
     $ds9(mb).view add checkbutton -label [msgcat::mc {Physical}] \
 	-variable view(info,physical) -command UpdateView
-    $ds9(mb).view add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable view(info,amplifier) -command UpdateView
-    $ds9(mb).view add checkbutton -label [msgcat::mc {Detector}] \
-	-variable view(info,detector) -command UpdateView
     $ds9(mb).view add checkbutton -label [msgcat::mc {Frame Information}] \
 	-variable view(info,frame) -command UpdateView
 
@@ -116,10 +112,6 @@ proc PrefsDialogViewMenu {w} {
 	-variable pview(info,image)
     $m add checkbutton -label [msgcat::mc {Physical}] \
 	-variable pview(info,physical)
-    $m add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pview(info,amplifier)
-    $m add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pview(info,detector)
     $m add checkbutton -label  [msgcat::mc {Frame Information}]\
 	-variable pview(info,frame)
 
@@ -286,12 +278,6 @@ proc CreateButtonsView {} {
     CheckButton $ds9(buttons).view.physical \
 	[string tolower [msgcat::mc {Physical}]] \
 	view(info,physical) UpdateView
-    CheckButton $ds9(buttons).view.amplifier \
-	[string tolower [msgcat::mc {Amplifier}]] \
-	view(info,amplifier) UpdateView
-    CheckButton $ds9(buttons).view.detector \
-	[string tolower [msgcat::mc {Detector}]] \
-	view(info,detector) UpdateView
     CheckButton $ds9(buttons).view.frame \
 	[string tolower [msgcat::mc {Frame}]] \
 	view(info,frame) UpdateView
@@ -314,8 +300,6 @@ proc CreateButtonsView {} {
         $ds9(buttons).view.wcs pbuttons(view,wcs)
         $ds9(buttons).view.image pbuttons(view,image)
         $ds9(buttons).view.physical pbuttons(view,physical)
-        $ds9(buttons).view.amplifier pbuttons(view,amplifier)
-        $ds9(buttons).view.detector pbuttons(view,detector)
         $ds9(buttons).view.frame pbuttons(view,frame)
     "
 }
@@ -368,10 +352,6 @@ proc PrefsDialogButtonbarView {f} {
 	-variable pbuttons(view,image) -command {UpdateButtons buttons(view)}
     $m add checkbutton -label [msgcat::mc {Physical}] \
 	-variable pbuttons(view,physical) -command {UpdateButtons buttons(view)}
-    $m add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(view,amplifier) -command {UpdateButtons buttons(view)}
-    $m add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(view,detector) -command {UpdateButtons buttons(view)}
     $m add checkbutton -label [msgcat::mc {Frame Information}] \
 	-variable pbuttons(view,frame) -command {UpdateButtons buttons(view)}
 }
