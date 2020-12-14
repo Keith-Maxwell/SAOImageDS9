@@ -32,19 +32,10 @@ proc FileMainMenu {} {
     $ds9(mb).file add command -label "[msgcat::mc {Create Movie}]..." \
 	-command MovieDialog
     $ds9(mb).file add separator
-    # $ds9(mb).file add command -label "[msgcat::mc {Restore}]..." \
-	-command RestoreDialog
-    # $ds9(mb).file add separator
+
     $ds9(mb).file add command -label "[msgcat::mc {Display Header}]..." \
 	-command DisplayHeaderMenu
-    # $ds9(mb).file add cascade -label [msgcat::mc {Preserve During Load}] \
-	-menu $ds9(mb).file.preserve
-    # $ds9(mb).file add separator
-    # $ds9(mb).file add cascade -label [msgcat::mc {XPA}] \
-	-menu $ds9(mb).file.xpa
-    # $ds9(mb).file add cascade -label [msgcat::mc {SAMP}] \
-	-menu $ds9(mb).file.samp
-    # $ds9(mb).file add separator
+
     $ds9(mb).file add command -label "[msgcat::mc {Open TCL Console}]..." \
 	-command OpenConsole
     $ds9(mb).file add command -label "[msgcat::mc {Source TCL}]..." \
@@ -199,43 +190,6 @@ proc FileMainMenu {} {
     $ds9(mb).file.saveimage add command -label {PNG...} \
 	-command [list SaveImageDialog png]
 
-    # File Preserve Menu
-    # ThemeMenu $ds9(mb).file.preserve
-    # $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Pan}] \
-	-variable panzoom(preserve) -command PreservePan
-    # $ds9(mb).file.preserve add checkbutton -label [msgcat::mc {Region}] \
-	-variable marker(preserve) -command MarkerPreserve
-
-    # ThemeMenu $ds9(mb).file.samp
-    # $ds9(mb).file.samp add command -label [msgcat::mc {Connect}] \
-	-command SAMPConnect
-    # $ds9(mb).file.samp add command -label [msgcat::mc {Disconnect}] \
-	-command SAMPDisconnect
-    # $ds9(mb).file.samp add separator
-    # $ds9(mb).file.samp add cascade -label [msgcat::mc {Image}] \
-	-menu $ds9(mb).file.samp.image
-    # $ds9(mb).file.samp add cascade -label [msgcat::mc {Table}] \
-	-menu $ds9(mb).file.samp.table
-
-    # ThemeMenu $ds9(mb).file.samp.image
-    # $ds9(mb).file.samp.image add command -label [msgcat::mc {Broadcast}] \
-	-command "SAMPSendImageLoadFits {}"
-    # $ds9(mb).file.samp.image add separator
-
-    # ThemeMenu $ds9(mb).file.samp.table
-    # $ds9(mb).file.samp.table add command -label [msgcat::mc {Broadcast}] \
-	-command "SAMPSendTableLoadFits {}"
-    # $ds9(mb).file.samp.table add separator
-
-    # ThemeMenu $ds9(mb).file.xpa
-    # $ds9(mb).file.xpa add command -label "[msgcat::mc {Information}]..." \
-	-command XPAInfo
-    # $ds9(mb).file.xpa add separator
-    # $ds9(mb).file.xpa add command -label [msgcat::mc {Connect}] \
-	-command XPAConnect
-    # $ds9(mb).file.xpa add command -label [msgcat::mc {Disconnect}] \
-	-command XPADisconnect
-
     # Bindings
     bind $ds9(top) <<Open>> [list OpenDialog fits]
     bind $ds9(top) <<Save>> [list SaveDialog fits]
@@ -248,30 +202,7 @@ proc FileMainMenu {} {
     }
 }
 
-proc PrefsDialogFileMenu {w} {
-    set f [ttk::labelframe $w.mfile -text [msgcat::mc {File}]]
 
-    ttk::menubutton $f.menu -text [msgcat::mc {Menu}] -menu $f.menu.menu
-    PrefsDialogButtonbarFile $f.buttonbar
-
-    grid $f.menu $f.buttonbar -padx 2 -pady 2
-
-    set m $f.menu.menu
-    ThemeMenu $m
-    $m add cascade -label [msgcat::mc {Preserve During Load}] \
-	-menu $m.preserve
-
-    global pscale
-    global ppanzoom
-    global pmarker
-    ThemeMenu $m.preserve
-    $m.preserve add checkbutton -label [msgcat::mc {Pan}] \
-	-variable ppanzoom(preserve)
-    $m.preserve add checkbutton -label [msgcat::mc {Region}] \
-	-variable pmarker(preserve)
-
-    pack $f -side top -fill both -expand true
-}
 
 # Buttons
 
@@ -498,18 +429,8 @@ proc CreateButtonsFile {} {
     ButtonButton $ds9(buttons).file.movie \
 	[string tolower [msgcat::mc {Movie}]] MovieDialog
 
-    # ButtonButton $ds9(buttons).file.restore \
-	[string tolower [msgcat::mc {Restore}]] RestoreDialog
-
     ButtonButton $ds9(buttons).file.header \
 	[string tolower [msgcat::mc {Header}]] DisplayHeaderMenu
-
-    # ButtonButton $ds9(buttons).file.xpainfo \
-	[string tolower {XPA Info}] XPAInfo
-    # ButtonButton $ds9(buttons).file.sampimage \
-	[string tolower [msgcat::mc {SAMP Image}]] "SAMPSendImageLoadFits {}"
-    # ButtonButton $ds9(buttons).file.samptable \
-	[string tolower [msgcat::mc {SAMP Table}]] "SAMPSendTableLoadFits {}"
 
     ButtonButton $ds9(buttons).file.console \
 	[string tolower [msgcat::mc {Console}]] OpenConsole
@@ -618,14 +539,11 @@ proc PrefsDialogButtonbarFile {f} {
     $m add checkbutton -label "[msgcat::mc {Create Movie}]..." \
 	-variable pbuttons(file,movie) -command {UpdateButtons buttons(file)}
     $m add separator
-    #$m add checkbutton -label "[msgcat::mc {Restore}]..." \
-	-variable pbuttons(file,restore) -command {UpdateButtons buttons(file)}
-    #$m add separator
+
     $m add checkbutton -label "[msgcat::mc {Display Header}]..." \
 	-variable pbuttons(file,header) -command {UpdateButtons buttons(file)}
     $m add separator
-    #$m add cascade -label [msgcat::mc {XPA}] -menu $m.xpa
-    #$m add cascade -label [msgcat::mc {SAMP}] -menu $m.samp
+
     $m add separator
     $m add checkbutton -label "[msgcat::mc {Open TCL Console}]..." \
 	-variable pbuttons(file,console) -command {UpdateButtons buttons(file)}
@@ -841,18 +759,6 @@ proc PrefsDialogButtonbarFile {f} {
 	-variable pbuttons(file,saveimage,png) \
 	-command {UpdateButtons buttons(file)}
 
-    #ThemeMenu $m.xpa
-    #$m.xpa add checkbutton -label "[msgcat::mc {Information}]..." \
-	-variable pbuttons(file,xpa,info) \
-	-command {UpdateButtons buttons(file)}
-
-    #ThemeMenu $m.samp
-    #$m.samp add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(file,samp,image) \
-	-command {UpdateButtons buttons(file)}
-    #$m.samp add checkbutton -label [msgcat::mc {Table}] \
-	-variable pbuttons(file,samp,table) \
-	-command {UpdateButtons buttons(file)}
 }
 
 # Support
@@ -870,8 +776,6 @@ proc UpdateFileMenu {} {
     UpdateFileMenuSaveImage
     UpdateFileMenuMovie
     UpdateFileMenuHeader
-    #UpdateFileMenuXPA
-    #UpdateFileMenuSAMP
 }
 
 proc UpdateFileMenuOpen {} {
@@ -1142,90 +1046,3 @@ proc UpdateFileMenuHeader {} {
     }
 }
 
-
-proc UpdateFileMenuXPA {} {
-    global ds9
-    global current
-    global xpa
-
-    set mm $ds9(mb).file
-    set bb $ds9(buttons).file
-
-    if {[info exists xpa]} {
-	$mm.xpa entryconfig "[msgcat::mc {Information}]..." -state normal
-	$mm.xpa entryconfig [msgcat::mc {Disconnect}] -state normal
-    } else {
-	$mm.xpa entryconfig "[msgcat::mc {Information}]..." -state disabled
-	$mm.xpa entryconfig [msgcat::mc {Disconnect}] -state disabled
-    }
-}
-
-proc UpdateFileMenuSAMP {} {
-    global pds9
-    global ds9
-    global current
-    global samp
-
-    set mm $ds9(mb).file
-    set bb $ds9(buttons).file
-
-    if {!$pds9(samp)} {
-	$mm.samp entryconfig [msgcat::mc {Connect}] -state disabled
-	$mm.samp entryconfig [msgcat::mc {Disconnect}] -state disabled
-
-	$mm.samp entryconfig [msgcat::mc {Image}] -state disabled
-	$mm.samp entryconfig [msgcat::mc {Table}] -state disabled
-	$bb.sampimage configure -state disabled
-	$bb.samptable configure -state disabled
-	return
-    }
-
-    if {[info exists samp]} {
-	$mm.samp entryconfig [msgcat::mc {Connect}] -state disabled
-	$mm.samp entryconfig [msgcat::mc {Disconnect}] -state normal
-    } else {
-	$mm.samp entryconfig [msgcat::mc {Connect}] -state normal
-	$mm.samp entryconfig [msgcat::mc {Disconnect}] -state disabled
-    }
-
-    $mm.samp entryconfig [msgcat::mc {Image}] -state disabled
-    $mm.samp entryconfig [msgcat::mc {Table}] -state disabled
-    $bb.sampimage configure -state disabled
-    $bb.samptable configure -state disabled
-
-    if {$current(frame) == {}} {
-	return
-    }
-
-    if {[info exists samp]} {
-	if {[$current(frame) has fits]} {
-	    set ss [expr $ds9(menu,start)+2]
-
-	    $mm.samp entryconfig [msgcat::mc {Image}] -state normal
-	    if {[$mm.samp.image index end] >= $ss} {
-		$mm.samp.image delete $ss end
-	    }
-	    foreach args $samp(apps,image) {
-		foreach {id name} $args {
-		    $mm.samp.image add command -label $name \
-			-command "SAMPSendImageLoadFits $id"
-		}
-	    }
-	    $bb.sampimage configure -state normal
-	}
-
-	if {[$current(frame) has fits bin]} {
-	    $mm.samp entryconfig [msgcat::mc {Table}] -state normal
-	    if {[$mm.samp.table index end] >= $ss} {
-		$mm.samp.table delete $ss end
-	    }
-	    foreach args $samp(apps,table) {
-		foreach {id name} $args {
-		    $mm.samp.table add command -label $name \
-			-command "SAMPSendTableLoadFits $id"
-		}
-	    }
-	    $bb.samptable configure -state normal
-	}
-    }
-}

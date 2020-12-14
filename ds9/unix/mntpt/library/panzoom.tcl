@@ -179,14 +179,6 @@ proc PanRelease {which x y} {
     UpdatePan $which
 }
 
-proc PreservePan {} {
-    global current
-    global panzoom
-
-    if {$current(frame) != {}} {
-	$current(frame) pan preserve $panzoom(preserve)
-    }
-}
 
 proc UpdatePan {which} {
     LockFrame $which

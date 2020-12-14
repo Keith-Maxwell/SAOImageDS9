@@ -31,22 +31,11 @@ proc EditMainMenu {} {
 	-variable current(mode) -value crosshair -command ChangeMode
     $ds9(mb).edit add radiobutton -label [msgcat::mc {Colorbar}] \
 	-variable current(mode) -value colorbar -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Pan}] \
-	-variable current(mode) -value pan -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Zoom}] \
-	-variable current(mode) -value zoom -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Rotate}] \
-	-variable current(mode) -value rotate -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Crop}] \
-	-variable current(mode) -value crop -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Catalog}] \
-	-variable current(mode) -value catalog -command ChangeMode
+
     $ds9(mb).edit add radiobutton -label [msgcat::mc {Footprint}] \
 	-variable current(mode) -value footprint -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {Examine}] \
-	-variable current(mode) -value examine -command ChangeMode
-    $ds9(mb).edit add radiobutton -label [msgcat::mc {3D}] \
-	-variable current(mode) -value 3d -command ChangeMode
+
+
 
     switch $ds9(wm) {
 	x11 -
@@ -95,22 +84,10 @@ proc PrefsDialogEditMenu {w} {
 	-variable pcurrent(mode) -value crosshair
     $m add radiobutton -label [msgcat::mc {Colorbar}] \
 	-variable pcurrent(mode) -value colorbar
-    $m add radiobutton -label [msgcat::mc {Pan}] \
-	-variable pcurrent(mode) -value pan
-    $m add radiobutton -label [msgcat::mc {Zoom}] \
-	-variable pcurrent(mode) -value zoom
-    $m add radiobutton -label [msgcat::mc {Rotate}] \
-	-variable pcurrent(mode) -value rotate
-    $m add radiobutton -label [msgcat::mc {Crop}] \
-	-variable pcurrent(mode) -value crop
-    $m add radiobutton -label [msgcat::mc {Catalog}] \
-	-variable pcurrent(mode) -value catalog
+
     $m add radiobutton -label [msgcat::mc {Footprint}] \
 	-variable pcurrent(mode) -value footprint
-    $m add radiobutton -label [msgcat::mc {Examine}] \
-	-variable pcurrent(mode) -value examine
-    $m add radiobutton -label [msgcat::mc {3D}] \
-	-variable pcurrent(mode) -value 3d
+
 
     pack $f -side top -fill both -expand true
 }
@@ -169,30 +146,10 @@ proc CreateButtonsEdit {} {
     RadioButton $ds9(buttons).edit.colorbar \
 	[string tolower [msgcat::mc {Colorbar}]] \
 	current(mode) colorbar ChangeMode
-    RadioButton $ds9(buttons).edit.pan \
-	[string tolower [msgcat::mc {Pan}]] \
-	current(mode) pan ChangeMode
-    RadioButton $ds9(buttons).edit.zoom \
-	[string tolower [msgcat::mc {Zoom}]] \
-	current(mode) zoom ChangeMode
-    RadioButton $ds9(buttons).edit.rotate \
-	[string tolower [msgcat::mc {Rotate}]] \
-	current(mode) rotate ChangeMode
-    RadioButton $ds9(buttons).edit.crop \
-	[string tolower [msgcat::mc {Crop}]] \
-	current(mode) crop ChangeMode
-    RadioButton $ds9(buttons).edit.catalog \
-	[string tolower [msgcat::mc {Cat}]] \
-	current(mode) catalog ChangeMode
+
     RadioButton $ds9(buttons).edit.footprint \
         [string tolower [msgcat::mc {FP}]] \
         current(mode) footprint ChangeMode
-    RadioButton $ds9(buttons).edit.examine \
-	[string tolower [msgcat::mc {Exam}]] \
-	current(mode) examine ChangeMode
-    RadioButton $ds9(buttons).edit.3d \
-	[string tolower [msgcat::mc {3D}]] \
-	current(mode) 3d ChangeMode
 
     ButtonButton $ds9(buttons).edit.prefs \
 	[string tolower [msgcat::mc {Preferences}]] PrefsDialog
@@ -206,14 +163,7 @@ proc CreateButtonsEdit {} {
         $ds9(buttons).edit.region pbuttons(edit,region)
         $ds9(buttons).edit.crosshair pbuttons(edit,crosshair)
         $ds9(buttons).edit.colorbar pbuttons(edit,colorbar)
-        $ds9(buttons).edit.pan pbuttons(edit,pan)
-        $ds9(buttons).edit.zoom pbuttons(edit,zoom)
-        $ds9(buttons).edit.rotate pbuttons(edit,rotate)
-        $ds9(buttons).edit.crop pbuttons(edit,crop)
-        $ds9(buttons).edit.catalog pbuttons(edit,catalog)
         $ds9(buttons).edit.footprint pbuttons(edit,footprint)                   
-        $ds9(buttons).edit.examine pbuttons(edit,examine)
-        $ds9(buttons).edit.3d pbuttons(edit,3d)
         $ds9(buttons).edit.prefs pbuttons(edit,prefs)
     "
 }
@@ -245,23 +195,10 @@ proc PrefsDialogButtonbarEdit {f} {
 	-variable pbuttons(edit,crosshair) -command {UpdateButtons buttons(edit)}
     $m add checkbutton -label [msgcat::mc {Colorbar}] \
 	-variable pbuttons(edit,colorbar) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Pan}] \
-	-variable pbuttons(edit,pan) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Zoom}] \
-	-variable pbuttons(edit,zoom) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Rotate}] \
-	-variable pbuttons(edit,rotate) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Crop}] \
-	-variable pbuttons(edit,crop) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Catalog}] \
-	-variable pbuttons(edit,catalog) -command {UpdateButtons buttons(edit)}
+
     $m add checkbutton -label [msgcat::mc {Footprint}] \
 	-variable pbuttons(edit,footprint) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {Examine}] \
-	-variable pbuttons(edit,examine) -command {UpdateButtons buttons(edit)}
-    $m add checkbutton -label [msgcat::mc {3D}] \
-	-variable pbuttons(edit,3d) -command {UpdateButtons buttons(3d)}
-    $m add separator
+
     $m add checkbutton -label [msgcat::mc {Preferences}] \
 	-variable pbuttons(edit,prefs) -command {UpdateButtons buttons(edit)}
 }
