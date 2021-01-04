@@ -37,11 +37,6 @@ proc FrameMainMenu {} {
     $ds9(mb).frame add radiobutton -label [msgcat::mc {Blink Frames}] \
 	-variable current(display) -value blink -command DisplayMode
     $ds9(mb).frame add separator
-    $ds9(mb).frame add cascade -label [msgcat::mc {Match}] \
-	-menu $ds9(mb).frame.match
-    $ds9(mb).frame add cascade -label [msgcat::mc {Lock}] \
-	-menu $ds9(mb).frame.lock
-    $ds9(mb).frame add separator
     $ds9(mb).frame add cascade -label [msgcat::mc {Goto Frame}] \
 	-menu $ds9(mb).frame.goto
     $ds9(mb).frame add cascade -label [msgcat::mc {Show/Hide Frames}] \
@@ -58,179 +53,8 @@ proc FrameMainMenu {} {
     $ds9(mb).frame add command -label [msgcat::mc {Last Frame}] \
 	-command LastFrame
     $ds9(mb).frame add separator
-    $ds9(mb).frame add command -label "[msgcat::mc {Cube}]..." \
-	-command CubeDialog
-    $ds9(mb).frame add command -label "[msgcat::mc {RGB}]..." \
-	-command RGBDialog
-    $ds9(mb).frame add command -label "[msgcat::mc {3D}]..." \
-	-command 3DDialog
-    $ds9(mb).frame add separator
     $ds9(mb).frame add cascade -label [msgcat::mc {Frame Parameters}] \
 	-menu $ds9(mb).frame.params
-
-    # match
-    ThemeMenu $ds9(mb).frame.match
-    $ds9(mb).frame.match add cascade -label [msgcat::mc {Frame}] \
-	-menu $ds9(mb).frame.match.frame
-    $ds9(mb).frame.match add cascade -label [msgcat::mc {Crosshair}] \
-	-menu $ds9(mb).frame.match.crosshair
-    $ds9(mb).frame.match add cascade -label [msgcat::mc {Crop}] \
-	-menu $ds9(mb).frame.match.crop
-    $ds9(mb).frame.match add cascade -label [msgcat::mc {Slice}] \
-	-menu $ds9(mb).frame.match.cube
-    $ds9(mb).frame.match add command -label [msgcat::mc {Bin}] \
-	-command MatchBinCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Axes Order}] \
-	-command MatchAxesCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Scale}] \
-	-command MatchScaleCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Scale and Limits}] \
-	-command MatchScaleLimitsCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Colorbar}] \
-	-command MatchColorCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Block}] \
-	-command MatchBlockCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {Smooth}] \
-	-command MatchSmoothCurrent
-    $ds9(mb).frame.match add command -label [msgcat::mc {3D View}] \
-	-command Match3DCurrent
-
-    ThemeMenu $ds9(mb).frame.match.frame
-    $ds9(mb).frame.match.frame add command -label [msgcat::mc {WCS}] \
-	-command {MatchFrameCurrent wcs}
-    $ds9(mb).frame.match.frame add separator
-    $ds9(mb).frame.match.frame add command -label [msgcat::mc {Image}] \
-	-command {MatchFrameCurrent image}
-    $ds9(mb).frame.match.frame add command -label [msgcat::mc {Physical}] \
-	-command {MatchFrameCurrent physical}
-    $ds9(mb).frame.match.frame add command -label [msgcat::mc {Amplifier}] \
-	-command {MatchFrameCurrent amplifier}
-    $ds9(mb).frame.match.frame add command -label [msgcat::mc {Detector}] \
-	-command {MatchFrameCurrent detector}
-
-    ThemeMenu $ds9(mb).frame.match.crosshair
-    $ds9(mb).frame.match.crosshair add command -label [msgcat::mc {WCS}] \
-	-command {MatchCrosshairCurrent wcs}
-    $ds9(mb).frame.match.crosshair add separator
-    $ds9(mb).frame.match.crosshair add command -label [msgcat::mc {Image}] \
-	-command {MatchCrosshairCurrent image}
-    $ds9(mb).frame.match.crosshair add command -label [msgcat::mc {Physical}] \
-	-command {MatchCrosshairCurrent physical}
-    $ds9(mb).frame.match.crosshair add command -label [msgcat::mc {Amplifier}] \
-	-command {MatchCrosshairCurrent amplifier}
-    $ds9(mb).frame.match.crosshair add command -label [msgcat::mc {Detector}] \
-	-command {MatchCrosshairCurrent detector}
-
-    ThemeMenu $ds9(mb).frame.match.crop
-    $ds9(mb).frame.match.crop add command -label [msgcat::mc {WCS}] \
-	-command {MatchCropCurrent wcs}
-    $ds9(mb).frame.match.crop add separator
-    $ds9(mb).frame.match.crop add command -label [msgcat::mc {Image}] \
-	-command {MatchCropCurrent image}
-    $ds9(mb).frame.match.crop add command -label [msgcat::mc {Physical}] \
-	-command {MatchCropCurrent physical}
-    $ds9(mb).frame.match.crop add command -label [msgcat::mc {Amplifier}] \
-	-command {MatchCropCurrent amplifier}
-    $ds9(mb).frame.match.crop add command -label [msgcat::mc {Detector}] \
-	-command {MatchCropCurrent detector}
-
-    ThemeMenu $ds9(mb).frame.match.cube
-    $ds9(mb).frame.match.cube add command -label [msgcat::mc {WCS}] \
-	-command {MatchCubeCurrent wcs}
-    $ds9(mb).frame.match.cube add separator
-    $ds9(mb).frame.match.cube add command -label [msgcat::mc {Image}] \
-	-command {MatchCubeCurrent image}
-
-    # lock
-    ThemeMenu $ds9(mb).frame.lock
-    $ds9(mb).frame.lock add cascade -label [msgcat::mc {Frame}] \
-	-menu $ds9(mb).frame.lock.frame
-    $ds9(mb).frame.lock add cascade -label [msgcat::mc {Crosshair}] \
-	-menu $ds9(mb).frame.lock.crosshair
-    $ds9(mb).frame.lock add cascade -label [msgcat::mc {Crop}] \
-	-menu $ds9(mb).frame.lock.crop
-    $ds9(mb).frame.lock add cascade -label [msgcat::mc {Slice}] \
-	-menu $ds9(mb).frame.lock.cube
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Bin}] \
-	-variable bin(lock) -command {LockBinCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Axes Order}] \
-	-variable cube(lock,axes) -command {LockAxesCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Scale}] \
-	-variable scale(lock) -command {LockScaleCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Scale and Limits}] \
-	-variable scale(lock,limits) -command {LockScaleLimitsCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Colorbar}] \
-	-variable colorbar(lock) -command {LockColorCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Block}] \
-	-variable block(lock) -command {LockBlockCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {Smooth}] \
-	-variable smooth(lock) -command {LockSmoothCurrent}
-    $ds9(mb).frame.lock add checkbutton -label [msgcat::mc {3D View}] \
-	-variable threed(lock) -command {Lock3DCurrent}
-
-    ThemeMenu $ds9(mb).frame.lock.frame
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {None}] \
-	-variable panzoom(lock) -value none -command LockFrameCurrent
-    $ds9(mb).frame.lock.frame add separator
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {WCS}] \
-	-variable panzoom(lock) -value wcs -command LockFrameCurrent
-    $ds9(mb).frame.lock.frame add separator
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {Image}] \
-	-variable panzoom(lock) -value image -command LockFrameCurrent
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {Physical}] \
-	-variable panzoom(lock) -value physical	-command LockFrameCurrent
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {Amplifier}] \
-	-variable panzoom(lock) -value amplifier -command LockFrameCurrent
-    $ds9(mb).frame.lock.frame add radiobutton -label [msgcat::mc {Detector}] \
-	-variable panzoom(lock) -value detector -command LockFrameCurrent
-
-    ThemeMenu $ds9(mb).frame.lock.crosshair
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {None}] -variable crosshair(lock) \
-	-value none -command LockCrosshairCurrent
-    $ds9(mb).frame.lock.crosshair add separator
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {WCS}] -variable crosshair(lock) \
-	-value wcs -command LockCrosshairCurrent
-    $ds9(mb).frame.lock.crosshair add separator
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {Image}] -variable crosshair(lock) \
-	-value image -command LockCrosshairCurrent
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {Physical}] -variable crosshair(lock) \
-	-value physical -command LockCrosshairCurrent
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {Amplifier}] -variable crosshair(lock) \
-	-value amplifier -command LockCrosshairCurrent
-    $ds9(mb).frame.lock.crosshair add radiobutton \
-	-label [msgcat::mc {Detector}] -variable crosshair(lock) \
-	-value detector -command LockCrosshairCurrent
-
-    ThemeMenu $ds9(mb).frame.lock.crop
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {None}] \
-	-variable crop(lock) -value none -command LockCropCurrent
-    $ds9(mb).frame.lock.crop add separator
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {WCS}] \
-	-variable crop(lock) -value wcs -command LockCropCurrent
-    $ds9(mb).frame.lock.crop add separator
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {Image}] \
-	-variable crop(lock) -value image -command LockCropCurrent
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {Physical}] \
-	-variable crop(lock) -value physical -command LockCropCurrent
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {Amplifier}] \
-	-variable crop(lock) -value amplifier -command LockCropCurrent
-    $ds9(mb).frame.lock.crop add radiobutton -label [msgcat::mc {Detector}] \
-	-variable crop(lock) -value detector -command LockCropCurrent
-
-    ThemeMenu $ds9(mb).frame.lock.cube
-    $ds9(mb).frame.lock.cube add radiobutton -label [msgcat::mc {None}] \
-	-variable cube(lock) -value none -command LockCubeCurrent
-    $ds9(mb).frame.lock.cube add separator
-    $ds9(mb).frame.lock.cube add radiobutton -label [msgcat::mc {WCS}] \
-	-variable cube(lock) -value wcs -command LockCubeCurrent
-    $ds9(mb).frame.lock.cube add separator
-    $ds9(mb).frame.lock.cube add radiobutton -label [msgcat::mc {Image}] \
-	-variable cube(lock) -value image -command LockCubeCurrent
 
     # active
     ThemeMenu $ds9(mb).frame.active
@@ -485,158 +309,6 @@ proc CreateButtonsFrame {} {
 	[string tolower [msgcat::mc {Blink}]] \
 	current(display) blink DisplayMode
 
-    ButtonButton $ds9(buttons).frame.matchbin \
-	[string tolower [msgcat::mc {Match Bin}]] MatchBinCurrent
-    ButtonButton $ds9(buttons).frame.matchaxes \
-	[string tolower [msgcat::mc {Match Axes}]] MatchAxesCurrent
-    ButtonButton $ds9(buttons).frame.matchscale \
-	[string tolower [msgcat::mc {Match Scale}]] MatchScaleCurrent
-    ButtonButton $ds9(buttons).frame.matchscalelimits \
-	[string tolower [msgcat::mc {Match Limits}]] \
-	MatchScaleLimitsCurrent
-    ButtonButton $ds9(buttons).frame.matchcolor \
-	[string tolower [msgcat::mc {Match Color}]] MatchColorCurrent
-    ButtonButton $ds9(buttons).frame.matchsmooth \
-	[string tolower [msgcat::mc {Match Smooth}]] MatchSmoothCurrent
-
-    ButtonButton $ds9(buttons).frame.matchframewcs \
-	[string tolower [msgcat::mc {Match Frame WCS}]] \
-	{MatchFrameCurrent wcs}
-    ButtonButton $ds9(buttons).frame.matchframeimage \
-	[string tolower [msgcat::mc {Match Frame Image}]] \
-	{MatchFrameCurrent image}
-    ButtonButton $ds9(buttons).frame.matchframephysical \
-	[string tolower [msgcat::mc {Match Frame Physical}]] \
-	{MatchFrameCurrent physical}
-    ButtonButton $ds9(buttons).frame.matchframedetector \
-	[string tolower [msgcat::mc {Match Frame Detector}]] \
-	{MatchFrameCurrent detector}
-    ButtonButton $ds9(buttons).frame.matchframeamplifier \
-	[string tolower [msgcat::mc {Match Frame Amplifier}]] \
-	{MatchFrameCurrent amplifier}
-
-    ButtonButton $ds9(buttons).frame.matchcrosshairwcs \
-	[string tolower [msgcat::mc {Match Crosshair WCS}]] \
-	{MatchCrosshairCurrent wcs}
-    ButtonButton $ds9(buttons).frame.matchcrosshairimage \
-	[string tolower [msgcat::mc {Match Crosshair Image}]] \
-	{MatchCrosshairCurrent image}
-    ButtonButton $ds9(buttons).frame.matchcrosshairphysical \
-	[string tolower [msgcat::mc {Match Crosshair Physical}]] \
-	{MatchCrosshairCurrent physical}
-    ButtonButton $ds9(buttons).frame.matchcrosshairdetector \
-	[string tolower [msgcat::mc {Match Crosshair Detector}]] \
-	{MatchCrosshairCurrent detector}
-    ButtonButton $ds9(buttons).frame.matchcrosshairamplifier \
-	[string tolower [msgcat::mc {Match Crosshair Amplifier}]] \
-	{MatchCrosshairCurrent amplifier}
-
-    ButtonButton $ds9(buttons).frame.matchcropwcs \
-	[string tolower [msgcat::mc {Match Crop WCS}]] \
-	{MatchCropCurrent wcs}
-    ButtonButton $ds9(buttons).frame.matchcropimage \
-	[string tolower [msgcat::mc {Match Crop Image}]] \
-	{MatchCropCurrent image}
-    ButtonButton $ds9(buttons).frame.matchcropphysical \
-	[string tolower [msgcat::mc {Match Crop Physical}]] \
-	{MatchCropCurrent physical}
-    ButtonButton $ds9(buttons).frame.matchcropdetector \
-	[string tolower [msgcat::mc {Match Crop Detector}]] \
-	{MatchCropCurrent detector}
-    ButtonButton $ds9(buttons).frame.matchcropamplifier \
-	[string tolower [msgcat::mc {Match Crop Amplifier}]] \
-	{MatchCropCurrent amplifier}
-
-    ButtonButton $ds9(buttons).frame.matchcubewcs \
-	[string tolower [msgcat::mc {Match Slice WCS}]] \
-	{MatchCubeCurrent wcs}
-    ButtonButton $ds9(buttons).frame.matchcubeimage \
-	[string tolower [msgcat::mc {Match Slice Image}]] \
-	{MatchCubeCurrent image}
-
-    CheckButton $ds9(buttons).frame.lockbin \
-	[string tolower [msgcat::mc {Lock Bin}]] bin(lock) LockBinCurrent
-    CheckButton $ds9(buttons).frame.lockaxes \
-	[string tolower [msgcat::mc {Lock Axes}]] \
-	cube(lock,axes) LockAxesCurrent
-    CheckButton $ds9(buttons).frame.lockscale \
-	[string tolower [msgcat::mc {Lock Scale}]] scale(lock) LockScaleCurrent
-    CheckButton $ds9(buttons).frame.lockscalelimits \
-	[string tolower [msgcat::mc {Lock Limits}]] \
-	scale(lock,limits) LockScaleLimitsCurrent
-    CheckButton $ds9(buttons).frame.lockcolor \
-	[string tolower [msgcat::mc {Lock Color}]] color(lock) LockColorCurrent
-    CheckButton $ds9(buttons).frame.locksmooth \
-	[string tolower [msgcat::mc {Lock Smooth}]] \
-	smooth(lock) LockSmoothCurrent
-
-    RadioButton $ds9(buttons).frame.lockframenone \
-	[string tolower [msgcat::mc {Lock Frame None}]] \
-	panzoom(lock) none LockFrameCurrent
-    RadioButton $ds9(buttons).frame.lockframewcs \
-	[string tolower [msgcat::mc {Lock Frame WCS}]] \
-	panzoom(lock) wcs LockFrameCurrent
-    RadioButton $ds9(buttons).frame.lockframeimage \
-	[string tolower [msgcat::mc {Lock Frame Image}]] \
-	panzoom(lock) image LockFrameCurrent
-    RadioButton $ds9(buttons).frame.lockframephysical \
-	[string tolower [msgcat::mc {Lock Frame Physical}]] \
-	panzoom(lock) physical LockFrameCurrent
-    RadioButton $ds9(buttons).frame.lockframedetector \
-	[string tolower [msgcat::mc {Lock Frame Detector}]] \
-	panzoom(lock) detector LockFrameCurrent
-    RadioButton $ds9(buttons).frame.lockframeamplifier \
-	[string tolower [msgcat::mc {Lock Frame Amplifier}]] \
-	panzoom(lock) amplifier LockFrameCurrent
-
-    RadioButton $ds9(buttons).frame.lockcrosshairnone \
-	[string tolower [msgcat::mc {Lock Crosshair None}]] \
-	crosshair(lock) none LockCrosshairCurrent
-    RadioButton $ds9(buttons).frame.lockcrosshairwcs \
-	[string tolower [msgcat::mc {Lock Crosshair WCS}]] \
-	crosshair(lock) wcs LockCrosshairCurrent
-    RadioButton $ds9(buttons).frame.lockcrosshairimage \
-	[string tolower [msgcat::mc {Lock Crosshair Image}]] \
-	crosshair(lock) image LockCrosshairCurrent
-    RadioButton $ds9(buttons).frame.lockcrosshairphysical \
-	[string tolower [msgcat::mc {Lock Crosshair Physical}]] \
-	crosshair(lock) physical LockCrosshairCurrent
-    RadioButton $ds9(buttons).frame.lockcrosshairdetector \
-	[string tolower [msgcat::mc {Lock Crosshair Detector}]] \
-	crosshair(lock) detector LockCrosshairCurrent
-    RadioButton $ds9(buttons).frame.lockcrosshairamplifier \
-	[string tolower [msgcat::mc {Lock Crosshair Amplifier}]] \
-	crosshair(lock) amplifier LockCrosshairCurrent
-
-    RadioButton $ds9(buttons).frame.lockcropnone \
-	[string tolower [msgcat::mc {Lock Crop None}]] \
-	crop(lock) none LockCropCurrent
-    RadioButton $ds9(buttons).frame.lockcropwcs \
-	[string tolower [msgcat::mc {Lock Crop WCS}]] \
-	crop(lock) wcs LockCropCurrent
-    RadioButton $ds9(buttons).frame.lockcropimage \
-	[string tolower [msgcat::mc {Lock Crop Image}]] \
-	crop(lock) image LockCropCurrent
-    RadioButton $ds9(buttons).frame.lockcropphysical \
-	[string tolower [msgcat::mc {Lock Crop Physical}]] \
-	crop(lock) physical LockCropCurrent
-    RadioButton $ds9(buttons).frame.lockcropdetector \
-	[string tolower [msgcat::mc {Lock Crop Detector}]] \
-	crop(lock) detector LockCropCurrent
-    RadioButton $ds9(buttons).frame.lockcropamplifier \
-	[string tolower [msgcat::mc {Lock Crop Amplifier}]] \
-	crop(lock) amplifier LockCropCurrent
-
-    RadioButton $ds9(buttons).frame.lockcubenone \
-	[string tolower [msgcat::mc {Lock Slice None}]] \
-	cube(lock) none LockCubeCurrent
-    RadioButton $ds9(buttons).frame.lockcubewcs \
-	[string tolower [msgcat::mc {Lock Slice WCS}]] \
-	cube(lock) wcs LockCubeCurrent
-    RadioButton $ds9(buttons).frame.lockcubeimage \
-	[string tolower [msgcat::mc {Lock Slice Image}]] \
-	cube(lock) image LockCubeCurrent
-
     ButtonButton $ds9(buttons).frame.movefirst \
 	[string tolower [msgcat::mc {Move First}]] MoveFirstFrame
     ButtonButton $ds9(buttons).frame.moveprev \
@@ -655,13 +327,6 @@ proc CreateButtonsFrame {} {
     ButtonButton $ds9(buttons).frame.last \
 	[string tolower [msgcat::mc {Last}]] LastFrame
 
-    ButtonButton $ds9(buttons).frame.cube \
-	[string tolower "[msgcat::mc {Cube}]..."] CubeDialog
-    ButtonButton $ds9(buttons).frame.rgb \
-	[string tolower "[msgcat::mc {RGB}]..."] RGBDialog
-    ButtonButton $ds9(buttons).frame.3d \
-	[string tolower "[msgcat::mc {3D}]..."] 3DDialog
-
     ButtonButton $ds9(buttons).frame.size \
 	[string tolower [msgcat::mc {Size}]] DisplayDefaultDialog
 
@@ -678,66 +343,6 @@ proc CreateButtonsFrame {} {
         $ds9(buttons).frame.tile pbuttons(frame,tile)
         $ds9(buttons).frame.blink pbuttons(frame,blink)
 
-        $ds9(buttons).frame.matchbin pbuttons(frame,match,bin)
-        $ds9(buttons).frame.matchaxes pbuttons(frame,match,axes)
-        $ds9(buttons).frame.matchscale pbuttons(frame,match,scale)
-        $ds9(buttons).frame.matchscalelimits pbuttons(frame,match,scalelimits)
-        $ds9(buttons).frame.matchcolor pbuttons(frame,match,color)
-        $ds9(buttons).frame.matchsmooth pbuttons(frame,match,smooth)
-
-        $ds9(buttons).frame.matchframewcs pbuttons(frame,match,frame,wcs)
-        $ds9(buttons).frame.matchframeimage pbuttons(frame,match,frame,image)
-        $ds9(buttons).frame.matchframephysical pbuttons(frame,match,frame,physical)
-        $ds9(buttons).frame.matchframedetector pbuttons(frame,match,frame,detector)
-        $ds9(buttons).frame.matchframeamplifier pbuttons(frame,match,frame,amplifier)
-
-        $ds9(buttons).frame.matchcrosshairwcs pbuttons(frame,match,crosshair,wcs)
-        $ds9(buttons).frame.matchcrosshairimage pbuttons(frame,match,crosshair,image)
-        $ds9(buttons).frame.matchcrosshairphysical pbuttons(frame,match,crosshair,physical)
-        $ds9(buttons).frame.matchcrosshairdetector pbuttons(frame,match,crosshair,detector)
-        $ds9(buttons).frame.matchcrosshairamplifier pbuttons(frame,match,crosshair,amplifier)
-
-        $ds9(buttons).frame.matchcropwcs pbuttons(frame,match,crop,wcs)
-        $ds9(buttons).frame.matchcropimage pbuttons(frame,match,crop,image)
-        $ds9(buttons).frame.matchcropphysical pbuttons(frame,match,crop,physical)
-        $ds9(buttons).frame.matchcropdetector pbuttons(frame,match,crop,detector)
-        $ds9(buttons).frame.matchcropamplifier pbuttons(frame,match,crop,amplifier)
-
-        $ds9(buttons).frame.matchcubewcs pbuttons(frame,match,cube,wcs)
-        $ds9(buttons).frame.matchcubeimage pbuttons(frame,match,cube,image)
-
-        $ds9(buttons).frame.lockbin pbuttons(frame,lock,bin)
-        $ds9(buttons).frame.lockaxes pbuttons(frame,lock,axes)
-        $ds9(buttons).frame.lockscale pbuttons(frame,lock,scale)
-        $ds9(buttons).frame.lockscalelimits pbuttons(frame,lock,scalelimits)
-        $ds9(buttons).frame.lockcolor pbuttons(frame,lock,color)
-        $ds9(buttons).frame.locksmooth pbuttons(frame,lock,smooth)
-
-        $ds9(buttons).frame.lockframenone pbuttons(frame,lock,frame,none)
-        $ds9(buttons).frame.lockframewcs pbuttons(frame,lock,frame,wcs)
-        $ds9(buttons).frame.lockframeimage pbuttons(frame,lock,frame,image)
-        $ds9(buttons).frame.lockframephysical pbuttons(frame,lock,frame,physical)
-        $ds9(buttons).frame.lockframedetector pbuttons(frame,lock,frame,detector)
-        $ds9(buttons).frame.lockframeamplifier pbuttons(frame,lock,frame,amplifier)
-
-        $ds9(buttons).frame.lockcrosshairnone pbuttons(frame,lock,crosshair,none)
-        $ds9(buttons).frame.lockcrosshairwcs pbuttons(frame,lock,crosshair,wcs)
-        $ds9(buttons).frame.lockcrosshairimage pbuttons(frame,lock,crosshair,image)
-        $ds9(buttons).frame.lockcrosshairphysical pbuttons(frame,lock,crosshair,physical)
-        $ds9(buttons).frame.lockcrosshairdetector pbuttons(frame,lock,crosshair,detector)
-        $ds9(buttons).frame.lockcrosshairamplifier pbuttons(frame,lock,crosshair,amplifier)
-
-        $ds9(buttons).frame.lockcropnone pbuttons(frame,lock,crop,none)
-        $ds9(buttons).frame.lockcropwcs pbuttons(frame,lock,crop,wcs)
-        $ds9(buttons).frame.lockcropimage pbuttons(frame,lock,crop,image)
-        $ds9(buttons).frame.lockcropphysical pbuttons(frame,lock,crop,physical)
-        $ds9(buttons).frame.lockcropdetector pbuttons(frame,lock,crop,detector)
-        $ds9(buttons).frame.lockcropamplifier pbuttons(frame,lock,crop,amplifier)
-
-        $ds9(buttons).frame.lockcubenone pbuttons(frame,lock,cube,none)
-        $ds9(buttons).frame.lockcubewcs pbuttons(frame,lock,cube,wcs)
-        $ds9(buttons).frame.lockcubeimage pbuttons(frame,lock,cube,image)
-
         $ds9(buttons).frame.movefirst pbuttons(frame,movefirst)
         $ds9(buttons).frame.moveprev pbuttons(frame,moveprev)
         $ds9(buttons).frame.movenext pbuttons(frame,movenext)
@@ -746,9 +351,6 @@ proc CreateButtonsFrame {} {
         $ds9(buttons).frame.prev pbuttons(frame,prev)
         $ds9(buttons).frame.next pbuttons(frame,next)
         $ds9(buttons).frame.last pbuttons(frame,last)
-        $ds9(buttons).frame.cube pbuttons(frame,cube)
-        $ds9(buttons).frame.rgb pbuttons(frame,rgb)
-        $ds9(buttons).frame.3d pbuttons(frame,3d)
         $ds9(buttons).frame.size pbuttons(frame,size)
     "
 }
@@ -788,9 +390,6 @@ proc PrefsDialogButtonbarFrame {f} {
     $m add checkbutton -label [msgcat::mc {Blink Frames}] \
 	-variable pbuttons(frame,blink) -command {UpdateButtons buttons(frame)}
     $m add separator
-    $m add cascade -label [msgcat::mc {Match}] -menu $m.match
-    $m add cascade -label [msgcat::mc {Lock}] -menu $m.lock
-    $m add separator
     $m add cascade -label [msgcat::mc {Move Frame}] -menu $m.move
     $m add separator
     $m add checkbutton -label [msgcat::mc {First Frame}] \
@@ -802,216 +401,8 @@ proc PrefsDialogButtonbarFrame {f} {
     $m add checkbutton -label [msgcat::mc {Last Frame}] \
 	-variable pbuttons(frame,last) -command {UpdateButtons buttons(frame)}
     $m add separator
-    $m add checkbutton -label "[msgcat::mc {Cube}]..." \
-	-variable pbuttons(frame,cube) -command {UpdateButtons buttons(frame)}
-    $m add checkbutton -label "[msgcat::mc {RGB}]..." \
-	-variable pbuttons(frame,rgb) -command {UpdateButtons buttons(frame)}
-    $m add checkbutton -label "[msgcat::mc {3D}]..." \
-	-variable pbuttons(frame,3d) -command {UpdateButtons buttons(frame)}
-    $m add separator
     $m add cascade -label [msgcat::mc {Frame Parameters}] -menu $m.params
 
-    # match
-    ThemeMenu $m.match
-    $m.match add cascade -label [msgcat::mc {Frame}] \
-	-menu $m.match.frame
-    $m.match add cascade -label [msgcat::mc {Crosshair}] \
-	-menu $m.match.crosshair
-    $m.match add cascade -label [msgcat::mc {Crop}] \
-	-menu $m.match.crop
-    $m.match add cascade -label [msgcat::mc {Slice}] \
-	-menu $m.match.cube
-    $m.match add checkbutton -label [msgcat::mc {Bin}] \
-	-variable pbuttons(frame,match,bin) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match add checkbutton -label [msgcat::mc {Axes Order}] \
-	-variable pbuttons(frame,match,axes) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match add checkbutton -label [msgcat::mc {Scale}] \
-	-variable pbuttons(frame,match,scale) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match add checkbutton -label [msgcat::mc {Scale and Limits}] \
-	-variable pbuttons(frame,match,scalelimits) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match add checkbutton -label [msgcat::mc {Color}] \
-	-variable pbuttons(frame,match,color) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match add checkbutton -label [msgcat::mc {Smooth}] \
-	-variable pbuttons(frame,match,smooth) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.match.frame
-    $m.match.frame add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,match,frame,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.frame add separator
-    $m.match.frame add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,match,frame,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.frame add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,match,frame,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.frame add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,match,frame,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.frame add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,match,frame,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.match.crosshair
-    $m.match.crosshair add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,match,crosshair,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crosshair add separator
-    $m.match.crosshair add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,match,crosshair,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crosshair add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,match,crosshair,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crosshair add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,match,crosshair,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crosshair add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,match,crosshair,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.match.crop
-    $m.match.crop add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,match,crop,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crop add separator
-    $m.match.crop add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,match,crop,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crop add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,match,crop,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crop add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,match,crop,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.crop add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,match,crop,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-
-    ThemeMenu $m.match.cube
-    $m.match.cube add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,match,cube,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.match.cube add separator
-    $m.match.cube add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,match,cube,image) \
-	-command {UpdateButtons buttons(frame)}
-
-    # lock
-    ThemeMenu $m.lock
-    $m.lock add cascade -label [msgcat::mc {Frame}] \
-	-menu $m.lock.frame
-    $m.lock add cascade -label [msgcat::mc {Crosshair}] \
-	-menu $m.lock.crosshair
-    $m.lock add cascade -label [msgcat::mc {Crop}] \
-	-menu $m.lock.crop
-    $m.lock add cascade -label [msgcat::mc {Slice}] \
-	-menu $m.lock.cube
-    $m.lock add checkbutton -label [msgcat::mc {Bin}] \
-	-variable pbuttons(frame,lock,bin) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock add checkbutton -label [msgcat::mc {Axes Order}] \
-	-variable pbuttons(frame,lock,axes) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock add checkbutton -label [msgcat::mc {Scale}] \
-	-variable pbuttons(frame,lock,scale) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock add checkbutton -label [msgcat::mc {Scale and Limits}] \
-	-variable pbuttons(frame,lock,scalelimits) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock add checkbutton -label [msgcat::mc {Color}] \
-	-variable pbuttons(frame,lock,color) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock add checkbutton -label [msgcat::mc {Smooth}] \
-	-variable pbuttons(frame,lock,smooth) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.lock.frame
-    $m.lock.frame add checkbutton -label [msgcat::mc {None}] \
-	-variable pbuttons(frame,lock,frame,none) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.frame add separator
-    $m.lock.frame add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,lock,frame,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.frame add separator
-    $m.lock.frame add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,lock,frame,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.frame add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,lock,frame,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.frame add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,lock,frame,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.frame add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,lock,frame,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.lock.crosshair
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {None}] \
-	-variable pbuttons(frame,lock,crosshair,none) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crosshair add separator
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,lock,crosshair,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crosshair add separator
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,lock,crosshair,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,lock,crosshair,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,lock,crosshair,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crosshair add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,lock,crosshair,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-    ThemeMenu $m.lock.crop
-    $m.lock.crop add checkbutton -label [msgcat::mc {None}] \
-	-variable pbuttons(frame,lock,crop,none) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crop add separator
-    $m.lock.crop add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,lock,crop,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crop add separator
-    $m.lock.crop add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,lock,crop,image) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crop add checkbutton -label [msgcat::mc {Physical}] \
-	-variable pbuttons(frame,lock,crop,physical) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crop add checkbutton -label [msgcat::mc {Detector}] \
-	-variable pbuttons(frame,lock,crop,detector) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.crop add checkbutton -label [msgcat::mc {Amplifier}] \
-	-variable pbuttons(frame,lock,crop,amplifier) \
-	-command {UpdateButtons buttons(frame)}
-
-
-    ThemeMenu $m.lock.cube
-    $m.lock.cube add checkbutton -label [msgcat::mc {None}] \
-	-variable pbuttons(frame,lock,cube,none) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.cube add separator
-    $m.lock.cube add checkbutton -label [msgcat::mc {WCS}] \
-	-variable pbuttons(frame,lock,cube,wcs) \
-	-command {UpdateButtons buttons(frame)}
-    $m.lock.cube add separator
-    $m.lock.cube add checkbutton -label [msgcat::mc {Image}] \
-	-variable pbuttons(frame,lock,cube,image) \
-	-command {UpdateButtons buttons(frame)}
 
     # move
     ThemeMenu $m.move
@@ -1060,9 +451,6 @@ proc UpdateFrameMenu {} {
 	$ds9(mb).frame entryconfig [msgcat::mc {Tile Frames}] -state normal
 	$ds9(mb).frame entryconfig [msgcat::mc {Blink Frames}] -state normal
 
-	$ds9(mb).frame entryconfig [msgcat::mc {Match}] -state normal
-	$ds9(mb).frame entryconfig [msgcat::mc {Lock}] -state normal
-
 	$ds9(mb).frame entryconfig [msgcat::mc {Move Frame}] -state normal
 
 	$ds9(mb).frame entryconfig [msgcat::mc {First Frame}] -state normal
@@ -1102,9 +490,6 @@ proc UpdateFrameMenu {} {
 	$ds9(mb).frame entryconfig [msgcat::mc {Tile Frames}] -state disabled
 	$ds9(mb).frame entryconfig [msgcat::mc {Blink Frames}] -state disabled
 
-	$ds9(mb).frame entryconfig [msgcat::mc {Match}] -state disabled
-	$ds9(mb).frame entryconfig [msgcat::mc {Lock}] -state disabled
-
 	$ds9(mb).frame entryconfig [msgcat::mc {Move Frame}] -state disabled
 
 	$ds9(mb).frame entryconfig [msgcat::mc {First Frame}] -state disabled
@@ -1132,49 +517,6 @@ proc UpdateFrameMenu {} {
 	$ds9(buttons).frame.prev configure -state disabled
 	$ds9(buttons).frame.next configure -state disabled
 	$ds9(buttons).frame.last configure -state disabled
-    }
-
-    if {$current(frame) != {}} {
-	$ds9(mb).frame entryconfig "[msgcat::mc {Cube}]..." \
-	    -state normal
-	$ds9(buttons).frame.cube configure -state normal
-
-	switch -- [$current(frame) get type] {
-	    base {
-		$ds9(mb).frame entryconfig "[msgcat::mc {RGB}]..." \
-		    -state disabled
-		$ds9(mb).frame entryconfig "[msgcat::mc {3D}]..." \
-		    -state normal
-		$ds9(buttons).frame.rgb configure -state disabled
-		$ds9(buttons).frame.3d configure -state normal
-	    }
-	    rgb {
-		$ds9(mb).frame entryconfig "[msgcat::mc {RGB}]..." \
-		    -state normal
-		$ds9(mb).frame entryconfig "[msgcat::mc {3D}]..." \
-		    -state disabled
-		$ds9(buttons).frame.rgb configure -state normal
-		$ds9(buttons).frame.3d configure -state disabled
-	    }
-	    3d {
-		$ds9(mb).frame entryconfig "[msgcat::mc {RGB}]..." \
-		    -state disabled
-		$ds9(mb).frame entryconfig "[msgcat::mc {3D}]..."  \
-		    -state normal
-		$ds9(buttons).frame.rgb configure -state disabled
-		$ds9(buttons).frame.3d configure -state normal
-	    }
-	}
-    } else {
-	$ds9(mb).frame entryconfig "[msgcat::mc {Cube}]..." \
-	    -state disabled
-	$ds9(mb).frame entryconfig "[msgcat::mc {RGB}]..." \
-	    -state disabled
-	$ds9(mb).frame entryconfig "[msgcat::mc {3D}]..." \
-	    -state disabled
-	$ds9(buttons).frame.cube configure -state disabled
-	$ds9(buttons).frame.rgb configure -state disabled
-	$ds9(buttons).frame.3d configure -state disabled
     }
 }
 
